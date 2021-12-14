@@ -1,0 +1,6 @@
+{
+  "resources": {
+    "enableExchangeOrder":"Activer la commande d'échange",
+    "enableExchangeInOrderDetails":"Cocher pour activer la commande d'échange"
+  }
+}

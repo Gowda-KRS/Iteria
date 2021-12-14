@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "รายละเอียดบัญชี",
+    "accountAddressBookText": "สมุดบันทึกที่อยู่บริษัท",
+    "updatePasswordText": "อัปเดตรหัสผ่าน",
+    "orderHistoryText":"ประวัติใบสั่ง",
+    "scheduledOrdersText": "ใบสั่งที่วางกำหนดการ",
+    "purchaseListsText": "ลิสต์จัดซื้อ",
+    "orderApprovalSettingsText": "การตั้งค่าการอนุมัติใบสั่ง",
+    "accountContactsText": "ผู้ติดต่อของบัญชี",
+    "ordersPendingApprovalText": "ใบสั่งที่รอการอนุมัติ",
+    "addressBookText": "สมุดบันทึกที่อยู่",
+    "wishListText": "ลิสต์สิ่งที่ต้องการ",
+    "myAccountText": "บัญชีของฉัน",
+    "customerDetailsText": "รายละเอียดโปรไฟล์",
+    "accountOrderHistoryText": "ประวัติใบสั่ง",
+    "accountScheduledOrdersText": "ใบสั่งที่วางกำหนดการ",
+    "customerSearchText":"การค้นหาลูกค้า",
+    "selfRegistrationText":"คำขอการลงทะเบียน",
+    "registrationRequestsText": "คำขอการลงทะเบียน"
+    
+  }
+}

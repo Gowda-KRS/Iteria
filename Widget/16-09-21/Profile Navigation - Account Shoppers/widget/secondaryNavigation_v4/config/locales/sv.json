@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Sekundära menyalternativ",
+    "displayAndURLHelpText":"Ange ett namn på det sekundära navigeringsmenyalternativet som ska visas i nätbutiken och en associerad webbadress. Kunder dirigeras om till webbadressen genom att välja det angivna namnet. Ange de associerade kontobaserade kundroller som kommer att ha åtkomst till menyalternativet. Obs! Detta bör endast inkludera kontobaserade kundroller.",
+    "placeHoldersText":   "Visningsnamn, URL, roll",
+    "addMoreRowsText": "Lägg till fler rader",
+    "displayOptionsHelpText":" Välj om menyalternativen ska visas vertikalt eller horisontellt i sidlayouten.",
+	"displayOptionsLabel":"Navigeringsorientering",
+	"horizontalText": "Horisontellt",
+	"verticalText": "Vertikalt"
+  }
+}

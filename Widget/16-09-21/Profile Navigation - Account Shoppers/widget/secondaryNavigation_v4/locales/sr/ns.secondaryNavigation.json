@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Детаљи налога",
+    "accountAddressBookText": "Адресар налога",
+    "updatePasswordText": "Ажурирај лозинку",
+    "orderHistoryText":"Историјат наруџбина",
+    "scheduledOrdersText": "Планиране наруџбине",
+    "purchaseListsText": "Листе за куповину",
+    "orderApprovalSettingsText": "Подешавања одобрења наруџбине",
+    "accountContactsText": "Контакти за налог",
+    "ordersPendingApprovalText": "Наруџбине које чекају одобрење",
+    "addressBookText": "Адресар",
+    "wishListText": "Листа жеља",
+    "myAccountText": "Мој налог",
+    "customerDetailsText": "Детаљи профила",
+    "accountOrderHistoryText": "Историјат наруџбина",
+    "accountScheduledOrdersText": "Планиране наруџбине",
+    "customerSearchText":"Претрага купаца",
+    "selfRegistrationText":"Захтеви за регистрацију",
+    "registrationRequestsText": "Захтеви за регистрацију"
+    
+  }
+}

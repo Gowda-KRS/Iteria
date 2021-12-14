@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Másodlagos menübeállítások",
+    "displayAndURLHelpText":"Megadhat egy, az áruházi portálon megjelenítendő másodlagos navigációsmenü-beállításnevet és a hozzá tartozó URL-címet. A vásárlókat a rendszer az adott név kiválasztása után erre az URL-címre irányítja át. Megadhatja a hozzárendelt fiókalapú vásárlói szerepköröket, amelyek hozzáféréssel fognak rendelkezni az adott menübeállításhoz. Megjegyzés: ez csak a fiókalapú vásárlói szerepkörökre vonatkozik.",
+    "placeHoldersText":   "Megjelenített név, URL-cím, szerepkör",
+    "addMoreRowsText": "További sorok felvétele",
+    "displayOptionsHelpText":"Kiválaszthatja, hogy a menübeállításokat függőlegesen vagy vízszintesen szeretné-e megjeleníteni az oldalelrendezésen.",
+	"displayOptionsLabel":"Navigáció tájolása",
+	"horizontalText": "Vízszintes",
+	"verticalText": "Függőleges"
+  }
+}

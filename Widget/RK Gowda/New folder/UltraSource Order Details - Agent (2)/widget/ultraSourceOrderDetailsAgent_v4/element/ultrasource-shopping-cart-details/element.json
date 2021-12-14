@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["ultraSourceOrderDetailsAgent"],
+  "tag": "ultrasource-shopping-cart-details",
+  "translations": [{
+    "description": "Agent Shopping Cart Details",
+    "language": "en",
+    "title": "Agent Shopping Cart Details"
+  }],
+  "type": "fragment",
+  "version": 5
+}

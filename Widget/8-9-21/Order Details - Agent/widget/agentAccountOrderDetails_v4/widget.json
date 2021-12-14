@@ -1,0 +1,178 @@
+{
+  "config": {"isExchangeEnabled": true},
+  "defaultLayout": "orderDetailsDefaultLayout",
+  "global": false,
+  "globalEnabled": false,
+  "i18nresources": "agentAccountOrderDetails",
+  "imports": ["orderDetailsAgent"],
+  "javascript": "account-order-details-section",
+  "jsEditable": false,
+  "minWidth": 1,
+  "pageTypes": ["agentOrderDetails"],
+  "source": 100,
+  "translations": [
+    {
+      "language": "th",
+      "name": "รายละเอียดใบสั่ง - เอเจนต์"
+    },
+    {
+      "language": "pt_BR",
+      "name": "Detalhes do Pedido - Agente"
+    },
+    {
+      "language": "zh_CN",
+      "name": "订单详细信息 - 客服"
+    },
+    {
+      "language": "uk",
+      "name": "Агент відомостей замовлення"
+    },
+    {
+      "language": "bg",
+      "name": "Подробности за поръчка \u2013 агент"
+    },
+    {
+      "language": "et",
+      "name": "Tellimuse üksikasjad \u2013 agent"
+    },
+    {
+      "language": "lv",
+      "name": "Pasūtījuma dati - aģents"
+    },
+    {
+      "language": "no",
+      "name": "Ordredetaljer - agent"
+    },
+    {
+      "language": "lt",
+      "name": "Užsakymo išs. inf. \u2013 agentas"
+    },
+    {
+      "language": "fr_CA",
+      "name": "Détails de commande - Agent"
+    },
+    {
+      "language": "ro",
+      "name": "Detalii comandă - Agent"
+    },
+    {
+      "language": "ja",
+      "name": "オーダー詳細 - エージェント"
+    },
+    {
+      "language": "sl",
+      "name": "Podrobnosti naročila - Agent"
+    },
+    {
+      "language": "ru",
+      "name": "Сведения о заказе - агент"
+    },
+    {
+      "language": "hr",
+      "name": "Pojedinosti narudžbe - agent"
+    },
+    {
+      "language": "tr",
+      "name": "Sipariş Detayları - Aracı"
+    },
+    {
+      "language": "pl",
+      "name": "Szczegóły zamówienia - agent"
+    },
+    {
+      "language": "zh_TW",
+      "name": "訂單詳細資料 - 專員"
+    },
+    {
+      "language": "ko",
+      "name": "주문 세부정보 - 상담원"
+    },
+    {
+      "language": "cs",
+      "name": "Detaily objednávky - agent"
+    },
+    {
+      "language": "hu",
+      "name": "Rendelés adatai - Ügynök"
+    },
+    {
+      "language": "el",
+      "name": "Λεπτ. παραγγελίας - Αντιπρ."
+    },
+    {
+      "language": "da",
+      "name": "Ordredetaljer - Agent"
+    },
+    {
+      "language": "en",
+      "name": "Order Details - Agent"
+    },
+    {
+      "language": "sr",
+      "name": "Детаљи наруџбине \u2013 агент"
+    },
+    {
+      "language": "ar",
+      "name": "تفاصيل الطلب - الوكيل"
+    },
+    {
+      "language": "de",
+      "name": "Bestelldetails - Agent"
+    },
+    {
+      "language": "sr_Latn",
+      "name": "Detalji narudžbine \u2013 agent"
+    },
+    {
+      "language": "es",
+      "name": "Detalles de orden - Agente"
+    },
+    {
+      "language": "ca",
+      "name": "Detalls d'ordre - Agent"
+    },
+    {
+      "language": "fr",
+      "name": "Détails de commande - Agent"
+    },
+    {
+      "language": "id",
+      "name": "Detail Pesanan - Agen"
+    },
+    {
+      "language": "it",
+      "name": "Dettagli ordine - Agente"
+    },
+    {
+      "language": "ms",
+      "name": "Butiran Pesanan - Ejen"
+    },
+    {
+      "language": "en_GB",
+      "name": "Order Details - Agent"
+    },
+    {
+      "language": "vi",
+      "name": "Chi tiết ĐH - NV trực TĐ"
+    },
+    {
+      "language": "nl",
+      "name": "Orderdetails - agent"
+    },
+    {
+      "language": "sv",
+      "name": "Orderdetaljer - handläggare"
+    },
+    {
+      "language": "pt",
+      "name": "Detalhes Encomendas - Agente"
+    },
+    {
+      "language": "fi",
+      "name": "Tilauksen tiedot - asiakasp."
+    }
+  ],
+  "version": 4,
+  "widgetFamily": "agentAccountOrderDetails",
+  "widgetType": "agentAccountOrderDetails"
+}

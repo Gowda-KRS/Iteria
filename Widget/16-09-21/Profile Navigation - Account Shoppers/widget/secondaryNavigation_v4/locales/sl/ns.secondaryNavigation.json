@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Podrobnosti računa",
+    "accountAddressBookText": "Adresar računa",
+    "updatePasswordText": "Posodobitev gesla",
+    "orderHistoryText":"Zgodovina naročil",
+    "scheduledOrdersText": "Planirana naročila",
+    "purchaseListsText": "Seznami nakupov",
+    "orderApprovalSettingsText": "Nastavitve odobritve naročila",
+    "accountContactsText": "Kontakti računa",
+    "ordersPendingApprovalText": "Naročila čakajo na odobritev",
+    "addressBookText": "Adresar",
+    "wishListText": "Seznam želja",
+    "myAccountText": "Moj račun",
+    "customerDetailsText": "Podrobnosti profila",
+    "accountOrderHistoryText": "Zgodovina naročil",
+    "accountScheduledOrdersText": "Planirana naročila",
+    "customerSearchText":"Iskanje kupca",
+    "selfRegistrationText":"Zahteve za registracijo",
+    "registrationRequestsText": "Zahteve za registracijo"
+    
+  }
+}

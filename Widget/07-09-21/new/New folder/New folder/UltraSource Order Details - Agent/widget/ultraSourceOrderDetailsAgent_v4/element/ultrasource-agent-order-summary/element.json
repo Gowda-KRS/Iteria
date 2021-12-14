@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["ultraSourceOrderDetailsAgent"],
+  "tag": "ultrasource-agent-order-summary",
+  "translations": [{
+    "description": "Agent Order Details Summary",
+    "language": "en",
+    "title": "Agent Order Details Summary"
+  }],
+  "type": "fragment",
+  "version": 5
+}

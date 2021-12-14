@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Opções do Menu Secundário",
+    "displayAndURLHelpText":"Introduza um nome de opção de menu de navegação secundário para ser apresentado na sua montra e um URL associado. Os compradores são direcionados para esse URL selecionando o nome atribuído. Introduza as funções de comprador com base na conta associada que terão acesso a essa opção de menu. Nota: isto só deverá incluir funções de comprador com base na conta.",
+    "placeHoldersText":   "Nome de Apresentação, URL, Função",
+    "addMoreRowsText": "Acrescentar Mais Linhas",
+    "displayOptionsHelpText":" Escolha se pretende apresentar as opções de menu na disposição da página vertical ou horizontalmente.",
+	"displayOptionsLabel":"Orientação da Navegação",
+	"horizontalText": "Horizontal",
+	"verticalText": "Vertical"
+  }
+}

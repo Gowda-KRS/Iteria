@@ -1,0 +1,35 @@
+{
+  "widgetDescriptorName": "secondaryNavigation",
+  "properties": [
+    {
+      "id": "displayOptions",
+	  "type": "optionType",
+	  "name": "displayOptions",
+	  "defaultValue": "vertical",
+	  "helpTextResourceId": "displayOptionsHelpText",
+	  "labelResourceId": "displayOptionsLabel",
+      "options":[{"value": "horizontal", "labelResourceId": "horizontalText", "id":"horizontal"},{"value": "vertical", "labelResourceId": "verticalText", "id": "vertical"}],
+	  "required": true
+    },
+    {
+      "id": "displayAndURL",
+	  "type": "multiKeyValuePairsType",
+	  "name": "displayAndURL",
+	  "helpTextResourceId": "displayAndURLHelpText",
+	  "labelResourceId": "displayAndURLLabel",
+	  "placeHolders": "placeHoldersText",
+	  "maxLengths": "100,100,100",
+	  "noOfColumns": 3,
+	  "addMoreRowsResourceId": "addMoreRowsText",
+	  "required": false
+    },
+    {
+      "id": "metaPageType",
+	  "type": "stringType",
+	  "name": "metaPageType",
+	  "helpTextResourceId": "metaPageTypeText",
+	  "labelResourceId": "metaPageTypeLabel",
+	  "required": false
+    }
+  ]
+}

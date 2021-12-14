@@ -1,0 +1,311 @@
+<!-- ko if : loaded -->
+<div id="cc-customerDisplay">
+	<div id="cc-customerDisplay-header">
+		<div id="cc-customerDisplay-header-customerInfo" class="col-md-12">
+			<h1 class="agent-headerText"
+				id="cc-customerDisplay-myProfileText"
+				data-bind="widgetLocaleText: 'myProfileText'"></h1>
+		</div>
+	</div>
+
+	<!--  oc layout: panels -->
+
+	<!-- container to display customer profile and shipping address information -->
+	<div id="cc-customerDisplay-controls" class="row">
+         
+        <div class="col-md-6" data-oc-id="panel-3">
+		<!-- oc section : ultrasource-customer-details -->
+		<!--<div data-bind="element: 'ultrasource-customer-details'"></div>-->
+		<!---->
+		<div class="cc-margin-top20">
+	<!-- Template to display user details -->
+	 <!-- ko if: $data.isAccountWithNoContracts() -->
+	 <div class="row">
+	 <span class="col-md-12" id="cc-customer-account-no-contracts-error-text"
+		  		data-bind="widgetLocaleText : 'accountHasNoContracts'"></span>
+	 </div>
+     <!-- /ko -->
+     <!-- ko with: user -->
+	<fieldset id="cc-customer-detail-edit-fields">
+		<!-- Below section will be displayed if edit button is clicked -->
+		<div id="cc-customerProfile-details-edit-region">
+			<div class="row" id="cc-customer-customerDetails-header">
+				<p data-bind="widgetLocaleText: 'customerDetailsHeader'"
+					class="no-outline col-xs-12 details-label"
+					id="cc-customer-customerDetails-headerText"></p>
+			</div>
+			<!--ks added on 8/26/21-->
+			<div class="row" id="title-c">
+			    <div class="col-md-12">
+			        <span class="col-md-2" style="    margin-left: -14px;">
+			            <label class="title-label-text">Prefix</label>  
+			        </span>
+			        <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+			        <span class="col-md-6">
+			            <input class="form-control input-title" data-bind="value: $parent.dyProp_nameTitle"  type="text" style="border: 1px solid #dfe4e7;border-radius: 3px;padding: .5em;margin: .2em 0 .2em 0;" />
+			        </span>
+			        
+			    </div>
+			</div>
+			
+			<div class="row first-row">
+				<div id="cc-customer-details-edit-firstName"
+					class="form-group col-md-4">
+					<span class="text-danger visible-xs"
+						id="cc-customer-pfirstname-error"
+						data-bind="validationMessage: firstName"> </span>
+					<div class="control">
+						<label class="control-label details-label" for="cc-customer-pfirstname"
+							data-bind="widgetLocaleText:'firstNameText'"></label> <input
+							type="text" class="col-md-12 form-control details-input-field" name="sFirstName"
+							id="cc-customer-pfirstname"
+							data-bind="validatableValue: firstName,
+                                widgetLocaleText : {value:'firstNameText',
+                                              attr:'placeholder'},
+                                disable: $parent.isAccountWithNoContracts, css: {'sf-error' : !firstName.__valid__()}">
+					</div>
+				</div>
+				<div id="cc-customer-details-edit-lastName"
+					class="form-group col-md-4">
+					<span class="text-danger visible-xs"
+						id="cc-customer-plastName-error"
+						data-bind="validationMessage: lastName"></span>
+					<div class="control">
+						<label class="control-label details-label" for="cc-customer-plastname"
+							data-bind="widgetLocaleText:'lastNameText'"></label> <input
+							type="text" class="col-md-12 form-control details-input-field" name="sLastName"
+							id="cc-customer-plastname"
+							data-bind="validatableValue: lastName,
+                                widgetLocaleText : {value:'lastNameText', attr:'placeholder'},
+                                disable: $parent.isAccountWithNoContracts, css: {'sf-error' : !lastName.__valid__()}">
+					</div>
+				</div>
+				<div id="cc-customer-details-error-tablet"
+					class="col-md-4 hidden-xs">
+					<p class="text-danger"
+						id="cc-customer-details-sfirstname-error-tablet"
+						data-bind="validationMessage: firstName" role="alert"></p>
+					<p class="text-danger"
+						id="cc-customer-details-slastname-error-tablet"
+						data-bind="validationMessage: lastName" role="alert"></p>
+				</div>
+				<div class="form-group col-md-8">
+					<div class="control">
+						<label class="control-label details-label" for="cc-customer-pEmail"
+							data-bind="widgetLocaleText:'emailIdText'"></label> <input
+							type="text" class="col-md-12 form-control details-input-field" name="pEmail"
+							id="cc-customer-pEmail"
+							data-bind="validatableValue: emailAddress, disable: true">
+					</div>
+				</div>
+				<!--ks added on 8/30/21-->
+			    <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="css: {'required' : $data.required}">Role</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $parent.dyProp_role" aria-label="Role">
+                       <!--<span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>-->
+                    </span>
+                </div>
+			<div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                        <!--ks changed from position title to title according to wireframe on 9/8/21-->
+                      <label data-bind="css: {'required' : $data.required}">Title</label>  
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $parent.dyProp_positionTitle" aria-label="Position Title">
+                       <!--<span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>-->
+                    </span>
+            </div>
+            <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="css: {'required' : $data.required}">Office Number</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                        <!-- ko if: $parent.dyProp_officeNumber -->
+                       <input class="form-control" type="text" data-bind="value: $parent.dyProp_officeNumber" aria-label="Office Number">
+                       <!-- /ko -->
+                       <!-- ko ifnot: $parent.dyProp_officeNumber -->
+                       <input class="form-control" type="text" data-bind="value: $parent.dyProp_homeNumber" aria-label="Office Number">
+                       <!-- /ko -->
+                       <!--<span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>-->
+                    </span>
+            </div>
+            <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="css: {'required' : $data.required}">Mobile Number</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $parent.dyProp_mobileNumber" aria-label="Mobile Number">
+                       <!--<span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>-->
+                    </span>
+            </div>
+            <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="css: {'required' : $data.required}">Fax Number</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $parent.dyProp_faxNumber" aria-label="Fax Number">
+                       <!--<span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>-->
+                    </span>
+            </div>
+            <!--e-->    
+			</div>
+		</div>
+		
+		<!--ks added on 9/8/21-->
+		<h4 class="customPropertiesHeader" data-bind="widgetLocaleText:'additionalInfoText'">Additional Information</h4>
+		<!--<hr>-->
+		<!--  ko if: $parent.accountAndSiteSelector.activeSites().length > 0  -->
+		<!-- ko if: $parent.accountAndSiteSelector.selectedSite() -->
+		<div class="row col-md-12">
+			<label id="cc-customerProfile-Preferences-text"
+				class="cc-customer-nickName details-label">Preferences</label>
+				<!--ks hidden as requirements on 9/14/21-->
+			<!--<div class="checkbox"-->
+			<!--	id="cc-customerProfile-edit-marketingMail-checkbox" >-->
+			<!--	<label for="cc-customerProfile-edit-marketingMails"> <input-->
+			<!--		type="checkbox" name="marketing-mail"-->
+			<!--		id="cc-customerProfile-edit-marketingMails"-->
+			<!--		data-bind="checked: emailMarketingMails, value:emailMarketingMails, enable: $parent.accountAndSiteSelector.selectedSite()">-->
+			<!--		<span data-bind="text: $parent.marketingMailsTextForSite" class="details-label"-->
+			<!--		id="cc-customerProfile-edit-marketingMails-text"></span>-->
+			<!--	</label>-->
+			<!--</div>-->
+		</div>
+		<!-- /ko -->
+		
+		<!--ks added on 9/8/21-->
+		<div class="row">
+        <span class="preferences">
+        <input type="checkbox" id="mail" name="type" value="mail" data-bind="checked:$parent.receiveMails , valueUpdate: 'afterkeydown'">
+        <label for="mail" class="receive">Receive mailings</label>
+        </span>
+        </div>
+        <div class="row">
+        <span class="preferences">
+        <input type="checkbox" id="email" name="type1" value="email" data-bind="checked: $parent.receiveEmail , valueUpdate: 'afterkeydown'">
+        <label for="email" class="receive">Receive emails</label>
+        </span>
+        </div>
+        <div class="row">
+        <span class="preferences">
+        <input type="checkbox" id="text" name="type2" value="text" data-bind="checked:$parent.receiveTexts , valueUpdate: 'afterkeydown'">
+        <label for="text" class="receive">Receive texts</label>
+        </span>
+        </div>
+        <div class="row">
+        <span class="preferences">
+        <input type="checkbox" id="catalog" name="type3" value="catalog" data-bind="checked:$parent.receiveCatalogs , valueUpdate: 'afterkeydown'">
+        <label for="catalog" class="receive">Receive catalogs</label>
+        </span>
+        </div>
+		<!--e-->
+		
+		<!-- ko if: $parent.accountAndSiteSelector.activeSites().length > 1 -->
+		<div class="row col-md-12">
+		<div class="checkbox">
+		<label for="cc-customerProfile-edit-globalMarketingMails" id="cc-customerProfile-edit-globalMarketingMails-label">
+			<input type="checkbox" id="cc-customerProfile-edit-globalMarketingMails"
+			 data-bind="checked : $data.receiveEmailGlobally, click: $parent.switchGlobalEmailPrefOptionChange.bind($parent)" />		
+		<!-- ko ifnot: $data.receiveEmailGlobally -->
+		  <span data-bind="widgetLocaleText : 'globalMarketingMailsTitleTextOn'"
+				id="cc-cusrProfile-edit-globalMarketingMails-text" class="details-label"></span> 
+		<!-- /ko -->
+		<!-- ko if: $data.receiveEmailGlobally --> 
+		  <span data-bind="widgetLocaleText : 'globalMarketingMailsTitleTextOff'"
+				id="cc-cusrProfile-edit-globalMarketingMails-text" class="details-label"></span> 
+		<!-- /ko -->
+		</label>
+		</div>
+		</div>
+		<!--  /ko -->
+		<!-- /ko -->
+	</fieldset>
+	<!-- /ko -->
+</div>
+		<!---->
+		
+		<!-- /oc -->
+        
+	    <!-- oc section : ultrasource-customer-profile-reset-password -->
+		<div data-bind="element: 'ultrasource-customer-profile-reset-password'"></div>
+		<!-- /oc -->
+		
+        <!--ks added on 8/31/21-->
+        <!-- oc section : ultrasource-customer-store-roles -->
+		<div data-bind="visible: user().isB2BUser()">
+		<div data-bind="element : 'ultrasource-customer-store-roles'"></div>
+		</div>
+		<!-- /oc -->
+        <!---->
+        
+		<!-- oc section : ultrasource-customer-pending-orders -->
+		<div data-bind="element: 'ultrasource-customer-pending-orders'"></div>
+		<!-- /oc -->
+
+		<!-- oc section : ultrasource-launch-store-as-customer -->
+		<div data-bind="element: 'ultrasource-launch-store-as-customer'"></div>
+		<!-- /oc -->
+		
+		</div>
+
+        <div class="col-md-6" data-oc-id="panel-4">
+		<!-- oc section : ultrasource-customer-store-credit-balance -->
+		<div data-bind="element: 'ultrasource-customer-store-credit-balance'"></div>
+		<!-- /oc -->
+
+		<!-- oc section : ultrasource-customer-loyalty-programs -->
+		<div data-bind="element : 'ultrasource-customer-loyalty-programs'"></div>
+		<!-- /oc -->
+
+		<!-- oc section : ultrasource-customer-store-roles -->
+		<!--<div data-bind="visible: user().isB2BUser()">-->
+		<!--<div data-bind="element : 'ultrasource-customer-store-roles'"></div>-->
+		<!--</div>-->
+		<!-- /oc -->
+
+		<!-- oc section : customer-profile-status -->
+		<!--<div data-bind="element : 'customer-profile-status'"></div>-->   <!--ks 9/8/21-->
+		<!-- /oc -->
+		</div>
+	</div>
+	
+	<!--ks hidden on 9/8/21-->
+ <!--   <div id="customerNotes" class="row">-->
+	<!--  <div class="col-md-12" data-oc-id="panel-5">-->
+	    <!-- oc section : ultrasource-agent-notes -->
+	<!--      <hr class="line agent-line" />-->
+	<!--	  <div data-bind="element : 'agent-notes'"></div>-->
+		<!-- /oc -->
+	<!--  </div>-->
+	<!--</div>-->
+	
+	 <div id="customerDynamicProps" class="row">
+	  <div class="col-md-12" data-oc-id="panel-6">
+	    <!-- oc section : ultra-dynamic-property -->
+          <!-- ko setContextVariable:{name:'context', value: $data.user().dynamicProperties()} -->
+            <!--<div data-bind="element:'ultra-dynamic-property'"></div>-->
+             <!-- /ko -->
+        <!-- /oc -->
+       </div>
+      </div>
+      
+	<div id="customerSaveCancel" class="row">
+	  <div class="col-md-12" data-oc-id="panel-7">
+	    <!-- oc section : ultrasource-customer-profile-save-cancel -->
+	      <hr class="line agent-line" />
+		  <div data-bind="element : 'ultrasource-customer-profile-save-cancel'"></div>
+		<!-- /oc -->
+	  </div>
+	</div>
+	<!-- /oc -->
+
+</div>
+<!-- /ko -->

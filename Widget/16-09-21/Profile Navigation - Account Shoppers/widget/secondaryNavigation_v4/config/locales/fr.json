@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Options de menu secondaires",
+    "displayAndURLHelpText":"Entrez un nom d'option de menu de navigation secondaire à afficher sur votre vitrine électronique, ainsi qu'une URL associée. Les acheteurs seront dirigés vers cette URL lorsqu'ils sélectionneront ce nom. Entrez les rôles associés d'acheteur basé sur des comptes qui auront accès à cette option de menu. Remarque : Inclure uniquement des rôles d'acheteur basé sur des comptes.",
+    "placeHoldersText":   "Afficher le nom, l'URL, le rôle",
+    "addMoreRowsText": "Ajouter des lignes",
+    "displayOptionsHelpText":" Choisissez l'orientation horizontale ou verticale pour l'affichage des options de menu dans la présentation de page.",
+	"displayOptionsLabel":"Orientation de navigation",
+	"horizontalText": "Horizontale",
+	"verticalText": "Verticale"
+  }
+}

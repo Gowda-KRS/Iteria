@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["ultrasourceCustomerProfileDetailsAgent"],
+  "tag": "ultrasource-launch-store-as-customer",
+  "translations": [{
+    "description": "Ultrasource Launch Store As Customer",
+    "language": "en",
+    "title": "Ultrasource Launch Store As Customer"
+  }],
+  "type": "fragment",
+  "version": 3
+}

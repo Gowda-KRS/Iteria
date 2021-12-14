@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Paskyros informacija",
+    "accountAddressBookText": "Paskyros adresų knyga",
+    "updatePasswordText": "Atnaujinti slaptažodį",
+    "orderHistoryText":"Užsakymų istorija",
+    "scheduledOrdersText": "Suplanuoti užsakymai",
+    "purchaseListsText": "Pirkinių sąrašai",
+    "orderApprovalSettingsText": "Užsakymo patvirtinimo parametrai",
+    "accountContactsText": "Paskyros kontaktai",
+    "ordersPendingApprovalText": "Patvirtinimo laukiantys užsakymai",
+    "addressBookText": "Adresų knyga",
+    "wishListText": "Pageidavimų sąrašas",
+    "myAccountText": "Mano paskyra",
+    "customerDetailsText": "Profilio išsami informacija",
+    "accountOrderHistoryText": "Užsakymų istorija",
+    "accountScheduledOrdersText": "Suplanuoti užsakymai",
+    "customerSearchText":"Klientų paieška",
+    "selfRegistrationText":"Registracijos užklausos",
+    "registrationRequestsText": "Registracijos užklausos"
+    
+  }
+}

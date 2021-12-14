@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Opsi Menu Sekunder",
+    "displayAndURLHelpText":"Masukkan opsi menu navigasi sekunder untuk ditampilkan di etalase Anda, dan sebuah URL terkait. Pembeli diarahkan ke URL tersebut dengan memilih nama yang diberikan. Masukkan akun berdasarkan peran pembeli terkait yang akan memiliki akses ke opsi menu tersebut. Catatan: hal ini hanya akan menyertakan akun berdasarkan peran pembeli.",
+    "placeHoldersText":   "Nama Tampilan, URL, Peran",
+    "addMoreRowsText": "Tambah Lebih Banyak Baris",
+    "displayOptionsHelpText":" Pilih antara menampilkan opsi menu di tata letak halaman secara vertikal atau horizontal.",
+	"displayOptionsLabel":"Orientasi Navigasi",
+	"horizontalText": "Horizontal",
+	"verticalText": "Vertikal"
+  }
+}

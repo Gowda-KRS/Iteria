@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "アカウント詳細",
+    "accountAddressBookText": "アカウント・アドレス帳",
+    "updatePasswordText": "パスワードの更新",
+    "orderHistoryText":"オーダー履歴",
+    "scheduledOrdersText": "スケジュール済オーダー",
+    "purchaseListsText": "購入リスト",
+    "orderApprovalSettingsText": "オーダー承認設定",
+    "accountContactsText": "アカウント連絡先",
+    "ordersPendingApprovalText": "オーダー承認保留中",
+    "addressBookText": "アドレス帳",
+    "wishListText": "ウィッシュ・リスト",
+    "myAccountText": "自分のアカウント",
+    "customerDetailsText": "プロファイル詳細",
+    "accountOrderHistoryText": "オーダー履歴",
+    "accountScheduledOrdersText": "スケジュール済オーダー",
+    "customerSearchText":"顧客検索",
+    "selfRegistrationText":"登録要求",
+    "registrationRequestsText": "登録要求"
+    
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Opţiuni meniu secundare",
+    "displayAndURLHelpText":"Introduceţi un nume de opţiune secundară din meniul de navigare, de afişat în magazinul virtual, şi un URL asociat. Cumpărătorii sunt direcţionaţi către URL-ul respectiv prin selectarea numelui. Introduceţi contul asociat, pe baza rolurilor cumpărătorilor, care vor avea acces la opţiunea de meniu respectivă. Notă: Aceasta trebuie să includă doar rolurile de cumpărători bazate pe conturi.",
+    "placeHoldersText":   "Nume afişat, URL, rol",
+    "addMoreRowsText": "Adăugare mai multe rânduri",
+    "displayOptionsHelpText":" Optaţi pt. a afişa vertical sau orizontal opţiunile de meniu în macheta de pagini.",
+	"displayOptionsLabel":"Orientare navigare",
+	"horizontalText": "Orizontal",
+	"verticalText": "Vertical"
+  }
+}

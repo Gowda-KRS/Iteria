@@ -1,0 +1,13 @@
+{
+  "widgetDescriptorName": "ultraSourceOrderSearchAgent",
+  "properties": [
+    {
+      "id": "itemsPerPage",
+      "type": "stringType",
+      "name": "itemsPerPage",
+      "helpTextResourceId": "itemsPerPageDisplayHelpText",
+      "labelResourceId": "itemsPerPageDisplayLabel",
+      "defaultValue": "15"
+    }
+  ]
+}

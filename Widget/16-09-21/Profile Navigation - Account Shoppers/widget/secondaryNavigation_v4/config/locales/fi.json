@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Toissijaiset valikon valinnat",
+    "displayAndURLHelpText":"Anna kaupassa näytettävän toissijaisen navigointivalikon vaihtoehdon nimi ja liittyvä web-osoite. Ostajat ohjataan tähän web-osoitteeseen, kun he valitsevat annetun nimen. Anna liittyvät tiliin perustuvat ostajan roolit, joilla on valikon vaihtoehdon käyttöoikeus. Huomautus: voi sisältää ainoastaan tiliin perustuvia ostajan rooleja.",
+    "placeHoldersText":   "Näyttönimi, web-osoite, rooli",
+    "addMoreRowsText": "Lisää rivejä",
+    "displayOptionsHelpText":" Valitse, näytetäänkö valikon vaihtoehdot sivun asettelussa pysty- vai vaakasuorassa.",
+	"displayOptionsLabel":"Navigoinnin suunta",
+	"horizontalText": "Vaakasuora",
+	"verticalText": "Pystysuora"
+  }
+}

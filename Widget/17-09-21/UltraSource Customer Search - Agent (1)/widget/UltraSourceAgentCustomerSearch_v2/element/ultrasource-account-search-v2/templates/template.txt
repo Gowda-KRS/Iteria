@@ -1,0 +1,13 @@
+<!-- ko if: initialized() && $data.elements.hasOwnProperty('ultrasource-account-search-v2') -->
+  <div class="form-group" id="cc-organization-field">
+    <label for="cc-customer-organization-text" class="control-label" data-bind=" attr: {id: id()+'_cc-customer-account-label'}" id="">Company Name </label>
+    <div data-bind="attr: {id: id()+'_search_row'}" class="row">
+      <div class="col-md-12">
+        <div class="right-inner-addon" style="position: relative;">
+          <input id="account-search-box"style="padding-right: 30px;" aria-required="true" type="text" class="form-control" data-bind="attr:{'title':$data['resources']().accountproductSearchPlaceholderText}, onRender:$data['elements']['ultrasource-account-search-v2'].initializer.bind($data, $element.id),
+            textInput: $data['elements']['ultrasource-account-search-v2'].accountSearchValue">          
+        </div>
+      </div>
+    </div> 
+  </div>
+<!-- /ko -->

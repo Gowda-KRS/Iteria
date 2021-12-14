@@ -1,0 +1,70 @@
+<!-- MODAL -->
+<div class="modal width-fixed fade cc-modalForm"
+  id="cc-trackingReferencesModal" tabindex="-1"
+  data-bind="modal: 0, modalTabbingContraint">
+  <div class="modal-dialog">
+   <div class="sr-only" data-bind="widgetLocaleText: 'trackingReferencesModalOpenedText'"></div>
+    <div id="tracking-ref-modal-content" class="modal-content">
+      <div class="modal-header">
+        <button id="cc-trackingNumbers-close" type="button" class="close"
+          data-dismiss="modal" data-bind="widgetLocaleText: {value:'closeText', attr:'aria-label'}">
+        </button>
+        <div id="cc-orderTrackingReferencesTitle">
+          <span id="cc-trackingNumbersTitle"
+            data-bind="widgetLocaleText: 'trackShipmentsText'"> </span>
+        </div>
+      </div>
+      <div class="modal-body cc-orderTrackingReferences-modal-body"
+        id="cc-trackingNumbersModalPane">
+        <div>
+        </div>
+        <div class="table-layout-fixed-break-word col-md-12"
+          id="cc-order-tracking-references">
+          <table summary='tracking-references-Table-Header'
+            class="table-header-styling table table-bordered table-striped tableHeader cc-orderDetails-trackingNumberItems-header">
+            <thead>
+              <tr>
+                <th scope="col" class="vert-align"
+                  data-bind="widgetLocaleText: 'carrierText'"></th>
+                <th scope="col" class="vert-align text-center"
+                  data-bind="widgetLocaleText: 'trackingReferenceText'"></th>
+              </tr>
+            </thead>
+          </table>
+          <div id="cc-orderDetails-trackingNumberItems-data-table"
+            data-bind="css: {'cc-orderDetails-trackingNumberItems-body': ( $data[$parent.selectedShippingGroupForTracking()].trackingInfo.length > 4),
+                 'cc-orderDetails-trackingNumberItems-body-without-scrollbar': ($data[$parent.selectedShippingGroupForTracking()].trackingInfo.length <= 4)}">
+            <table id="cc-orderDetails-trackingNumberItems-data"
+              summary="tracking-references-Data-Table"
+              class="table table-bordered table-striped tableHeader">
+              <tbody data-bind="foreach: $data[$parent.selectedShippingGroupForTracking()].trackingInfo">
+                <tr>
+                  <td scope="row">
+                    <span data-bind="text: $data.carrierName"> </span>
+                  </td>
+                  <td class="text-center">
+                    <a target="_blank" data-bind="attr: { href: $data.trackingUrl,
+                     'aria-label': $parents[1].translate('trackingReferenceReaderText',
+                         { carrierName: $data.carrierName, trackingReference: $data.trackingNumber
+                      })}">
+                      <span data-bind="text: $data.trackingNumber">
+                      </span>
+                    </a>	
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <!-- Close button -->
+        <button id="cc-orderTrackingReferencesCancel-btn"
+          class="cc-button-secondary secondarybackground"
+          style="margin-top: 5px;" data-dismiss="modal"
+          data-bind="widgetLocaleText: 'buttonCancelText'" >
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

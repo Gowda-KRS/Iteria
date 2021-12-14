@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Tilitiedot",
+    "accountAddressBookText": "Tilin osoitekirja",
+    "updatePasswordText": "Päivitä salasana",
+    "orderHistoryText":"Tilaushistoria",
+    "scheduledOrdersText": "Suunnitellut tilaukset",
+    "purchaseListsText": "Ostoluettelot",
+    "orderApprovalSettingsText": "Tilauksen hyväksymisasetukset",
+    "accountContactsText": "Tilin yhteystiedot",
+    "ordersPendingApprovalText": "Hyväksyntää odottavat tilaukset",
+    "addressBookText": "Osoitekirja",
+    "wishListText": "Toivomuslista",
+    "myAccountText": "Oma tili",
+    "customerDetailsText": "Profiilin tiedot",
+    "accountOrderHistoryText": "Tilaushistoria",
+    "accountScheduledOrdersText": "Suunnitellut tilaukset",
+    "customerSearchText":"Asiakashaku",
+    "selfRegistrationText":"Rekisteröintipyynnöt",
+    "registrationRequestsText": "Rekisteröintipyynnöt"
+    
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Detaily účtu",
+    "accountAddressBookText": "Adresář zákazníků",
+    "updatePasswordText": "Aktualizovat heslo",
+    "orderHistoryText":"Historie objednávek",
+    "scheduledOrdersText": "Plánované objednávky",
+    "purchaseListsText": "Nákupní seznamy",
+    "orderApprovalSettingsText": "Nastavení schválení objednávky",
+    "accountContactsText": "Kontaktní osoby účtu",
+    "ordersPendingApprovalText": "Objednávky čekající na schválení",
+    "addressBookText": "Adresář",
+    "wishListText": "Seznam přání",
+    "myAccountText": "Můj účet",
+    "customerDetailsText": "Profil - detaily",
+    "accountOrderHistoryText": "Historie objednávek",
+    "accountScheduledOrdersText": "Plánované objednávky",
+    "customerSearchText":"Vyhledání zákazníků",
+    "selfRegistrationText":"Požadavky na registraci",
+    "registrationRequestsText": "Požadavky na registraci"
+    
+  }
+}

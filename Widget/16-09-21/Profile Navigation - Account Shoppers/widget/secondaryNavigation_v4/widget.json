@@ -1,0 +1,181 @@
+{
+  "availableToAllPages": true,
+  "config": {
+    "displayAndURL": "[{'0':'customerDetailsText','1':'/agentCustomerDetails','2':''},{'0':'accountAddressBookText','1':'/agentAddressBook','2':''},{'0':'accountOrderHistoryText','1':'/agentOrderHistory','2':''},{'0':'accountScheduledOrdersText','1':'/agentScheduledOrder','2':''},{'0':'accountContactsText','1':'/agentAccountContacts','2':'admin'},{'0':'accountDetailsText','1':'/agentAccountDetails','2':'buyer'},{'0':'ordersPendingApprovalText','1':'/agentOrdersPendingApproval','2':'approver'},{'0':'purchaseListsText','1':'/agentPurchaseList','2':''},{'0':'registrationRequestsText','1':'/agentContactRequestListing','2':'admin'}]",
+    "displayOptions": "horizontal",
+    "metaPageType": "agentProfilePage"
+  },
+  "global": false,
+  "globalEnabled": false,
+  "i18nresources": "secondaryNavigation",
+  "imports": [],
+  "javascript": "secondary-navigation",
+  "jsEditable": false,
+  "minWidth": 1,
+  "source": 100,
+  "translations": [
+    {
+      "language": "th",
+      "name": "วิดเจ็ตการนาวิเกตรอง"
+    },
+    {
+      "language": "pt_BR",
+      "name": "Widget de Navegação Secundária"
+    },
+    {
+      "language": "zh_CN",
+      "name": "\u201c次级导航\u201d小部件"
+    },
+    {
+      "language": "uk",
+      "name": "Віджет додаткової навігації"
+    },
+    {
+      "language": "bg",
+      "name": "Изпълним модул за вторична навигация"
+    },
+    {
+      "language": "et",
+      "name": "Teisese navigeerimise vidin"
+    },
+    {
+      "language": "lv",
+      "name": "Sekundārās navigācijas logrīks"
+    },
+    {
+      "language": "no",
+      "name": "Småprogram for sekundær navigering"
+    },
+    {
+      "language": "lt",
+      "name": "Antrinio naršymo valdiklis"
+    },
+    {
+      "language": "fr_CA",
+      "name": "Widget Navigation secondaire"
+    },
+    {
+      "language": "ro",
+      "name": "Widget navigare secundară"
+    },
+    {
+      "language": "ja",
+      "name": "「セカンダリ・ナビゲーション」ウィジェット"
+    },
+    {
+      "language": "sl",
+      "name": "Pripomoček za sekundarno krmarjenje"
+    },
+    {
+      "language": "ru",
+      "name": "Виджет \"Дополнительная навигация\""
+    },
+    {
+      "language": "hr",
+      "name": "Widget za sekundarnu navigaciju"
+    },
+    {
+      "language": "tr",
+      "name": "İkincil Gezinme Küçük Uygulaması"
+    },
+    {
+      "language": "pl",
+      "name": "Nawigacja podrzędna - widżet"
+    },
+    {
+      "language": "zh_TW",
+      "name": "次要導覽小工具"
+    },
+    {
+      "language": "ko",
+      "name": "보조 탐색 위젯"
+    },
+    {
+      "language": "cs",
+      "name": "Sekundární navigace - doplněk"
+    },
+    {
+      "language": "hu",
+      "name": "Másodlagos navigáció - Vezérlő"
+    },
+    {
+      "language": "el",
+      "name": "Δευτερεύον Widget πλοήγησης"
+    },
+    {
+      "language": "da",
+      "name": "Sekundær navigation (widget)"
+    },
+    {
+      "language": "en",
+      "name": "Secondary Navigation Widget"
+    },
+    {
+      "language": "sr",
+      "name": "Виџет за секундарну навигацију"
+    },
+    {
+      "language": "ar",
+      "name": "عنصر واجهة المستخدم للتنقل الثانوي"
+    },
+    {
+      "language": "de",
+      "name": "Widget für sekundäre Navigation"
+    },
+    {
+      "language": "sr_Latn",
+      "name": "Vidžet za sekundarnu navigaciju"
+    },
+    {
+      "language": "es",
+      "name": "Widget de navegación secundaria"
+    },
+    {
+      "language": "ca",
+      "name": "Giny de navegació secundària"
+    },
+    {
+      "language": "fr",
+      "name": "Widget Navigation secondaire"
+    },
+    {
+      "language": "id",
+      "name": "Widgent Navigasi Sekunder"
+    },
+    {
+      "language": "it",
+      "name": "Widget navigazione secondaria"
+    },
+    {
+      "language": "ms",
+      "name": "Widget Navigasi Kedua"
+    },
+    {
+      "language": "en_GB",
+      "name": "Secondary Navigation Widget"
+    },
+    {
+      "language": "vi",
+      "name": "Tiện ích nhỏ điều hướng phụ"
+    },
+    {
+      "language": "nl",
+      "name": "Widget Secundaire navigatie"
+    },
+    {
+      "language": "sv",
+      "name": "Sekundär navigering, widget"
+    },
+    {
+      "language": "pt",
+      "name": "Widget Navegação Secundária"
+    },
+    {
+      "language": "fi",
+      "name": "Toissijainen navigointi -widget"
+    }
+  ],
+  "version": 4,
+  "widgetFamily": "secondaryNavigation",
+  "widgetType": "secondaryNavigation"
+}

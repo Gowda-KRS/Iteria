@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Accountdetails",
+    "accountAddressBookText": "Adresboek account ",
+    "updatePasswordText": "Wachtwoord bijwerken",
+    "orderHistoryText":"Orderhistorie",
+    "scheduledOrdersText": "Geplande orders",
+    "purchaseListsText": "Inkooplijsten",
+    "orderApprovalSettingsText": "Instellingen ordergoedkeuring",
+    "accountContactsText": "Accountrelaties",
+    "ordersPendingApprovalText": "Orders wachtend op goedkeuring",
+    "addressBookText": "Adresboek",
+    "wishListText": "Verlanglijst",
+    "myAccountText": "Mijn account",
+    "customerDetailsText": "Profieldetails",
+    "accountOrderHistoryText": "Orderhistorie",
+    "accountScheduledOrdersText": "Geplande orders",
+    "customerSearchText":"Klant zoeken",
+    "selfRegistrationText":"Registratieaanvragen",
+    "registrationRequestsText": "Registratieaanvragen"
+    
+  }
+}

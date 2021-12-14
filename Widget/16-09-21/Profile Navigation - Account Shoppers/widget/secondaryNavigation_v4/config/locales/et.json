@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Teisesed menüükäsud",
+    "displayAndURLHelpText":"Sisestage teisene navigeerimismenüü käsu nimi, mis kuvatakse teie poes, ja seotud URL. Ostjad suunatakse sellele URL-ile, kui nad valivad antud nime. Sisestage seotud kontopõhised ostjarollid, millel on sellele menüükäsule juurdepääs. Märkus: kaasata tuleks ainult kontopõhised ostjarollid.",
+    "placeHoldersText":   "Kuvatav nimi, URL, roll",
+    "addMoreRowsText": "Lisa veel ridu",
+    "displayOptionsHelpText":"Valige, kas menüükäsud kuvatakse lehepaigutuses vertikaalselt või horisontaalselt.",
+	"displayOptionsLabel":"Navigeerimissuund",
+	"horizontalText": "Horisontaalne",
+	"verticalText": "Vertikaalne"
+  }
+}

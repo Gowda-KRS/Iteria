@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Szczegóły podmiotu",
+    "accountAddressBookText": "Książka adresowa konta",
+    "updatePasswordText": "Aktualizacja hasła",
+    "orderHistoryText":"Historia zamówień",
+    "scheduledOrdersText": "Zaplanowane zamówienia",
+    "purchaseListsText": "Listy zakupów",
+    "orderApprovalSettingsText": "Ustawienia zatwierdzania zamówień",
+    "accountContactsText": "Osoby kontaktowe konta",
+    "ordersPendingApprovalText": "Zamówienia oczekujące na zatwierdzenie",
+    "addressBookText": "Książka adresowa",
+    "wishListText": "Lista życzeń",
+    "myAccountText": "Moje konto",
+    "customerDetailsText": "Szczegóły profilu",
+    "accountOrderHistoryText": "Historia zamówień",
+    "accountScheduledOrdersText": "Zaplanowane zamówienia",
+    "customerSearchText":"Wyszukiwanie klienta",
+    "selfRegistrationText":"Zlecenia rejestracji",
+    "registrationRequestsText": "Zlecenia rejestracji"
+    
+  }
+}

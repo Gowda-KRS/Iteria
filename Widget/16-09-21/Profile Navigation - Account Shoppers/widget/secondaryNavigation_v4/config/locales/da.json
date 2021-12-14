@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Sekundære menuindstillinger",
+    "displayAndURLHelpText":"Indtast et sekundært navn på navigationsmenuindstilling, der skal vises på butiksfacaden, og en tilknyttet URL. Købere dirigeres til den URL, når de vælger det givne navn. Indtast den tilknyttede konto på basis af køberroller, som vil have adgang til den menuindstilling. Bemærk: Dette skal ikke omfatte kontobaserede køberroller.",
+    "placeHoldersText":   "Fremvisningsnavn, URL, rolle",
+    "addMoreRowsText": "Tilføj flere rækker",
+    "displayOptionsHelpText":"Vælg, om menuindstillingerne skal vises lodret eller vandret på sidelayoutet.",
+	"displayOptionsLabel":"Navigationsretning",
+	"horizontalText": "Vandret",
+	"verticalText": "Lodret"
+  }
+}

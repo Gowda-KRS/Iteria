@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "보조 메뉴 옵션",
+    "displayAndURLHelpText":"상점 및 연계된 URL에 표시될 보조 탐색 메뉴 옵션 이름을 입력합니다. 지정된 이름을 선택하여 구매자를 해당 URL로 지정됩니다. 해당 메뉴 옵션에 대한 접근 권한이 부여될 연계된 계정 기반 구매자 역할을 입력합니다. 주: 계정 기반 구매자 역할만 포함되어야 합니다.",
+    "placeHoldersText":   "표시 이름, URL, 역할",
+    "addMoreRowsText": "더 많은 행 추가",
+    "displayOptionsHelpText":" 페이지 레이아웃에 메뉴 옵션을 세로로 표시할지 아니면 가로로 표시할지 선택합니다.",
+	"displayOptionsLabel":"탐색 방향",
+	"horizontalText": "가로",
+	"verticalText": "세로"
+  }
+}

@@ -1,0 +1,84 @@
+  <!-- ko if: $data.modalObject  -->
+    <!-- ko with: $data.modalObject  -->
+    <div class="modal fade" id="cc-showAddressDetailsModal"  tabindex="-1" role="dialog">
+      <div class="modal-dialog cc-modal-dialog">
+        <div class="modal-content"  style="max-width: 64.5%;">
+          <div class="modal-header cc-margin-bottom" aria-labelledby="dialogTitleId">
+            <h3 id="cc-edit-addressDialogTitleId" data-bind="widgetLocaleText:'addressBookText'"></h3>
+            <button type="button" class="close cc-modal-focus-out-active cc-popover-x" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+          </div>
+          <div class="modal-body cc-modal-body">
+          <!-- ko if: $data.alias -->
+          <div class="col-md-12">
+            <label class="address-label" for = "nick-name" data-bind="widgetLocaleText:'nickNameText'"></label>
+            <div class="address-data" id = "cc-shippingAddress-nick-name" data-bind="text: $data.alias"></div>
+          </div>
+          <!-- /ko -->
+          <!-- ko if: $data.companyName -->
+          <div class="col-md-12">
+          <label class="address-label" for="company-name" data-bind="widgetLocaleText:'addressCompanyNameText'"></label>
+            <div class="address-data" id = "cc-shippingAddress-company-name" data-bind="text: $data.companyName"></div>
+          </div>
+          <!-- /ko -->
+          <div class="col-md-12">
+            <label class="address-label" for = "phoneNumber" data-bind="widgetLocaleText:'phoneNumberText'"></label>
+            <div class="address-data" id = "cc-shippingAddress-phoneNumber" data-bind="text: $parent.checkForEmptyString($data.phoneNumber)"></div>
+            </div>
+          <div class="col-md-12">
+            <label class="address-label" for = "address-one" data-bind="widgetLocaleText:'addressAddress1Text'"></label>
+            <div class="address-data" id = "cc-shippingAddress-address-one" data-bind="text: $parent.checkForEmptyString($data.address1)"></div>
+          </div>
+          <div class="col-md-12">
+            <label class="address-label" for = "address-two" data-bind="widgetLocaleText:'addressAddress2Text'"></label>
+            <div  class="address-data" id = "cc-shippingAddress-address-two" data-bind="text: $parent.checkForEmptyString($data.address2)"></div>
+         </div>
+          <div class="col-md-12">
+            <label class="address-label" for = "address-three" data-bind="widgetLocaleText:'addressAddress3Text'"></label>
+            <div class="address-data" id = "cc-shippingAddress-address-three" data-bind="text: $parent.checkForEmptyString($data.address3)"></div>
+          </div>
+            <div class="col-sm-6">
+              <label class="address-label" for = "city" data-bind="widgetLocaleText:'addressCityText'"></label>
+              <div  class="address-data" id = "cc-shippingAddress-city" data-bind="text: $data.city"></div>
+          </div>
+            <div class="col-sm-6">
+              <label class="address-label" for = "zip-code" data-bind="widgetLocaleText:'addressZipCodeText'"></label>
+              <div class="address-data" id = "cc-shippingAddress-zip-code" data-bind="text: $data.postalCode"></div>
+            </div>
+            <div class="col-sm-6" >
+              <label class="address-label" for = "county" data-bind="widgetLocaleText:'addressCountyText'"></label>
+              <div class="address-data" id = "cc-shippingAddress-county" data-bind="text: $parent.checkForEmptyString($data.county)"></div>
+                          </div>
+            <div class="col-sm-6" >
+              <label class="address-label" for = "country" data-bind="widgetLocaleText:'addressCountryText'"></label>
+              <div class="address-data" id = "cc-shippingAddress-country" data-bind="text: $data.country"></div>
+            </div>
+            <div class="col-sm-12" >
+              <label class="address-label" for = "state" data-bind="widgetLocaleText:'addressStateText'"></label>
+              <div  class="address-data" id = "cc-shippingAddress-state" data-bind="text: $data.state"></div>
+            </div>
+            <div class="col-sm-12">
+                  <!-- ko if: $parent.dynamicProperties() && $parent.dynamicProperties().length > 0 -->
+                  <div class="col-sm-12">
+                     <!-- ko setContextVariable:{name:'context', value: $parent.dynamicProperties} -->
+                     <!-- ko setContextVariable:{name:'data', value: $parent} -->
+                     <div data-bind="element:'dynamic-property'"></div>
+		     <!-- /ko -->
+                     <!-- /ko -->
+                  </div>
+                  <!-- /ko -->
+               </div>
+    </div>
+
+    <div class="dialog-footer dialog-footer-separator cc-footer-background">
+            <!-- cancel button -->
+            <button id="cc-UserModel-cancel" data-dismiss="modal"
+              class="cc-button-secondary secondarybackground"
+              data-bind=" widgetLocaleText: 'buttonCancel'">
+            </button>
+    </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- /ko -->
+    <!-- /ko -->

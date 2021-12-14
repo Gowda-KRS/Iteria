@@ -1,0 +1,178 @@
+{
+  "config": {},
+  "defaultLayout": "customerProfileDetailsDefaultLayout",
+  "global": false,
+  "globalEnabled": false,
+  "i18nresources": "ultrasourceagentcustomerprofiledetails",
+  "imports": [],
+  "javascript": "ultraSourceCustomerProfileDetails",
+  "jsEditable": true,
+  "minWidth": 1,
+  "pageTypes": ["agentCustomerDetails"],
+  "source": 100,
+  "translations": [
+    {
+      "language": "th",
+      "name": "รายละเอียดโปรไฟล์ของลูกค้า - เอเจนต์"
+    },
+    {
+      "language": "pt_BR",
+      "name": "Detalhes do Perfil do Cliente - Agente"
+    },
+    {
+      "language": "zh_CN",
+      "name": "客户配置文件详细信息 - 客服"
+    },
+    {
+      "language": "uk",
+      "name": "Агент відомостей про профіль замовника"
+    },
+    {
+      "language": "bg",
+      "name": "Подробности за профил на клиент \u2013 агент"
+    },
+    {
+      "language": "et",
+      "name": "Kliendiprofiili üksikasjad \u2013 agent"
+    },
+    {
+      "language": "lv",
+      "name": "Klienta profila dati - aģents"
+    },
+    {
+      "language": "no",
+      "name": "Detaljer om kundeprofil - agent"
+    },
+    {
+      "language": "lt",
+      "name": "Kliento profilio išs. informacija \u2013 agentas"
+    },
+    {
+      "language": "fr_CA",
+      "name": "Détails de profil de client - Agent"
+    },
+    {
+      "language": "ro",
+      "name": "Detalii profil client - Agent"
+    },
+    {
+      "language": "ja",
+      "name": "顧客プロファイル詳細 - エージェント"
+    },
+    {
+      "language": "sl",
+      "name": "Podrobnosti profila kupca - Agent"
+    },
+    {
+      "language": "ru",
+      "name": "Данные профиля клиента - агент"
+    },
+    {
+      "language": "hr",
+      "name": "Pojedinosti profila kupca - agent"
+    },
+    {
+      "language": "tr",
+      "name": "Müşteri Profil Detayları - Aracı"
+    },
+    {
+      "language": "pl",
+      "name": "Szczegóły profilu klienta - agent"
+    },
+    {
+      "language": "zh_TW",
+      "name": "客戶設定檔詳細資料 - 專員"
+    },
+    {
+      "language": "ko",
+      "name": "고객 프로파일 세부정보 - 상담원"
+    },
+    {
+      "language": "cs",
+      "name": "Detaily profilu zákazníka - agent"
+    },
+    {
+      "language": "hu",
+      "name": "Vevői profil adatai - Ügynök"
+    },
+    {
+      "language": "el",
+      "name": "Λεπτομέρειες προφίλ πελάτη - Αντιπρόσωπος"
+    },
+    {
+      "language": "da",
+      "name": "Detaljer om kundeprofil - Agent"
+    },
+    {
+      "language": "en",
+      "name": "UltraSource Customer Profile Details - Agent"
+    },
+    {
+      "language": "sr",
+      "name": "Детаљи о профилу купца - агент"
+    },
+    {
+      "language": "ar",
+      "name": "تفاصيل ملف تعريف العميل - الوكيل"
+    },
+    {
+      "language": "de",
+      "name": "Kundenprofildetails - Agent"
+    },
+    {
+      "language": "sr_Latn",
+      "name": "Detalji o profilu kupca - agent"
+    },
+    {
+      "language": "es",
+      "name": "Detalles de perfil de cliente - Agente"
+    },
+    {
+      "language": "ca",
+      "name": "Detalls de perfil de client - Agent"
+    },
+    {
+      "language": "fr",
+      "name": "Détails du profil client - Agent"
+    },
+    {
+      "language": "id",
+      "name": "Detail Profil Pelanggan - Agen"
+    },
+    {
+      "language": "it",
+      "name": "Dettagli profilo cliente - Agente"
+    },
+    {
+      "language": "ms",
+      "name": "Butiran Profil Pelanggan - Ejen"
+    },
+    {
+      "language": "en_GB",
+      "name": "UltraSource Customer Profile Details - Agent"
+    },
+    {
+      "language": "vi",
+      "name": "Chi tiết hồ sơ khách hàng - NV trực TĐ"
+    },
+    {
+      "language": "nl",
+      "name": "Details klantprofiel - agent"
+    },
+    {
+      "language": "sv",
+      "name": "Kundprofildetaljer - handläggare"
+    },
+    {
+      "language": "pt",
+      "name": "Detalhes do Perfil de Cliente - Agente"
+    },
+    {
+      "language": "fi",
+      "name": "Asiakasprofiilin tiedot - asiakaspalvelija"
+    }
+  ],
+  "version": 3,
+  "widgetFamily": "ultraSourceCustomerProfileDetails",
+  "widgetType": "ultraSourceCustomerProfileDetails"
+}

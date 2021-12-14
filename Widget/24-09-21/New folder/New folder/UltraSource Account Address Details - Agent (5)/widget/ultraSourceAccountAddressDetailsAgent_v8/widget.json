@@ -1,0 +1,20 @@
+{
+  "availableToAllPages": true,
+  "config": {},
+  "defaultLayout": "ultraSourceAccountAddressDetailsAgent_v8_lyt1",
+  "global": false,
+  "globalEnabled": false,
+  "i18nresources": "ultrasourceaccountaddresses",
+  "imports": ["shippingCountries"],
+  "javascript": "ultrasource-account-addresses",
+  "jsEditable": true,
+  "minWidth": 1,
+  "source": 101,
+  "translations": [{
+    "language": "en",
+    "name": "UltraSource Account Address Details - Agent"
+  }],
+  "version": 8,
+  "widgetFamily": "ultraSourceAccountAddressDetailsAgent",
+  "widgetType": "ultraSourceAccountAddressDetailsAgent"
+}

@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "次要功能表選項",
+    "displayAndURLHelpText":"輸入要在店面顯示的次要導覽功能表選項名稱及相關聯的 URL。購物者選取指定名稱即會導向至該 URL。輸入以帳戶為基礎的相關購物者角色，其具有該功能表選項的存取權。備註：這應僅包含以帳戶為基礎的購物者角色。",
+    "placeHoldersText":   "顯示名稱、URL、角色",
+    "addMoreRowsText": "新增更多資料列",
+    "displayOptionsHelpText":" 選擇要垂直或水平顯示頁面版面配置上的功能表選項。",
+	"displayOptionsLabel":"導覽方向",
+	"horizontalText": "水平",
+	"verticalText": "垂直"
+  }
+}

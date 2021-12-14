@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["ultraSourceOrderDetailsAgent"],
+  "tag": "ultrasource-agent-promotion-summary",
+  "translations": [{
+    "description": "Agent Promotion Summary",
+    "language": "en",
+    "title": "Agent Promotion Summary"
+  }],
+  "type": "fragment",
+  "version": 5
+}

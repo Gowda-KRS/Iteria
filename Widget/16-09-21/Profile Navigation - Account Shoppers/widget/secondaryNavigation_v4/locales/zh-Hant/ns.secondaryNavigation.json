@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "帳戶詳細資料",
+    "accountAddressBookText": "客戶通訊錄",
+    "updatePasswordText": "更新密碼",
+    "orderHistoryText":"訂單歷史記錄",
+    "scheduledOrdersText": "排定訂單",
+    "purchaseListsText": "採購清單",
+    "orderApprovalSettingsText": "訂單核准設定值",
+    "accountContactsText": "帳戶聯絡人",
+    "ordersPendingApprovalText": "待核准的訂單",
+    "addressBookText": "通訊錄",
+    "wishListText": "欲購清單",
+    "myAccountText": "我的帳戶",
+    "customerDetailsText": "設定檔詳細資料",
+    "accountOrderHistoryText": "訂單歷史記錄",
+    "accountScheduledOrdersText": "排定訂單",
+    "customerSearchText":"搜尋客戶",
+    "selfRegistrationText":"註冊要求",
+    "registrationRequestsText": "註冊要求"
+    
+  }
+}

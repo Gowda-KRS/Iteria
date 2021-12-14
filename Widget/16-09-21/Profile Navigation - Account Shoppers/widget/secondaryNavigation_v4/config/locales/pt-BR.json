@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Opções do Menu Secundário",
+    "displayAndURLHelpText":"Insira um nome de opção de menu de navegação secundário a ser exibido na sua vitrine de loja e um URL associado. Os compradores são direcionados para esse URL quando selecionam o nome fornecido. Insira as funções de comprador baseadas nas contas associadas que terão acesso a essa opção de menu. Observação: essas funções deverão incluir apenas funções de comprador baseadas em contas.",
+    "placeHoldersText":   "Nome de Exibição, URL, Função",
+    "addMoreRowsText": "Adicionar Mais Linhas",
+    "displayOptionsHelpText":" Escolha se deseja exibir as opções de menu no layout de página vertical ou horizontalmente.",
+	"displayOptionsLabel":"Orientação da Navegação",
+	"horizontalText": "Horizontal",
+	"verticalText": "Vertical"
+  }
+}

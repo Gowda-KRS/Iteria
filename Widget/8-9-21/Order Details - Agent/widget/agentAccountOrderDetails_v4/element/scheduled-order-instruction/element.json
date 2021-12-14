@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["agentAccountOrderDetails"],
+  "tag": "scheduled-order-instruction",
+  "translations": [{
+    "description": "Agent Scheduled Order Instruction",
+    "language": "en",
+    "title": "Agent Scheduled Order Instruction"
+  }],
+  "type": "fragment",
+  "version": 5
+}

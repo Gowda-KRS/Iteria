@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["ultrasourceCustomerProfileDetailsAgent"],
+  "tag": "ultrasource-customer-store-roles",
+  "translations": [{
+    "description": "Ultrasource Customer Store Roles",
+    "language": "en",
+    "title": "Ultrasource Customer Store Roles"
+  }],
+  "type": "fragment",
+  "version": 3
+}

@@ -1,0 +1,39 @@
+<style>
+
+div {
+    display: block;
+}
+
+#createOrderHeaderWidget_v1-createOrderHeaderWidgetInst_v1 .col-xs-12 {
+    width: 100%;
+}
+
+#createOrderHeaderWidget_v1-createOrderHeaderWidgetInst_v1 .createOrderHeader {
+    margin-top: 30px;
+    padding-left: 0;
+}
+
+</style>
+<!-- ko if: initialized() && $data.elements.hasOwnProperty('ultrasource-account-selector') && $data['elements']['ultrasource-account-selector'].isB2BProfile -->
+  <div class="row" style="width:481px; margin-top:30px;">
+    <!-- ko if :  $data['elements']['ultrasource-account-selector'].accountAndSiteSelector.allOrganizations().length == 0 -->
+      <div class="no-accounts-label"><span  data-bind = "widgetLocaleText:'noAccountsAssociated'"></span></div>
+    <!-- /ko -->
+    <!-- ko if : $data['elements']['ultrasource-account-selector'].accountAndSiteSelector.currentOrganizationId -->
+    <!-- ko if : $data['elements']['ultrasource-account-selector'].accountAndSiteSelector.allOrganizations().length >= 1 -->
+      <div class="col-sm-3 account-selector-label" data-bind="widgetLocaleText: {attr: 'title', value: 'accountText'}" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+        <label for="cc-account-selector" class="control-label" data-bind="widgetLocaleText: 'accountText', attr: {id: id()+'_cc-account-selector-label'}"> </label>
+      </div>
+      <div class="col-sm-6 select-wrapper-control" style="padding-left: 1px; width=240px;">
+        <select id="cc-account-selector"  class="form-control" style="width: auto; margin-bottom: 1rem;" data-bind="
+          options: $data['elements']['ultrasource-account-selector'].accountAndSiteSelector.allOrganizations(),
+          value: $data['elements']['ultrasource-account-selector'].accountAndSiteSelector.currentOrganizationId,
+          disable: $data['elements']['ultrasource-account-selector'].disableAccountSelector(),
+          optionsText: 'name', optionsValue: 'repositoryId',
+          event: {change: $data['elements']['ultrasource-account-selector'].handleOrganizationSelection.bind($data)}">
+        </select>
+      </div>
+    <!-- /ko -->
+    <!-- /ko -->
+  </div>
+<!-- /ko -->

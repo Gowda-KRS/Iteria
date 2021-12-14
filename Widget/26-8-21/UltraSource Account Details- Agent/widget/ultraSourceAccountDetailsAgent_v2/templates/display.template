@@ -1,0 +1,298 @@
+<div id="cc-agent-account-details-container">
+  <!-- ko if: $data.user().isB2BUser() -->
+  <div id="cc-account-details-header" class="row">
+    <div class="col-md-12">
+      <h1 class="agent-headerText" id="cc-account-details-heading" data-bind="
+        widgetLocaleText: 'accountDetailsText'"></h1>
+    </div>
+  </div>
+
+  <!-- oc section : account-general-info -->
+    <div data-bind="element: 'ultrasource-account-general-info'"></div>
+  <!-- /oc -->
+
+  <!-- ko if: isSelfRegistrationEnabled -->
+    <!-- oc section : registration-request-details -->
+      <div data-bind="element: 'ultrasource-registration-request-details'"></div>
+    <!-- /oc -->
+  <!-- /ko -->
+
+  <!-- oc section : account-approval-setting -->
+    <div data-bind="element: 'ultrasource-account-approval-setting'"></div>
+  <!-- /oc -->
+
+  <script type="text/html" id="info-popover">
+    <div>
+      <div class="col-md-12 pull-right">
+        <a id="cc-info-popover-close" href="#" class="pull-right cc-popover-x" data-bind='click: close, makeAccess: {readerResource: "ns.common:resources.closeText"}'>
+          <i class="fa fa-times"></i>
+        </a>
+      </div>
+      <div>
+        <span data-bind="text: $data.model"></span>
+      </div>
+    </div>
+  </script>
+
+  <!-- ko if: $data.user().currentOrganizationDetails() && $data.user().currentOrganizationDetails().dynamicProperties().length > 0 -->
+    <!-- ko setContextVariable:{name:'context', value: $data.user().currentOrganizationDetails().dynamicProperties} -->
+      <!--<div data-bind="element:'ultra-dynamic-property'"></div>-->
+      <!--rahul 26/8-->
+                         <div data-bind="if: $context.length > 0">
+    <!-- ko if: $data.opDynamicProperty()  === 'view'--><!-- /ko -->
+     <!-- ko if: $data.opDynamicProperty()  === 'update'-->
+      <!-- ko if: $data['elements']['ultrasource-dynamic-property'].showCustomPropertiesHeading -->
+      <h4 class="customPropertiesHeader" data-bind="widgetLocaleText:'additionalInfoText'">Additional Information</h4>
+      <!-- /ko -->
+         <!-- ko foreach: $context -->
+           <!-- ko if:  externalShopperContext() === 'false' -->
+            <!-- ko ifnot: internalOnly -->
+               <!-- ko if: (uiEditorType() === 'shortText' || uiEditorType() ==='number') -->
+               <!-- ko if: $data.label() !== "Payment Term" -->
+                  <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="text: $data.label, css: {'required' : $data.required}">SyteLine Customer ID</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $data.value, css : {'sf-error' : !$data.value.__valid__()}, attr: {'aria-label': $data.label}" aria-label="SyteLine Customer ID">
+                       <span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>
+                    </span>
+                   </div>
+                   <!-- /ko -->
+               <!-- /ko -->
+              <!-- ko if: uiEditorType() ==='richText' --><!-- /ko -->
+               <!-- ko if: (uiEditorType() === 'checkbox') --><!-- /ko -->
+              <!-- ko if: (uiEditorType() === 'date') --><!-- /ko -->
+           <!-- /ko -->
+          <!-- /ko -->
+          
+           <!-- ko if:  externalShopperContext() === 'false' -->
+            <!-- ko ifnot: internalOnly -->
+               <!-- ko if: (uiEditorType() === 'shortText' || uiEditorType() ==='number') -->
+               <!-- ko if: $data.label() !== "Payment Term" -->
+                  <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="text: $data.label, css: {'required' : $data.required}">Primary Business</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $data.value, css : {'sf-error' : !$data.value.__valid__()}, attr: {'aria-label': $data.label}" aria-label="Primary Business">
+                       <span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>
+                    </span>
+                   </div>
+                   <!-- /ko -->
+               <!-- /ko -->
+              <!-- ko if: uiEditorType() ==='richText' --><!-- /ko -->
+               <!-- ko if: (uiEditorType() === 'checkbox') --><!-- /ko -->
+              <!-- ko if: (uiEditorType() === 'date') --><!-- /ko -->
+           <!-- /ko -->
+          <!-- /ko -->
+          
+           <!-- ko if:  externalShopperContext() === 'false' -->
+            <!-- ko ifnot: internalOnly -->
+               <!-- ko if: (uiEditorType() === 'shortText' || uiEditorType() ==='number') -->
+               <!-- ko if: $data.label() !== "Payment Term" -->
+                  <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="text: $data.label, css: {'required' : $data.required}">Secondary Business</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $data.value, css : {'sf-error' : !$data.value.__valid__()}, attr: {'aria-label': $data.label}" aria-label="Secondary Business">
+                       <span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>
+                    </span>
+                   </div>
+                   <!-- /ko -->
+               <!-- /ko -->
+              <!-- ko if: uiEditorType() ==='richText' --><!-- /ko -->
+               <!-- ko if: (uiEditorType() === 'checkbox') --><!-- /ko -->
+              <!-- ko if: (uiEditorType() === 'date') --><!-- /ko -->
+           <!-- /ko -->
+          <!-- /ko -->
+          
+           <!-- ko if:  externalShopperContext() === 'false' -->
+            <!-- ko ifnot: internalOnly -->
+               <!-- ko if: (uiEditorType() === 'shortText' || uiEditorType() ==='number') -->
+               <!-- ko if: $data.label() !== "Payment Term" -->
+                  <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="text: $data.label, css: {'required' : $data.required}">Organization Type</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $data.value, css : {'sf-error' : !$data.value.__valid__()}, attr: {'aria-label': $data.label}" aria-label="Organization Type">
+                       <span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>
+                    </span>
+                   </div>
+                   <!-- /ko -->
+               <!-- /ko -->
+              <!-- ko if: uiEditorType() ==='richText' --><!-- /ko -->
+               <!-- ko if: (uiEditorType() === 'checkbox') --><!-- /ko -->
+              <!-- ko if: (uiEditorType() === 'date') --><!-- /ko -->
+           <!-- /ko -->
+          <!-- /ko -->
+          
+           <!-- ko if:  externalShopperContext() === 'false' -->
+            <!-- ko ifnot: internalOnly -->
+               <!-- ko if: (uiEditorType() === 'shortText' || uiEditorType() ==='number') -->
+               <!-- ko if: $data.label() !== "Payment Term" -->
+                 <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="text: $data.label, css: {'required' : $data.required}">Number Of Employees</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $data.value, css : {'sf-error' : !$data.value.__valid__()}, attr: {'aria-label': $data.label}" aria-label="Number Of Employees">
+                       <span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>
+                    </span>
+                   </div>
+                   <!-- /ko -->
+               <!-- /ko -->
+              <!-- ko if: uiEditorType() ==='richText' --><!-- /ko -->
+               <!-- ko if: (uiEditorType() === 'checkbox') --><!-- /ko -->
+              <!-- ko if: (uiEditorType() === 'date') --><!-- /ko -->
+           <!-- /ko -->
+          <!-- /ko -->
+          
+           <!-- ko if:  externalShopperContext() === 'false' -->
+            <!-- ko ifnot: internalOnly -->
+               <!-- ko if: (uiEditorType() === 'shortText' || uiEditorType() ==='number') -->
+               <!-- ko if: $data.label() !== "Payment Term" -->
+                  <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="text: $data.label, css: {'required' : $data.required}">Annual Revenue</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $data.value, css : {'sf-error' : !$data.value.__valid__()}, attr: {'aria-label': $data.label}" aria-label="Annual Revenue">
+                       <span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>
+                    </span>
+                   </div>
+                   <!-- /ko -->
+               <!-- /ko -->
+              <!-- ko if: uiEditorType() ==='richText' --><!-- /ko -->
+               <!-- ko if: (uiEditorType() === 'checkbox') --><!-- /ko -->
+              <!-- ko if: (uiEditorType() === 'date') --><!-- /ko -->
+           <!-- /ko -->
+          <!-- /ko -->
+          
+           <!-- ko if:  externalShopperContext() === 'false' -->
+            <!-- ko ifnot: internalOnly -->
+               <!-- ko if: (uiEditorType() === 'shortText' || uiEditorType() ==='number') -->
+               <!-- ko if: $data.label() !== "Payment Term" -->
+                  <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="text: $data.label, css: {'required' : $data.required}">Terms</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $data.value, css : {'sf-error' : !$data.value.__valid__()}, attr: {'aria-label': $data.label}" aria-label="Terms">
+                       <span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>
+                    </span>
+                   </div>
+                   <!-- /ko -->
+               <!-- /ko -->
+              <!-- ko if: uiEditorType() ==='richText' --><!-- /ko -->
+               <!-- ko if: (uiEditorType() === 'checkbox') --><!-- /ko -->
+              <!-- ko if: (uiEditorType() === 'date') --><!-- /ko -->
+           <!-- /ko -->
+          <!-- /ko -->
+          
+           <!-- ko if:  externalShopperContext() === 'false' -->
+            <!-- ko ifnot: internalOnly -->
+               <!-- ko if: (uiEditorType() === 'shortText' || uiEditorType() ==='number') -->
+               <!-- ko if: $data.label() !== "Payment Term" -->
+                  <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="text: $data.label, css: {'required' : $data.required}">Credit Limit</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $data.value, css : {'sf-error' : !$data.value.__valid__()}, attr: {'aria-label': $data.label}" aria-label="Credit Limit">
+                       <span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>
+                    </span>
+                   </div>
+                   <!-- /ko -->
+               <!-- /ko -->
+              <!-- ko if: uiEditorType() ==='richText' --><!-- /ko -->
+               <!-- ko if: (uiEditorType() === 'checkbox') --><!-- /ko -->
+              <!-- ko if: (uiEditorType() === 'date') --><!-- /ko -->
+           <!-- /ko -->
+          <!-- /ko -->
+          
+           <!-- ko if:  externalShopperContext() === 'false' -->
+            <!-- ko ifnot: internalOnly -->
+               <!-- ko if: (uiEditorType() === 'shortText' || uiEditorType() ==='number') -->
+               <!-- ko if: $data.label() !== "Payment Term" -->
+                  <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="text: $data.label, css: {'required' : $data.required}">Equipment/Parts Specialist</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $data.value, css : {'sf-error' : !$data.value.__valid__()}, attr: {'aria-label': $data.label}" aria-label="Equipment/Parts Specialist">
+                       <span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>
+                    </span>
+                   </div>
+                   <!-- /ko -->
+               <!-- /ko -->
+              <!-- ko if: uiEditorType() ==='richText' --><!-- /ko -->
+               <!-- ko if: (uiEditorType() === 'checkbox') --><!-- /ko -->
+              <!-- ko if: (uiEditorType() === 'date') --><!-- /ko -->
+           <!-- /ko -->
+          <!-- /ko -->
+          
+           <!-- ko if:  externalShopperContext() === 'false' -->
+            <!-- ko ifnot: internalOnly -->
+               <!-- ko if: (uiEditorType() === 'shortText' || uiEditorType() ==='number') -->
+               <!-- ko if: $data.label() !== "Payment Term" -->
+                  <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="text: $data.label, css: {'required' : $data.required}">Supplies Specialist</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $data.value, css : {'sf-error' : !$data.value.__valid__()}, attr: {'aria-label': $data.label}" aria-label="Supplies Specialist">
+                       <span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>
+                    </span>
+                   </div>
+                   <!-- /ko -->
+               <!-- /ko -->
+              <!-- ko if: uiEditorType() ==='richText' --><!-- /ko -->
+               <!-- ko if: (uiEditorType() === 'checkbox') --><!-- /ko -->
+              <!-- ko if: (uiEditorType() === 'date') --><!-- /ko -->
+           <!-- /ko -->
+          <!-- /ko -->
+          <!-- /ko -->
+          <!-- ko if: $data.elements['ultrasource-dynamic-property'].hasInternalProperties($context) --><!-- /ko -->
+    <!-- /ko -->
+  </div>
+	
+    <!-- /ko -->
+  <!-- /ko -->
+
+  <!-- ko if: $data.user().isDelegatedAdmin() && $data.user().active() && delegatedAdminAllowedThroughAgent-->
+    <div class="row">
+      <div class="col-md-12" id="cc-customerAccountDetails-save-cancel-button-group-container">
+        <div class="pull-right" id="cc-customerAccountDetails-save-cancel-button-group">
+          <button id="cc-customerAccountDetails-cancel" class="account-details-secondary-button" data-bind="click: handleCancelUpdate">
+            <span id="cc-customerAccountDetails-cancel-button-text" data-bind="widgetLocaleText:'buttonCancelText'"></span>
+          </button>
+          <button id="cc-customerAccountDetails-save" class="account-details-primary-button" data-bind="
+                  click: updateAccountDetails">
+            <span id="cc-customerAccountDetails-save-button-text" data-bind="widgetLocaleText:'buttonSaveText'"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  <!--/ko-->
+
+  <!--/ko-->
+
+  <!-- ko if: !$data.user().isB2BUser() -->
+  <div class="notDelAdminMessage alert alert-info">
+    <h4 data-bind="widgetLocaleText: 'notAB2BCustomerText'"></h4>
+  </div>
+  <!--  /ko -->
+</div>

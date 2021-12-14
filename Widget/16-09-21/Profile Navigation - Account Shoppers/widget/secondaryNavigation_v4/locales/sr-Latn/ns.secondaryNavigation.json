@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Detalji naloga",
+    "accountAddressBookText": "Adresar naloga",
+    "updatePasswordText": "Ažuriraj lozinku",
+    "orderHistoryText":"Istorijat narudžbina",
+    "scheduledOrdersText": "Planirane narudžbine",
+    "purchaseListsText": "Liste za kupovinu",
+    "orderApprovalSettingsText": "Podešavanja odobrenja narudžbine",
+    "accountContactsText": "Kontakti za nalog",
+    "ordersPendingApprovalText": "Narudžbine koje čekaju odobrenje",
+    "addressBookText": "Adresar",
+    "wishListText": "Lista želja",
+    "myAccountText": "Moj nalog",
+    "customerDetailsText": "Detalji profila",
+    "accountOrderHistoryText": "Istorijat narudžbina",
+    "accountScheduledOrdersText": "Planirane narudžbine",
+    "customerSearchText":"Pretraga kupaca",
+    "selfRegistrationText":"Zahtevi za registraciju",
+    "registrationRequestsText": "Zahtevi za registraciju"
+    
+  }
+}

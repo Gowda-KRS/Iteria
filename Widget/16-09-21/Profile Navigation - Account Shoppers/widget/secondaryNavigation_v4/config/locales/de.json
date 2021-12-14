@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Sekundäre Menüoptionen",
+    "displayAndURLHelpText":"Geben Sie einen Namen für die sekundäre Navigationsmenüoption ein, der in Ihrer Storefront angezeigt werden soll, und eine zugehörige URL. Die Käufer werden durch Auswahl des angegebenen Namens auf diese URL weitergeleitet. Geben Sie die zugehörigen accountbasierten Käuferrollen ein, die Zugriff auf diese Menüoption haben. Hinweis: Dies sollte nur accountbasierte Käuferrollen beinhalten.",
+    "placeHoldersText":   "Name, URL, Rolle anzeigen",
+    "addMoreRowsText": "Weitere Zeilen hinzufügen",
+    "displayOptionsHelpText":"Wählen Sie aus, ob die Menüoptionen im Seitenlayout vertikal oder horizontal angezeigt werden sollen.",
+	"displayOptionsLabel":"Navigationsausrichtung",
+	"horizontalText": "Horizontal",
+	"verticalText": "Vertikal"
+  }
+}

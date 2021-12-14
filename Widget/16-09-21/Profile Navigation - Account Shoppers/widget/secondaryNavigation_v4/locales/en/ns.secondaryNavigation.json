@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Account Details",
+    "accountAddressBookText": "Account Address Book",
+    "updatePasswordText": "Update Password",
+    "orderHistoryText":"Order History",
+    "scheduledOrdersText": "Scheduled Orders",
+    "purchaseListsText": "Purchase Lists",
+    "orderApprovalSettingsText": "Order Approval Settings",
+    "accountContactsText": "Account Contacts",
+    "ordersPendingApprovalText": "Orders Pending Approval",
+    "addressBookText": "Address Book",
+    "wishListText": "Wish List",
+    "myAccountText": "My Account",
+    "customerDetailsText": "Profile Details",
+    "accountOrderHistoryText": "Order History",
+    "accountScheduledOrdersText": "Scheduled Orders",
+    "customerSearchText":"Customer Search",
+    "selfRegistrationText":"Registration Requests",
+    "registrationRequestsText": "Registration Requests"
+    
+  }
+}

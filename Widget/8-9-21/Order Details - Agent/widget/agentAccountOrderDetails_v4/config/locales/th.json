@@ -1,0 +1,6 @@
+{
+  "resources": {
+    "enableExchangeOrder":"ใช้งานใบสั่งเปลี่ยน",
+    "enableExchangeInOrderDetails":"ทำเครื่องหมายเพื่อใช้งานใบสั่งเปลี่ยน"
+  }
+}

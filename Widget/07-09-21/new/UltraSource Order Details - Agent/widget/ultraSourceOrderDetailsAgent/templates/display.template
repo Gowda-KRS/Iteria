@@ -1,0 +1,1026 @@
+<div>
+     <!--  ko if:   $data.orderDetailsWrapper.isRenderComplete() -->
+    <!-- oc layout: panels -->
+  <div class="row">
+
+    <div class="oc-panel" data-oc-id="panel-0-0">
+
+      <!-- oc section: ultrasource-agent-order-refresh -->
+            <div data-bind="element: 'ultrasource-agent-order-refresh'"></div>
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+
+  <div class="row">
+
+    <div class="oc-panel col-md-8" data-oc-id="panel-1-0">
+
+      <!-- oc section: ultrasource-agent-order-summary -->
+            <!--<div data-bind="element: 'ultrasource-agent-order-summary'"></div>-->
+            <!--rahul 06/09-->
+             <div id="cc-orderDetails-orderOverview" class="col-md-8">
+<div class="row">
+ <h4 class="cc-order-header-font-size" style="margin-bottom: 5px !important;margin-top: 2px;"
+          data-bind="widgetLocaleText: 'orderDetailsText'"></h4>
+          <!-- ko if: $data.orderDetailsWrapper.isRenderComplete() -->
+          <!-- ko with: $data.orderDetailsWrapper.orderDetails() -->
+          <!--ks added on 9/6/21-->
+          <!-- ko if: profile.organization -->
+           <span id="cc-orderDetails-accountName"
+             data-bind=" ">Account Number</span>
+             <span data-bind="widgetLocaleText: 'delimiterText'"></span>
+             <span id="cc-orderDetails-accountName-value"
+             data-bind="text: profile.organization.id"></span>
+           <br>
+          <!-- /ko -->
+          
+           <!-- ko if: profile.organization -->
+           <span id="cc-orderDetails-accountName"
+             data-bind="">Company Name</span>
+             <span data-bind="widgetLocaleText: 'delimiterText'"></span>
+             <span id="cc-orderDetails-accountName-value"
+             data-bind="text: profile.organization.name"></span>
+           <br>
+          <!-- /ko -->
+           <!-- ko if: profile.firstName -->
+          <span id="cc-orderDetails-customerName-label"
+          data-bind="">Contact Name
+          </span> <span
+          data-bind="widgetLocaleText: 'delimiterText',
+                                 visible: profile.firstName || profile.lastName"></span>
+ 
+          <a
+              data-bind="attr: { href: '#', 
+              id: 'cc-orderDetails-link-' + $data.profileId },
+              click: $parent.profileDetailsLinkWithLocale.bind($parent)">
+            <span id="cc-orderDetails-firstName-value"
+              data-bind="text: profile.firstName,
+              visible: profile.firstName"></span>
+            <span id="cc-orderDetails-lastName-value"
+              data-bind="text: profile.lastName,
+              visible: profile.lastName"></span>
+            </a>
+        <br>
+        <!-- /ko -->
+        <!-- ko if: profile.email -->
+          <span id="cc-orderDetails-customerEmail-label"
+          data-bind="">Contact Email </span> <span
+          data-bind="widgetLocaleText: 'delimiterText'"></span> <span
+          id="cc-orderDetails-customerEmail-value"
+          data-bind="text: profile.email"> </span>
+        <!-- /ko -->
+         <!-- ko if: $parent.scheduledOrder().dateCreated -->
+         <br>
+         <span id="cc-orderDetails-createdDate-key"
+           data-bind="widgetLocaleText: 'dateCreated'">
+         </span> 
+         <span data-bind="widgetLocaleText: 'delimiterText'"></span> 
+         <span id="cc-orderDetails-createdDate-value"
+           data-bind="text: $parent.scheduledOrder().dateCreated">
+         </span>
+         <!-- /ko -->
+         <!-- ko if: $parent.scheduledOrder().nextOrder -->
+         <br>
+         <span id="cc-orderDetails-nextOrder-key"
+           data-bind="widgetLocaleText: 'nextOrder'">
+         </span> 
+         <span data-bind="widgetLocaleText: 'delimiterText'"></span> 
+         <span id="cc-orderDetails-nextOrder-value"
+           data-bind="text: $parent.scheduledOrder().nextOrder">
+         </span>
+         <!-- /ko -->
+         <!-- ko if: $parent.isSubmittedDate() -->
+         <br>
+        <span id="cc-orderDetails-submittedorderDate"
+          data-bind="widgetLocaleText: 'orderSubmittedDateText'"></span> <span
+          data-bind="widgetLocaleText: 'delimiterText'"></span> <span
+          id="cc-orderDetails-orderDate-value"
+          data-bind="ccDateTime: {date: submittedDate,
+                          format: 'datetime', dateFormat: 'medium', timeFormat: 'short'}">
+         </span>
+        <!-- /ko -->
+
+        <!-- ko if: $parent.orderSite() || siteId -->
+       <!-- <br>-->
+        <!--<span id="cc-orderDetails-orderSiteId-label"
+          data-bind="widgetLocaleText: 'merchantSiteText'"> </span> <span
+          data-bind="widgetLocaleText: 'delimiterText'"></span> <span
+          id="cc-orderDetails-orderSiteId-value"
+          data-bind="text: $parent.formatSiteText($parent.orderSite() ? $parent.orderSite() : siteId)"> </span>-->
+        <!-- /ko -->
+        <!-- ko if: $parent.orderDetailsWrapper.orderDetails().quoteInfo && $data.state != 1 -->
+                    <br>
+                    <span id="cc-orderDetails-quotedorderDate"
+                      data-bind="widgetLocaleText: 'quoteInitiatedDateLable'"></span> <span
+                      data-bind="widgetLocaleText: 'delimiterText'"></span> <span
+                      id="cc-orderDetails-quoteDate-value"
+                      data-bind="ccDateTime: {date: $parent.orderDetailsWrapper.orderDetails().quoteInfo.requestDate,
+                      format: 'datetime', dateFormat: 'medium', timeFormat: 'short'}">
+                    </span>
+                 <!-- ko if: $parent.orderDetailsWrapper.isQuoteRelatedState() -->
+            <br>
+                    <span id="cc-orderDetails-quotedorderStatus"
+                      data-bind="widgetLocaleText: 'quoteStatus'"></span> <span
+                      data-bind="widgetLocaleText: 'delimiterText'"></span> <span
+                      id="cc-orderDetails-quoteStatus-value"
+                      data-bind="text: $data.hasOwnProperty('stateDetailsAsUser') ? $data.stateDetailsAsUser : $data.state">
+                    </span>
+                    <!-- /ko -->
+                   <!-- ko if: $parent.orderDetailsWrapper.orderDetails().quoteInfo.expirationDate && $parent.orderDetailsWrapper.orderDetails().quoteInfo.expirationDate != -1 &&
+              $data.state != 1 -->
+            <br>
+                    <span id="cc-orderDetails-quotedorderExpireDate"
+                      data-bind="widgetLocaleText: 'quoteExpireDateLable'"></span> <span
+                      data-bind="widgetLocaleText: 'delimiterText'"></span> <span
+                      id="cc-orderDetails-quoteExpireDate-value"
+                      data-bind="ccDateTime: {date: $parent.orderDetailsWrapper.orderDetails().quoteInfo.expirationDate,
+                      format: 'datetime', dateFormat: 'medium', timeFormat: 'short'}">
+                    </span>
+                    <!-- /ko -->
+                    <!-- ko if: $parent.orderDetailsWrapper.orderDetails().quoteInfo.rejectionDate -->
+                    <br>
+                    <span id="cc-orderDetails-quotedorderRejectionDate"
+                      data-bind="widgetLocaleText: 'quoteRejectDateLable'"></span> <span
+                      data-bind="widgetLocaleText: 'delimiterText'"></span> <span
+                      id="cc-orderDetails-quoteExpireDate-value"
+                      data-bind="ccDateTime: {date: $parent.orderDetailsWrapper.orderDetails().quoteInfo.rejectionDate,
+                      format: 'datetime', dateFormat: 'medium', timeFormat: 'short'}">
+                    </span>
+                    <!-- /ko -->
+                    <!-- /ko -->
+                    
+        <!-- ko if: ($data.hasOwnProperty("orderCancelReason") && $data.orderCancelReason !== null) -->
+          <br>
+          <span id="cc-orderDetails-cancelReason-label" data-bind="widgetLocaleText:'orderCancelReasonText'"></span>
+          <span data-bind="widgetLocaleText: 'delimiterText'"> </span>
+          <span id="cc-orderDetails-cancelReason-value" data-bind="text: orderCancelReason"> </span>
+        <!-- /ko -->
+        <!-- ko if: $data.hasOwnProperty('approvalSystemMessages') && ($data.approvalSystemMessages.length > 0) -->
+          <br>
+          <span id="cc-orderDetails-pendingApprovalReason-label" data-bind="widgetLocaleText: 'pendingApprovalReasonText'"> </span>
+          <span data-bind="widgetLocaleText: 'delimiterText'"></span>
+          <span id="cc-orderDetails-pendingApprovalReason-value" data-bind="text: $data.approvalSystemMessages"></span>
+
+        <!-- /ko -->
+       <!-- ko if: priceListGroup !== undefined -->
+       <br>
+        <span id="cc-orderDetails-orderPriceGroup"
+          data-bind="widgetLocaleText: 'priceGroupText'">
+        </span>
+        <span data-bind="widgetLocaleText: 'delimiterText'"></span>
+        <span id="cc-orderDetails-orderPriceGroup-Name"
+          data-bind="text: priceListGroup.displayName, visible:  priceListGroup.displayName">
+        </span>
+        <span id="cc-orderDetails-orderPriceGroup-Code"
+          data-bind="text: priceListGroup.currency.currencyCode">
+        </span>
+        <br>
+        <!-- /ko -->
+        <!--rahul 07/09-->
+         <span id="cc-orderDetails-OrderSubmittedBy">Order Submitted By
+        </span>
+        <span data-bind="widgetLocaleText: 'delimiterText'"></span>
+        <span id="cc-orderDetails-OrderSubmittedBy-Name"
+          data-bind=" ">
+        </span>
+        <!--end-->
+        <!-- ko if: $parent.orderDetailsWrapper.orderFailureReason -->
+        <br>
+        <span id="cc-orderDetails-orderFailureReason"
+          data-bind="widgetLocaleText: 'orderFailureReasonText'">
+        </span>
+        <span data-bind="widgetLocaleText: 'delimiterText'"></span>
+        <span id="cc-orderDetails-orderFailureReason-Text"
+          data-bind="text: $parent.orderDetailsWrapper.orderFailureReason">
+        </span>
+        <!-- /ko -->
+         <!-- ko if: $data.agentId != null -->
+        <br>
+        <span id="cc-orderDetails-orderSubmittedBy"
+          data-bind="widgetLocaleText: 'orderSubmittedByText'">
+        </span>
+        <span data-bind="widgetLocaleText: 'delimiterText'"></span>
+        <span id="cc-orderDetails-orderSubmittedByAgent"
+          data-bind="widgetLocaleText: 'orderSubmittedByAgentText'">
+        </span>
+        <!-- /ko -->
+         <!-- ko if: $data.hasOwnProperty('originOfOrder') && $parent.getLocaleTextForOriginOfOrder(originOfOrder) !== "" -->
+         <br>
+        <span id="cc-orderDetails-originOfOrder"
+          data-bind="widgetLocaleText: 'originOfOrderText'">
+        </span>
+        <span data-bind="widgetLocaleText: 'delimiterText'"></span>
+        <span id="cc-orderDetails-originOfOrderValue"
+          data-bind="text: $parent.getLocaleTextForOriginOfOrder(originOfOrder)">
+        </span>
+        <!-- /ko -->
+        <!-- ko if: $parent.showApprovalDetails($data) -->
+        <br>
+        <span id="cc-orderDetails-approverName"
+          data-bind="widgetLocaleText: '5002' != $data.state ? 'approvedby' : 'rejectedBy'">
+        </span>
+        <span data-bind="widgetLocaleText: 'delimiterText'"></span>
+        <span id="cc-orderDetails-approverName-value"
+          data-bind="text: $parent.orderApproverName()">
+        </span>
+        <!-- /ko -->
+
+        <!-- ko if: $parent.isExchangeOrder() -->
+        <br>
+        <span id="cc-orderDetails-orderType"
+          data-bind="widgetLocaleText: 'orderTypeText'"></span> <span
+          data-bind="widgetLocaleText: 'delimiterText'"></span> <span
+          id="cc-orderDetails-orderType-value"
+          data-bind="widgetLocaleText: 'exchangeOrderText'"> </span> <br> <span
+          id="cc-orderDetails-originalOrder"
+          data-bind="widgetLocaleText: 'originalOrderText'"></span> <span
+          data-bind="widgetLocaleText: 'delimiterText'"></span> <a
+          data-bind="attr: {href: '#'},  click: $parent.clickOrderDetails.bind($parent, $parent.originalOrderId()),
+                       text:$parent.originalOrderId()">
+        </a>
+        <br>
+
+        <span id="cc-orderDetails-orderReturnRequest" data-bind="widgetLocaleText: 'returnRequestIdText'"> </span>
+        <span data-bind="widgetLocaleText: 'delimiterText'"></span>
+        <!-- ko if: $parent.exchangePaymentInfo() && $parent.exchangePaymentInfo().pendingAction.length == 0 -->
+            <a href="#" data-bind="click: $parent.showReturnRequest.bind($parent, $parent.exchangePaymentInfo().returnRequestId, $parent.originalOrderId())"
+              id="cc-return-request-link">
+                <span data-bind="text: $parent.exchangePaymentInfo().returnRequestId"></span>
+            </a>
+            <!-- /ko -->
+            <!-- ko if: $parent.exchangePaymentInfo() && $parent.exchangePaymentInfo().pendingAction.length != 0 -->
+            <span data-bind="text: $parent.exchangePaymentInfo().returnRequestId"></span>
+            <!-- /ko -->
+          <br>
+        <!-- /ko -->
+        <!-- ko if: $parent.exchangePaymentInfo() && $parent.exchangePaymentInfo().authorizationNumber && $parent.exchangePaymentInfo().authorizationNumber != $parent.exchangePaymentInfo().returnRequestId -->
+          <span id="cc-orderDetails-authorizationNumber-label" data-bind="widgetLocaleText: 'rmaNumberText'"> </span>
+          <span data-bind="widgetLocaleText: 'delimiterText'"></span>
+          <span id="cc-orderDetails-authorizationNumber-value" data-bind="text: $parent.exchangePaymentInfo().authorizationNumber"></span>
+          <br>
+        <!-- /ko -->
+        <!-- /ko -->
+        <!-- /ko -->
+</div>
+</div>
+            <!--end-->
+      <!-- /oc -->
+
+    </div>
+
+
+    <div class="oc-panel col-md-4" data-oc-id="panel-1-1">
+
+      <!-- oc section: ultrasource-agent-order-price-details -->
+            <div data-bind="element: 'ultrasource-agent-order-price-details'"></div>
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+
+  <div class="row">
+
+    <div class="oc-panel col-md-6" data-oc-id="panel-2-0">
+
+      <!-- oc section: ultrasource-agent-email-order-details -->
+      <div data-bind="element: 'ultrasource-agent-email-order-details'"></div>
+      <!-- /oc -->
+
+      <!-- oc section: copy-order -->
+    <!--  <div data-bind="element: 'copy-order'"></div>-->
+      <!-- /oc -->
+
+    </div>
+
+
+    <div class="oc-panel col-md-6" data-oc-id="panel-2-1">
+
+    </div>
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-3-0-line">
+
+      <!-- oc section: horizontal-line -->
+        <div class="line agent-line col-xs-12 hrMargin" data-oc-id="hr-line">
+        </div>
+      <!-- /oc -->
+
+    </div>
+  </div>
+
+
+  <div class="row">
+
+    <div class="oc-panel col-md-6" data-oc-id="panel-3-0">
+
+    </div>
+
+
+    <div class="oc-panel col-md-6" data-oc-id="panel-3-1">
+
+      <!-- oc section: return-order -->
+     <!-- <div data-bind="element: 'return-order'" class="paddingleft127 pull-left" ></div>-->
+      <!-- /oc -->
+      <!-- oc section: add-to-purchase-list -->
+      <div data-bind="element: 'add-to-purchase-list'" class="pull-right" ></div>
+      <!-- /oc -->
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-4-0">
+
+      <!-- oc section: ultrasource-shopping-cart-details -->
+      <div data-bind="element: 'ultrasource-shopping-cart-details'"></div>
+      <!-- /oc -->
+      <!--rahul 07/09-->
+  
+      <!--end-->
+
+    </div>
+
+
+  </div>
+
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-5-0">
+
+      <!-- oc section: ultrasource-agent-promotion-summary -->
+      <div data-bind="element: 'ultrasource-agent-promotion-summary'"></div>
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-6-0">
+
+      <!-- oc section: ultrasource-agent-order-payment-details -->
+      <!--<div data-bind="element: 'ultrasource-agent-order-payment-details'"></div>-->
+      <!--rahul 07/09-->
+      <!-- ko if: $data.orderDetailsWrapper.isRenderComplete() -->
+ <!-- ko if: showPaymentDetails() -->
+  <!-- ko if: isExchangeOrder() -->
+  <div id="cc-orderDetails-paymentDetails-exchangeOrder" class="row">
+    <div class="col-xs-12">
+      <div id="cc-orderDetails-paymentDetails-exchangeOrder-text" class="col-xs-12">
+        <h4 class="cc-order-header-font-size"
+          data-bind="widgetLocaleText: 'paymentDetailsText'"></h4>
+      </div>
+      <div id="cc-orderDetails-cardDetails-table-container"
+        class="col-xs-7 table-responsive">
+        <span id="cc-orderDetails-cardDetails-Title"
+          class="summary-table-title title"
+          data-bind="widgetLocaleText: 'returnCreditText'"> </span> <br>
+        <div class="col-md-12 order-cardInfo">
+          <div class="col-md-5 order-cardInfo">
+            <span data-bind="widgetLocaleText: 'paymentAmountText'"> </span>
+          </div>
+          <div class="col-md-6 remove-padding-left">
+            <span
+              data-bind="currency: {price: exchangePaymentInfo().amount,
+                                    currencyObj: $data.orderDetailsWrapper.orderDetails().priceListGroup.currency}"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /ko -->
+  <!-- ko ifnot: isExchangeOrder() -->
+  <div id="cc-orderDetails-paymentDetails-not-exchangeOrder" class="row">
+    <div class="col-md-12">
+      <div id="cc-orderDetails-paymentDetails-not-exchangeOrder-text">
+        <h4 class="cc-order-header-font-size"
+          data-bind="widgetLocaleText: 'paymentDetailsText'"></h4>
+      </div>
+      <!-- ko if: authorizedGiftCards().length > 0 -->
+        <div id="cc-orders-authorizedGiftCards" class="osummary">
+          <span class="title agent-subheadings" data-bind="widgetLocaleText: 'giftCardPaymentText'"></span>
+          <table role='presentation'>
+            <tbody data-bind="foreach: authorizedGiftCards">
+              <tr>
+                <td class="col-md-3 padding-left-0">
+                  <span class="font-size-14" data-bind="widgetLocaleText: 'giftCardText'"></span>
+                  <span data-bind="text: $index()+1"></span>
+                </td>
+                <td class="col-md-5">
+                  <span class="pull-right" data-bind="text : $data.maskedCardNumber"></span>
+                </td>
+                <td class="col-md-3 cc-orders-giftCard-amount">
+                <!-- ko if: $parent.orderDetailsWrapper.isMultiCurrencyOrder() -->
+                  <span class="ordersumprice pull-right"
+                        data-bind="currency: {price: $data.amount,
+                                     currencyObj: $parent.getSecondaryCurrency($parent.orderDetailsWrapper.orderDetails().secondaryCurrencyCode)}">
+                  </span>
+                  <!-- /ko -->
+                <!-- ko ifnot: $parent.orderDetailsWrapper.isMultiCurrencyOrder() -->
+                  <span class="ordersumprice pull-right"
+                        data-bind="currency: {price: $data.amount,
+                            currencyObj: $parent.orderDetailsWrapper.orderDetails().priceListGroup.currency}">
+                  </span>
+                  <!-- /ko -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      <!-- /ko -->
+      <!-- ko with: $data.orderDetailsWrapper.orderDetails() -->
+      <!-- ko if: $parents[0].authorizedCreditCards().length > 0 -->
+      <div id="cc-orderDetails-billingDetails-Info" class="row" data-bind="foreach: $parents[0].authorizedCreditCards">
+        <div class="col-xs-12 title agent-subheadings">
+          <div class="col-xs-12">
+          <!-- ko if: type == "card" -->
+            <span data-bind="widgetLocaleText: 'CardPaymentText'"></span>
+          <!-- /ko -->
+          <!-- ko if: type == "online" -->
+            <span data-bind="widgetLocaleText: 'OnlinePaymentText'"></span>
+          <!-- /ko -->
+            <span data-bind="text: $index()+1"></span>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div data-bind="attr:{id: 'cc-orderDetails-billingAddress-'+$index()+1}"
+               class="col-xs-5 rightVerticalLine">
+            <!-- ko if: type == "card" -->
+            <table data-bind="attr:{id: 'cc-orderDetails-billingAddress-table-'+$index()+1}">
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="summary-table-title title"
+                          data-bind="widgetLocaleText: 'billingAddressText',
+                          attr:{id: 'cc-orderDetails-billingAddress-Title-'+$index()+1}">
+                   </span> <br>
+                    <!-- ko with: $data.billingAddress -->
+                      <!-- ko if: firstName -->
+                       <div id="billingAddressDetailsSection" >
+                          <button href="#cc-orderAddressModal" data-toggle="modal" class="cc-orderDetails-view-address-btn" 
+                          data-bind="click:  $parents[2].showAddressDetails.bind($parents[2], $data),
+                          attr: { title : $parents[2].translate('viewAddressToolTipText'),
+                          id: 'cc-orderdetails-multiship-' +  $parent.paymentGroupId} ">
+                          <i class="fa fa-info-circle"></i> <span class="sr-only"></span>
+                          </button>
+                      </div>
+                        <span data-bind="text: firstName + ' ' + lastName,
+                            attr:{id: 'cc-orderDetails-billingAddress-name-'+$index()+1}">
+                        </span> <br>
+                      <!-- ko if: companyName -->
+                        <span id="cc-orderDetails-billingAddress-companyName"
+                              data-bind="text: companyName"></span><br>
+                      <!-- /ko -->
+                        <span data-bind="text: address1,
+                              attr:{id: 'cc-orderDetails-billingAddress-address1-'+$index()+1}">
+                        </span><br>
+                        <!-- ko if: address2 -->
+                          <span data-bind="text: address2,
+                                attr:{id: 'cc-orderDetails-billingAddress-address2-'+$index()+1}">
+                          </span><br>
+                        <!-- /ko -->
+                        <!-- ko if: address3 -->
+                          <span data-bind="text: address3,
+                                attr:{id: 'cc-orderDetails-billingAddress-address3-'+$index()+1}">
+                          </span><br>
+                        <!-- /ko -->
+                        <!-- ko if: county -->
+                          <span data-bind="text: county,
+                                attr:{id: 'cc-orderDetails-billingAddress-county-'+$index()+1}">
+                          </span><br>
+                        <!-- /ko -->
+                        <!-- ko if: $parents[2].getCountryName($data) -->
+                        <span data-bind="text: $parents[2].getCityStatePostal($data),
+                              attr:{id: 'cc-orderDetails-billingAddress-citySatePostal-'+$index()+1}">
+                        </span> <br>
+                        <!-- /ko -->
+                        <!-- ko if: $parents[2].getCountryName($data) -->
+                        <span data-bind="text: $parents[2].getCountryName($data),
+                              attr:{id: 'cc-orderDetails-billingAddress-country-'+$index()+1}">
+                        </span> <br>
+                        <!-- /ko -->
+                        <span data-bind="widgetLocaleText:'phoneNumberText',
+                              attr:{id: 'cc-orderDetails-billingAddress-phoneNumber-'+$index()+1}">
+                        </span>
+                        <span data-bind="text: phoneNumber">
+                        </span> <br>
+                      <!-- /ko -->
+                      <!-- ko ifnot: firstName --> <br>
+                        <p data-bind="widgetLocaleText: 'noBillingAddressText',
+                           attr:{id: 'cc-orderDetails-billingAddress-noData-'+$index()+1}">
+                        </p>
+                      <!-- /ko -->
+                    <!-- /ko -->
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- /ko -->
+            <!-- ko if: type == "online" -->
+              <table id="cc-orderDetails-onlinePayment-Info-table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <br>
+                      <span  data-bind="widgetLocaleText: 'paymentMethod'"></span>
+                      <br>
+                      <!-- ko if: paymentType=="paypalCheckout" -->
+                        <img class="payPalImage" src="https://www.paypal.com/en_US/i/logo/PayPal_mark_37x23.gif"
+                        align="left" data-bind="attr:{alt: 'PayPal'}" />
+                        <span class="payPalText" data-bind="widgetLocaleText: 'paypalText'"></span><br>
+                      <!-- /ko -->
+                      <!-- ko if: paymentType=="payULatamWebcheckout" -->
+                        <img class="payUImage" src="http://www.payulatam.com/logos/img/logo_payu.png"
+                        align="left">
+                        <span class="col-md-12 remove-padding-left payUText" data-bind="widgetLocaleText: 'payULatamText'"></span><br>
+                      <!-- /ko -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            <!-- /ko -->
+          </div>
+          <!-- ko if: type == "card" -->
+          <div data-bind="attr:{id: 'cc-orderDetails-cardDetails-table-container-'+$index()+1}"
+            class="col-xs-7 table-responsive">
+            <span class="summary-table-title title"
+                  data-bind="widgetLocaleText: 'cardDetailsText',
+                      attr:{id: 'cc-orderDetails-cardDetails-Title-'+$index()+1}">
+           </span> <br>
+            <div class="col-md-12 order-cardInfo">
+              <div class="col-md-2 order-cardInfo">
+                <span data-bind="widgetLocaleText: 'creditCardNumberText'"> </span>
+              </div>
+              <div class="col-md-6">
+                <!-- ko if:cardNumber -->
+                <span data-bind="text: cardNumber"></span>
+                <!-- /ko -->
+                <!-- ko ifnot:cardNumber -->
+                <span data-bind="text: '---'"></span>
+                <!-- /ko -->
+              </div>
+            </div>
+            <div class="col-md-12 order-cardInfo">
+              <div class="col-md-2 order-cardInfo">
+                <span data-bind="widgetLocaleText: 'paymentAmountText'"> </span>
+              </div>
+              <div class="col-md-6">
+                   <!-- ko if: $parents[1].orderDetailsWrapper.isMultiCurrencyOrder() -->
+                      <span data-bind="currency: {price: $data.amount,
+                                           currencyObj: $parents[1].getSecondaryCurrency($parents[1].orderDetailsWrapper.orderDetails().secondaryCurrencyCode)}"></span>
+                                    <!-- /ko -->
+                   <!-- ko ifnot: $parents[1].orderDetailsWrapper.isMultiCurrencyOrder() -->
+                   <span data-bind="currency: {price: amount,
+                                    currencyObj: $parents[1].orderDetailsWrapper.orderDetails().priceListGroup.currency}"></span>
+                                    <!-- /ko -->
+              </div>
+            </div>
+            <div class="col-md-12 order-cardInfo">
+              <div class="col-md-2 order-cardInfo">
+                <span data-bind="widgetLocaleText: 'paymentStatusText'"> </span>
+              </div>
+              <div class="col-md-6">
+                <span data-bind="text: $parents[1].translate(paymentStateString + '_PG')"></span>
+              </div>
+            </div>
+          </div>
+          <!-- /ko -->
+          <!-- ko if: type == "online" -->
+          <div id="cc-orderDetails-onlinePayment-Info" class="col-xs-7 table-responsive">
+            <div id="CC-ViewOrder-TransactionDetails" >
+              <span class="summary-table-title title"
+                    data-bind="widgetLocaleText: 'transactionDetails'"></span>
+            </div>
+            <br>
+            <div id="cc-orderDetails-onlinePayment" class="col-md-12 order-cardInfo">
+              <div class="col-md-2 order-cardInfo">
+                <span data-bind="widgetLocaleText: 'paymentAmountText'"> </span>
+                 </div>
+              <div class="col-md-6">
+              <!-- ko if: $parents[1].orderDetailsWrapper.isMultiCurrencyOrder() -->
+                <span data-bind="currency: {price: $data.amount,
+                                       currencyObj: $parents[1].getSecondaryCurrency($parents[1].orderDetailsWrapper.orderDetails().secondaryCurrencyCode)} "></span>
+              <!-- /ko -->
+              <!-- ko ifnot: $parents[1].orderDetailsWrapper.isMultiCurrencyOrder() -->
+                <span data-bind="currency: {price: amount,
+                    currencyObj: $parents[1].orderDetailsWrapper.orderDetails().priceListGroup.currency}"></span>
+              <!-- /ko -->
+            </div>
+            </div>
+            <div id="cc-orderDetails-OnlinePaymentStatus" class="col-md-12 order-cardInfo">
+              <div class="col-md-2 order-cardInfo">
+                <span data-bind="widgetLocaleText: 'paymentStatusText'"> </span>
+              </div>
+              <div class="col-md-6">
+                <span data-bind="text: $parents[1].translate(paymentStateString + '_PG')"></span>
+              </div>
+            </div>
+          </div>
+        <!-- /ko -->
+        </div>
+      </div>
+      <!-- /ko -->
+      <!-- Invoice Payment -->
+      <!-- ko if: $parents[0].authorizedInvoicePayments().length > 0 -->
+      <!-- ko foreach: $parents[0].authorizedInvoicePayments -->
+      <div data-bind="attr:{id: 'cc-orderDetails-invoicebillingDetails-Info-' + $index()} " class="row">
+        <div class="col-xs-12 title agent-subheadings">
+          <div class="col-xs-12">
+            <span data-bind="widgetLocaleText: 'invoicePaymentText'"></span>
+            <span data-bind="text: $index()+1"></span>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div data-bind="attr:{id: 'cc-orderDetails-invoicebillingAddress-' + $index()}"
+               class="col-xs-5 rightVerticalLine">
+            <table data-bind="attr:{id: 'cc-orderDetails-invoicebillingAddress-table-' + $index()}">
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="summary-table-title title"
+                          data-bind="widgetLocaleText: 'billingAddressText',
+                          attr:{id: 'cc-orderDetails-invoicebillingAddress-Title-' + $index()}">
+                   </span> <br>
+                    <!-- ko with: $data.billingAddress -->
+                      <!-- ko if: firstName -->
+                       <div id="billingAddressDetailsSection" >
+                          <button href="#cc-orderAddressModal" data-toggle="modal" class="cc-orderDetails-view-address-btn" 
+                          data-bind="click:  $parents[2].showAddressDetails.bind($parents[2], $data),
+                          attr: { title : $parents[2].translate('viewAddressToolTipText'),
+                          id: 'cc-orderdetails-multiship-' +  $parent.paymentGroupId} ">
+                          <i class="fa fa-info-circle"></i> <span class="sr-only"></span>
+                          </button>
+                      </div>
+                        <span data-bind="text: firstName + ' ' + lastName,
+                            attr:{id: 'cc-orderDetails-invoicebillingAddress-name-' + $index()}">
+                        </span> <br>
+                        <span data-bind="text: address1,
+                              attr:{id: 'cc-orderDetails-invoicebillingAddress-address1-'+ $index()}">
+                        </span><br>
+                        <!-- ko if: address2 -->
+                          <span data-bind="text: address2,
+                                attr:{id: 'cc-orderDetails-invoicebillingAddress-address2-'+ $index()}">
+                          </span><br>
+                        <!-- /ko -->
+                        <!-- ko if: address3 -->
+                          <span data-bind="text: address3,
+                                attr:{id: 'cc-orderDetails-invoicebillingAddress-address3-'+ $index()}">
+                          </span><br>
+                        <!-- /ko -->
+                        <!-- ko if: county -->
+                          <span data-bind="text: county,
+                                attr:{id: 'cc-orderDetails-invoicebillingAddress-county-'+ $index()}">
+                          </span><br>
+                        <!-- /ko -->
+                        <!-- ko if: $parents[2].getCityStatePostal($data) -->
+                        <span data-bind="text: $parents[2].getCityStatePostal($data),
+                              attr:{id: 'cc-orderDetails-invoicebillingAddress-citySatePostal-' + $index()}">
+                        </span> <br>
+                        <!-- /ko -->
+                        <!-- ko if: $parents[2].getCountryName($data) -->
+                        <span data-bind="text: $parents[2].getCountryName($data),
+                              attr:{id: 'cc-orderDetails-invoicebillingAddress-country-' + $index()}">
+                        </span> <br>
+                        <!-- /ko -->
+                        <span data-bind="widgetLocaleText:'phoneNumberText',
+                              attr:{id: 'cc-orderDetails-invoicebillingAddress-phoneNumber-' + $index()}">
+                        </span>
+                        <span data-bind="text: phoneNumber">
+                        </span> <br>
+                      <!-- /ko -->
+                      <!-- ko ifnot: firstName --> <br>
+                        <p data-bind="widgetLocaleText: 'noBillingAddressText',
+                           attr:{id: 'cc-orderDetails-invoicebillingAddress-noData-' + $index()}">
+                        </p>
+                      <!-- /ko -->
+                    <!-- /ko -->
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div data-bind="attr:{id: 'cc-orderDetails-invoice-Info-' + $index()}" class="col-xs-7 table-responsive">
+            <div data-bind="attr:{id: 'CC-ViewOrder-TransactionDetails-invoice-Info-' + $index()}" >
+              <span class="summary-table-title title"
+                    data-bind="widgetLocaleText: 'invoiceDetailsText'"></span>
+            </div>
+             <!-- ko if: $data.PONumber -->
+            <div data-bind="attr:{id: 'cc-orderDetails-invoice-PO-' + $index()}" class="col-md-11 order-cardInfo">
+              <div class="col-md-4 order-cardInfo">
+                <span data-bind="widgetLocaleText: 'poNumberText'"> </span>
+              </div>
+              <div class="col-md-6">
+                <span data-bind="text: $data.PONumber"></span>
+              </div>
+            </div>
+            <!-- /ko -->
+            <div  data-bind="attr:{id: 'cc-orderDetails-invoice-amount-' + $index()}" class="col-md-11 order-cardInfo">
+              <div class="col-md-4 order-cardInfo">
+                <span data-bind="widgetLocaleText: 'paymentAmountText'"> </span>
+              </div>
+              <div class="col-md-6">
+              <!-- ko if: $parents[1].orderDetailsWrapper.isMultiCurrencyOrder() -->
+                <span data-bind="currency: {price: $data.amount,
+                                            currencyObj: $parents[1].getSecondaryCurrency($parents[1].orderDetailsWrapper.orderDetails().secondaryCurrencyCode)}"></span>
+              <!-- /ko -->
+              <!-- ko ifnot: $parents[1].orderDetailsWrapper.isMultiCurrencyOrder() -->
+                <span data-bind="currency: {price: amount,
+                        currencyObj: $parents[1].orderDetailsWrapper.orderDetails().priceListGroup.currency}"></span>
+              <!-- /ko -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /ko -->
+      <!-- /ko -->
+      <!-- ko if: $parents[0].cashPaymentDetails().length -->
+      <span class="col-xs-12 title agent-subheadings" data-bind="widgetLocaleText: 'cashPaymentText'"></span>
+      <!-- ko foreach: $parents[0].cashPaymentDetails -->
+      <div data-bind="attr:{id: 'cc-orderDetails-cashPayment-Info-' + $index()}" class="col-xs-12">
+        <div data-bind="attr:{id: 'cc-orderDetails-cashPayment-' + $index()}" class="col-xs-12 padding-left-0">
+          <span data-bind="widgetLocaleText: 'cashPaymentText'"></span>
+          <span data-bind="text: $index()+1"></span>
+          <!-- ko if: $parents[1].orderDetailsWrapper.isMultiCurrencyOrder() -->
+            <span class="padding-left-10" data-bind="currency: {price: $data.amount,
+                                                     currencyObj: $parents[1].getSecondaryCurrency($parents[1].orderDetailsWrapper.orderDetails().secondaryCurrencyCode)} "></span>
+               <!-- /ko -->
+           <!-- ko ifnot: $parents[1].orderDetailsWrapper.isMultiCurrencyOrder() -->
+            <span class="padding-left-10" data-bind="currency: {price: amount,
+               currencyObj: $parents[1].orderDetailsWrapper.orderDetails().priceListGroup.currency}"></span>
+               <!-- /ko -->
+        </div>
+      </div>
+      <!-- /ko -->
+      <!-- /ko -->
+    <!-- Store Credit Begin -->
+    <!-- ko if: $parents[0].authorizedStoreCreditPayments().length -->
+      <div id="cc-order-details-store-credit-payment" class="col-xs-12 col-md-12 osummary">
+    <span class="title agent-subheadings" data-bind="widgetLocaleText: 'storeCreditPaymentText'"></span>
+    <table role='presentation'>
+            <tbody data-bind="foreach: $parents[0].authorizedStoreCreditPayments">
+              <tr>
+                <td class="col-md-3 padding-left-0">
+                  <span class="font-size-14" data-bind="widgetLocaleText: 'storeCreditText'"></span>
+                  <span data-bind="text: $index()+1"></span>
+                </td>
+                <td class="col-md-5">
+                  <span class="pull-right" data-bind="text : $data.storeCreditNumber"></span>
+                </td>
+                <td class="col-md-3">
+                  <span class="ordersumprice pull-right"
+                        data-bind="currency: {price: $data.amount, 
+                            currencyObj: $parents[1].orderDetailsWrapper.orderDetails().priceListGroup.currency}">
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <!-- /ko -->
+    <!-- End Store Credit -->
+      <!-- Loyalty start approach2 -->
+      <!-- ko if: $parents[0].authorizedVirtualPayments().length > 0 -->
+        <div id="cc-orderDetails-billingDetails-Info" class="row" data-bind="foreach: $parents[0].authorizedVirtualPayments">
+          <!-- ko if: $data.hasOwnProperty('billingAddress') -->
+            <div class="col-xs-12 title agent-subheadings">
+              <div class="col-xs-12">
+                <span data-bind="widgetLocaleText: 'loyaltyPaymentText'"></span>
+                <!-- ko if: $parents[1].authorizedVirtualPayments().length > 1 -->
+                  <span data-bind="text: $index()+1"></span>
+                <!-- /ko -->
+              </div>
+            </div>
+          <!-- /ko -->
+          <div class="col-xs-12">
+            <div data-bind="attr:{id: 'cc-orderDetails-billingAddress-'+$index()+1}"
+                class="col-xs-5 rightVerticalLine">
+              <!-- ko ifnot: $data.hasOwnProperty('billingAddress') -->
+                <span class="title agent-subheadings" data-bind="widgetLocaleText: 'loyaltyPaymentText'"></span>
+                <!-- ko if: $parents[1].authorizedVirtualPayments().length > 1 -->
+                  <span data-bind="text: $index()+1"></span>
+                <!-- /ko -->
+              <!-- /ko -->
+              <!-- ko if: paymentType == 'loyaltyPoints' && $data.hasOwnProperty('billingAddress') -->
+                <table data-bind="attr:{id: 'cc-orderDetails-billingAddress-table-'+$index()+1}">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="summary-table-title title"
+                            data-bind="widgetLocaleText: 'billingAddressText',
+                            attr:{id: 'cc-orderDetails-billingAddress-Title-'+$index()+1}">
+                        </span> <br>
+                        <!-- ko with: $data.billingAddress -->
+                          <!-- ko if: firstName -->
+                        <div id="billingAddressDetailsSection">
+                          <button href="#cc-orderAddressModal" data-toggle="modal" class="cc-orderDetails-view-address-btn" 
+                          data-bind="click:  $parents[2].showAddressDetails.bind($parents[2], $data),
+                          attr: { title : $parents[2].translate('viewAddressToolTipText'),
+                          id: 'cc-orderdetails-multiship-' +  $parent.paymentGroupId} ">
+                          <i class="fa fa-info-circle"></i> <span class="sr-only"></span>
+                          </button>
+                      </div>
+                            <span data-bind="text: firstName + ' ' + lastName,
+                                attr:{id: 'cc-orderDetails-billingAddress-name-'+$index()+1}">
+                            </span> <br>
+                            <!-- ko if: companyName -->
+                              <span id="cc-orderDetails-billingAddress-companyName"
+                                  data-bind="text: companyName"></span><br>
+                            <!-- /ko -->
+                            <span data-bind="text: address1,
+                                attr:{id: 'cc-orderDetails-billingAddress-address1-'+$index()+1}">
+                            </span><br>
+                            <!-- ko if: address2 -->
+                              <span data-bind="text: address2,
+                                  attr:{id: 'cc-orderDetails-billingAddress-address2-'+$index()+1}">
+                                  </span><br>
+                            <!-- /ko -->
+                            <!-- ko if: $parents[2].getCityStatePostal($data) -->
+                            <span data-bind="text: $parents[2].getCityStatePostal($data),
+                                attr:{id: 'cc-orderDetails-billingAddress-citySatePostal-'+$index()+1}">
+                            </span> <br>
+                            <!-- /ko -->
+                            <!-- ko if: $parents[2].getCountryName($data) -->
+                              <span data-bind="text: $parents[2].getCountryName($data),
+                                  attr:{id: 'cc-orderDetails-billingAddress-country-'+$index()+1}">
+                              </span> <br>
+                            <!-- /ko -->
+                            <span data-bind="widgetLocaleText:'phoneNumberText',attr:{id: 'cc-orderDetails-billingAddress-phoneNumber-'+$index()+1}">
+                            </span>
+                            <span data-bind="text: phoneNumber">
+                            </span> <br>
+                          <!-- /ko -->
+                          <!-- ko ifnot: firstName --> <br>
+                            <p data-bind="widgetLocaleText: 'noBillingAddressText',
+                                 attr:{id: 'cc-orderDetails-billingAddress-noData-'+$index()+1}">
+                            </p>
+                          <!-- /ko -->
+                        <!-- /ko -->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              <!-- /ko -->
+            </div>
+            <!-- ko if: paymentType == 'loyaltyPoints' -->
+              <div data-bind="attr:{id: 'cc-orderDetails-cardDetails-table-container-'+$index()+1}"
+                  class="col-xs-7 table-responsive">
+                <span class="summary-table-title title"
+                    data-bind="widgetLocaleText: 'pointsDetailsLabel',
+                    attr:{id: 'cc-orderDetails-cardDetails-Title-'+$index()+1}">
+                </span> <br>
+                <div class="col-md-12 order-cardInfo">
+                  <div class="col-md-3 order-cardInfo">
+                    <span data-bind="widgetLocaleText: 'programNameLabel'"> </span>
+                  </div>
+                  <div class="col-md-6">
+                    <!-- ko if:customPaymentProperties && customPaymentProperties.programName -->
+                      <span data-bind="text: customPaymentProperties.programName"></span>
+                    <!-- /ko -->
+                  </div>
+                </div>
+                <div class="col-md-12 order-cardInfo">
+                  <div class="col-md-3 order-cardInfo">
+                    <span data-bind="widgetLocaleText: 'paymentAmountText'"> </span>
+                  </div>
+                  <div class="col-md-6">
+                   <span data-bind="currency: {price: amount,
+                        currencyObj: $parents[1].orderDetailsWrapper.orderDetails().priceListGroup.currency}">
+                    </span>
+                   </div>
+                </div>
+                <div class="col-md-12 order-cardInfo">
+                  <div class="col-md-3 order-cardInfo">
+                    <span data-bind="widgetLocaleText: 'paymentStatusText'"> </span>
+                  </div>
+                  <div class="col-md-6">
+                    <span data-bind="text: $parents[1].translate(paymentStateString + '_PG')"></span>
+                  </div>
+                </div>
+              </div>
+            <!-- /ko -->
+          </div>
+        </div>
+      <!-- /ko -->
+      <!-- Loyalty end approach2 -->
+      <!-- Payment due when order is in pending payment state -->
+      <div class= "col-md-12" data-bind = " visible: $parent.paymentDue() > 0">
+        <span class= "col-md-2 remove-padding-left title" data-bind = "widgetLocaleText: 'paymentDueText'"></span>
+        <!-- ko if: $parent.orderDetailsWrapper.isMultiCurrencyOrder()-->
+             <span data-bind="text:$parent.convertToPaymentDueInMixCurrencyFormat($parent.orderDetailsWrapper.orderDetails())"></span>
+               <!-- /ko -->
+        <!-- ko ifnot: $parent.orderDetailsWrapper.isMultiCurrencyOrder()-->
+        <span data-bind="currency: {price: $parent.paymentDue(),
+                currencyObj: $parent.orderDetailsWrapper.orderDetails().priceListGroup.currency}"></span>
+         <!-- /ko -->
+      </div>
+      <!-- ko ifnot:paymentGroups.length > 0-->
+      <div id="cc-orderDetails-paymentDetails-noData-container" class="col-xs-12">
+        <p id="cc-orderDetails-paymentDetails-noData"
+           data-bind="widgetLocaleText: 'noPaymentDetailsText'"></p>
+           </div>
+      <!-- /ko -->
+      <!-- /ko -->
+    </div>
+  </div>
+  <!-- /ko -->
+   <!--rahul 07/09-->
+   <br>
+  <div class="row col-md-12 form-inline form-group">
+                      <label class="col-md-2" data-bind="css: {'required' : $data.required}">X Payment Terms</label>
+                      <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                      <input class="form-control col-md-6" type="text" data-bind="value: $data.value, attr: {'aria-label': $data.label}" readonly="" aria-label="X Payment Terms">
+                  </div>
+  <div id="cc-horizontalLine-paymentInfo">
+    <hr class="line agent-line col-xs-12" />
+  </div>
+  <!-- /ko -->
+<!-- /ko -->
+      <!--end-->
+      <!-- /oc -->
+    </div>
+
+
+  </div>
+
+  <div class="row">
+
+    <div class="oc-panel row" data-oc-id="panel-7-0">
+      <!-- oc section: dynamic-property -->
+        <div data-bind="if: $data.orderDetailsWrapper.orderDetails() && $data.orderDetailsWrapper.orderDetails().id &&
+                         $data.orderDetailsWrapper.orderDetails().dynamicProperties &&
+                          $data.orderDetailsWrapper.orderDetails().dynamicProperties.length > 0" data-oc-id="dynamic-property-Id2">
+          <div data-bind="setContextVariable:{name:'context', value: $data.orderDetailsWrapper.dynamicProperties}" data-oc-id="dynamic-property-Id">
+            <div class="col-md-12" data-bind="element: 'ultra-dynamic-property'"></div>
+          </div>
+        </div>
+      <!-- /oc -->
+    </div>
+
+
+  </div>
+
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-8-0">
+
+      <!-- oc section: ultrasource-scheduled-order-instruction -->
+      <div data-bind="element: 'ultrasource-scheduled-order-instruction'"></div>
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-9-0">
+
+      <!-- oc section: ultrasource-scheduled-order-executionList -->
+      <div data-bind="element: 'ultrasource-scheduled-order-executionList'"></div>
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-10-0">
+
+      <!-- oc section: ultrasource-scheduled-order-actions -->
+      <div data-bind="element: 'ultrasource-scheduled-order-actions'"></div>
+      <!-- /oc -->
+
+    </div>
+
+
+  </div>
+
+  <div class="row">
+
+    <div class="oc-panel col-md-12" data-oc-id="panel-11-0">
+
+    </div>
+
+
+  </div>
+  <!-- /oc -->
+   <!--  ko if:  orderDetailsWrapper.orderDetails() && orderDetailsWrapper.orderDetails().id -->
+    <div data-bind="template: { name: $data.templateAbsoluteUrl('/templates/tracking-reference-details.template') , templateUrl: '', data: orderDetailsWrapper.orderDetails().shippingGroups}">
+    </div>
+    <div id="cc-return-address-details-content"
+       data-bind="template: { name: $data.templateAbsoluteUrl('/templates/view-address-details.template'), templateUrl: '' }">
+    </div>
+    <!--  /ko  -->
+    <!-- /ko -->
+</div>

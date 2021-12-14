@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["ultrasourceCustomerProfileDetailsAgent"],
+  "tag": "ultrasource-customer-details",
+  "translations": [{
+    "description": "Ultrasource Customer Details",
+    "language": "en",
+    "title": "Ultrasource Customer Details"
+  }],
+  "type": "fragment",
+  "version": 3
+}

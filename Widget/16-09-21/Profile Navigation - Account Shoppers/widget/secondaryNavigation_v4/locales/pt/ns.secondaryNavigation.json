@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Detalhes da Conta",
+    "accountAddressBookText": "Livro de Endereços da Conta",
+    "updatePasswordText": "Atualizar Senha",
+    "orderHistoryText":"Histórico de Encomendas",
+    "scheduledOrdersText": "Encomendas Programadas",
+    "purchaseListsText": "Listas de Compras",
+    "orderApprovalSettingsText": "Definições da Aprovação de Encomendas",
+    "accountContactsText": "Contactos da Conta",
+    "ordersPendingApprovalText": "Encomendas com Aprovação Pendente",
+    "addressBookText": "Livro de Endereços",
+    "wishListText": "Lista de Preferências",
+    "myAccountText": "A Minha Conta",
+    "customerDetailsText": "Detalhes do Perfil",
+    "accountOrderHistoryText": "Histórico de Encomendas",
+    "accountScheduledOrdersText": "Encomendas Programadas",
+    "customerSearchText":"Pesquisa de Clientes",
+    "selfRegistrationText":"Pedidos de Registo",
+    "registrationRequestsText": "Pedidos de Registo"
+    
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Детайли за акаунт",
+    "accountAddressBookText": "Адресна книга на акаунт",
+    "updatePasswordText": "Актуализиране на парола",
+    "orderHistoryText":"История на поръчките",
+    "scheduledOrdersText": "Планирани поръчки",
+    "purchaseListsText": "Списъци с покупки",
+    "orderApprovalSettingsText": "Настройки за одобрение на поръчка",
+    "accountContactsText": "Контакти на акаунта",
+    "ordersPendingApprovalText": "Поръчки очакващи одобрение",
+    "addressBookText": "Адресна книга",
+    "wishListText": "Списък с желания",
+    "myAccountText": "Моят акаунт",
+    "customerDetailsText": "Данни за профила",
+    "accountOrderHistoryText": "История на поръчките",
+    "accountScheduledOrdersText": "Планирани поръчки",
+    "customerSearchText":"Клиентско търсене",
+    "selfRegistrationText":"Заявки за регистрация",
+    "registrationRequestsText": "Заявки за регистрация"
+    
+  }
+}

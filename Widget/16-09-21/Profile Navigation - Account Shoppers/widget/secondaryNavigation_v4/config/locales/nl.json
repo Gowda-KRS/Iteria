@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Secondaire menu-opties",
+    "displayAndURLHelpText":"Voer een secundaire navigatiemenu-optienaam in om weer te geven op uw storefront, en een daaraan gekoppelde URL. Klanten worden naar die URL geleid door het selecteren van de gegeven naam. Voer de gekoppelde op account gebaseerde klantrollen in die toegang hebben tot die menu-optie. Opmerking: dit geldt alleen voor op account gebaseerde klantrollen.",
+    "placeHoldersText":   "Weergavenaam, URL, rol",
+    "addMoreRowsText": "Meer rijen toevoegen",
+    "displayOptionsHelpText":" Kiezen of de menu-opties op de paginalay-out verticaal of horizontaal moeten worden weergegeven.",
+	"displayOptionsLabel":"Navigatie-oriëntatie",
+	"horizontalText": "Horizontaal",
+	"verticalText": "Verticaal"
+  }
+}

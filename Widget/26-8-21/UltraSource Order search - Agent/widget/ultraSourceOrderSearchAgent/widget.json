@@ -1,0 +1,25 @@
+{
+  "availableToAllPages": true,
+  "config": {"itemsPerPage": "15"},
+  "global": false,
+  "globalEnabled": false,
+  "i18nresources": "ultraSourceOrderSearchAgent",
+  "imports": [],
+  "javascript": "ultrasource-agent-order-search",
+  "jsEditable": true,
+  "minWidth": 1,
+  "source": 101,
+  "translations": [
+    {
+      "language": "en",
+      "name": "UltraSource Order Search - Agent"
+    },
+    {
+      "language": "en_GB",
+      "name": "UltraSource Order Search - Agent"
+    }
+  ],
+  "version": 2,
+  "widgetFamily": "ultraSourceOrderSearchAgent",
+  "widgetType": "ultraSourceOrderSearchAgent"
+}

@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Fiók adatai",
+    "accountAddressBookText": "Fiók címlistája",
+    "updatePasswordText": "Jelszó módosítása",
+    "orderHistoryText":"Rendelési előzmények",
+    "scheduledOrdersText": "Ütemezett rendelések",
+    "purchaseListsText": "Vásárlási listák",
+    "orderApprovalSettingsText": "Rendelés jóváhagyási beállításai",
+    "accountContactsText": "Ügyfél kapcsolattartói",
+    "ordersPendingApprovalText": "Jóváhagyásra váró megrendelések",
+    "addressBookText": "Címjegyzék",
+    "wishListText": "Kívánságlista",
+    "myAccountText": "Saját fiók",
+    "customerDetailsText": "Profiladatok",
+    "accountOrderHistoryText": "Rendelési előzmények",
+    "accountScheduledOrdersText": "Ütemezett rendelések",
+    "customerSearchText":"Vevő keresése",
+    "selfRegistrationText":"Regisztrációs kérelmek",
+    "registrationRequestsText": "Regisztrációs kérelmek"
+    
+  }
+}

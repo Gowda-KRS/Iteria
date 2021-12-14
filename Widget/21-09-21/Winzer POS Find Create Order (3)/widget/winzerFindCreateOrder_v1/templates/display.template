@@ -1,0 +1,389 @@
+<!-- ko with: customerSearchViewModel -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<style>
+/*Header*/
+body{
+    /*background: linear-gradient( to right, #fff, #fff, #fff, #fff) !important;*/
+}
+/*Main Body*/
+.main_div{
+  margin-top: 10%;
+  width: 950px;
+}
+.card-head {
+    height: 70px;
+    color: #1b75bc;
+}
+
+.card-head1 {
+    height: 120px;
+    color: #1b75bc;
+    border: 3px solid #0062af;
+    box-shadow: 5px 5px 5px 0px #0062af;
+    padding-top: 2%;
+    margin-bottom: 2%;
+}
+
+.btn:hover {
+    background-color: #1b75bc;
+}
+
+.main-btn-left {
+    margin-top: 5%;
+    background-color: #1b75bc;
+    border: 3px solid #0062af;
+    box-shadow: 5px 5px 5px 0px #0062af;
+    width: 75%;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.main-btn-right {
+    margin-top: 5%;
+    background-color: #1b75bc;
+    border: 3px solid #0062af;
+    box-shadow: 5px 5px 5px 0px #0062af;
+    width: 75%;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.card-text1 {
+    margin-top: 2.5%;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.card-text2 {
+    margin-top: 1.5%;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.card-break {
+    background-color: #54565a;
+    height: 15px;
+}
+
+.input-btn-div {
+    padding-right: 0px;
+}
+
+.input-txt-div {
+    padding-left: 0px;
+}
+/*ks added*/
+.input_label {
+    width: 100%;
+    color: #000000;
+    background-color: #f2f2f2;
+    border: 1px solid #000000;
+    text-align: center;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 0px;
+    padding: 10px;
+}
+
+.input_text {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #000000;
+    text-align: center;
+    color: #1b75bc;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.profile-icon {
+    font-size: 3em;
+    color: #000;
+}
+p{
+    text-align: center;
+}
+
+.profile-btn {
+    background-color: #1b75bc;
+    border: 3px solid #0062af;
+    box-shadow: 5px 5px 5px 0px #0062af;
+    width: 90%;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.col-md-4.profile-btn-div {
+    padding-left: 40px;
+    font-size: 16px;
+}
+
+.profile-text {
+    color: #1b75bc;
+    font-size: 16px;
+    font-weight: 500;
+}
+/*Phani Sekhar added on 07/01/21 for Credit Hold text*/
+span.credit-hold {
+    font-size: 25px;
+    font-weight: 750;
+    padding: 35px;
+}
+
+span.slow-pay-hold {
+    font-size: 25px;
+    font-weight: 750;
+}
+
+</style>
+</head>
+<body>
+    <div class="container main_div">
+        <div class="row">
+            <div class="col-md-12">
+        
+        <div> 
+        <b><a href="/file/v299554923248710285/thirdparty/create_order.pdf" target="_blank" rel="noopener noreferrer" style="padding-bottom:40px; font-size: 22px; text-align: right; float: right;"> Create Order PDF </a></b>
+        </div>
+                
+              <form>
+                <div class="card card-head">
+                  <div class="row">
+                      <div class="col-md-3"></div>
+                     <div class="col-md-6">
+                        <p class="card-text1" data-bind="widgetLocaleText:'findCustomerText'"></p>
+                     </div>
+                     <div class="col-md-3"></div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4 input-btn-div">
+                      <!--ks added-->
+                     <div class="input_label"><span class="input-group-text" id="basic-addon3"
+                            data-bind="widgetLocaleText: 'accountNumberText'">
+                        </span></div>
+                  </div>
+                  <div class="col-md-8 input-txt-div">
+                     <span><input class="input_text"  type="text" id="account-number" aria-describedby="basic-addon3"
+                        data-bind="value: $parent.accountNumber,
+                          valueUpdate: 'afterkeydown',   enterkey: $parent.customerSearch.bind($parent)"  /></span>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4 input-btn-div">
+                     <div class="input_label"><span class="input-group-text" id="basic-addon3"
+                            data-bind="widgetLocaleText: 'businessNameText'">
+                        </span></div>
+                  </div>
+                  <div class="col-md-8 input-txt-div">
+                     <span><input class="input_text"  type="text" id="business-name" aria-describedby="basic-addon3"
+                        data-bind="value: $parent.businessName,
+                          valueUpdate: 'afterkeydown',   enterkey: $parent.customerSearch.bind($parent)"  /></span>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4 input-btn-div" id="cc-customerDetails-phoneNumber-field">
+                     <div class="input_label"><span class="input-group-text" id="basic-addon3"
+                            data-bind="widgetLocaleText: 'phoneNumberText'">
+                        </span></div>
+                  </div>
+                  <div class="col-md-8 input-txt-div">
+                     <span><input class="input_text"  type="text" id="phone-number" aria-describedby="basic-addon3"
+                        data-bind=" value: $parent.phoneNumber,
+                           valueUpdate: 'afterkeydown',   enterkey: $parent.customerSearch.bind($parent),
+                           hasFocus: $parent.isEditPhone" /></span>
+                  </div>
+               </div>
+               <div class="card card-head">
+                  <div class="row">
+                     <div class="col-md-3"></div>
+                     <div class="col-md-6">
+                        <p class="card-text1" data-bind="widgetLocaleText:'findByShipToAddress'"></p>
+                     </div>
+                     <div class="col-md-3"></div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-4 input-btn-div" id="cc-customerDetails-address1-field">
+                     <div class="input_label"><span class="input-group-text" id="basic-addon3"
+                            data-bind="widgetLocaleText: 'address1Text'">
+                        </span></div>
+                  </div>
+                  <div class="col-md-8 input-txt-div">
+                     <span><input class="input_text"  type="text" id="addres1" aria-describedby="basic-addon3"
+                        data-bind="value: $parent.address1,
+                          valueUpdate: 'afterkeydown',   enterkey: $parent.customerSearch.bind($parent)"  /></span>
+                  </div>
+                   <div class="col-md-4 input-btn-div">
+                      <div class="input_label"><span class="input-group-text" id="basic-addon3"
+                             data-bind="widgetLocaleText: 'cityText'">
+                         </span></div>
+                   </div>
+                   <div class="col-md-8 input-txt-div">
+                      <span><input class="input_text"  type="text" id="city" aria-describedby="basic-addon3"
+                         data-bind="value: $parent.city,
+                           valueUpdate: 'afterkeydown',   enterkey: $parent.customerSearch.bind($parent)"  /></span>
+                   </div>
+                   <div class="col-md-4 input-btn-div">
+                      <div class="input_label"><span class="input-group-text" id="basic-addon3"
+                             data-bind="widgetLocaleText: 'stateText'">
+                         </span></div>
+                   </div>
+                   <div class="col-md-8 input-txt-div">
+                      <span><input class="input_text"  type="text" id="state" aria-describedby="basic-addon3"
+                         data-bind="value: $parent.state,
+                           valueUpdate: 'afterkeydown',   enterkey: $parent.customerSearch.bind($parent)"  /></span>
+                   </div>
+                   <div class="col-md-4 input-btn-div">
+                      <div class="input_label"><span class="input-group-text" id="basic-addon3"
+                             data-bind="widgetLocaleText: 'zipCodeText'">
+                         </span></div>
+                   </div>
+                   <div class="col-md-8 input-txt-div">
+                      <span><input class="input_text"  type="text" id="postal-code" aria-describedby="basic-addon3"
+                         data-bind="value: $parent.postalCode,
+                           valueUpdate: 'afterkeydown',   enterkey: $parent.customerSearch.bind($parent)"  /></span>
+                   </div>
+               </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <button class="btn main-btn-left pull-left cc-button-secondary" data-bind="click: $parent.reset.bind($parent), enable: $parent.isSearchEnabled()"><span data-bind="widgetLocaleText:'buttonResetText'"></span></button>
+                    </div>
+                    <div class="col-md-6"></div>
+                    <div class="col-md-3">
+                        <button class="btn main-btn-right pull-right cc-button-secondary" type="submit" data-bind="click: $parent.customerSearch.bind($parent), enable: $parent.isSearchEnabled()"><span data-bind="widgetLocaleText:'buttonSearchText'"></span></button>
+                    </div>
+                </div>
+               
+               </form>
+              
+              <div id="cc-customerSearchResult-panel" data-bind=" visible: isSearchPerformed()">
+              <br><br>
+              <!-- ko if: totalNumber() !== 0 -->
+              <!-- Pagination control - Top -->
+               <div class="card card-head">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p align="center" class="card-text2">Matching Customers</p>
+                     </div>
+                  </div>
+               </div>
+               <br>
+               <div data-bind="foreach: recordsInCurrentPage">
+                  <div class="card card-head1">
+                  <div class="row">
+                     <div class="col-md-2">
+                        <p align="center"><i class="fa fa-user-circle-o profile-icon"></i></p>
+                     </div>
+                     <!--<div class="col-md-7 profile-btn-div">
+                        <span align="left" class="profile-text" data-bind="text: parentOrganization.name + ' ' "></span><br>-->
+
+                        <!--<span align="left" class="profile-text" data-bind="text: accountNumber"></span><br>-->
+                        <!--<span align="left" class="profile-text" data-bind="text: phoneNumber, attr: {id: 'cc-phoneNumber-link-' + id }, attr: { 'title': phoneNumber }"></span>-->
+
+                     <!--</div>-->
+                     
+                     <div class="col-md-3 profile-btn-div"> <span align="left" class="profile-text">Account: </span>
+                     <!--<span align="left" class="profile-text" data-bind="text: $data.parentOrganization.repositoryId"></span>-->
+                     
+                     <span align="left" class="profile-text" data-bind="text: $parents[1].accountUniqueIdArray()[$index()]"></span>
+						<br> <span align="left" class="profile-text" data-bind="text: $data.parentOrganization.name"></span> 
+					</div>
+                     <div class="col-md-3 profile-btn-div">
+                        <!-- ko if: $parents[1].allAddresses().length > 0  -->
+						<!-- ko with: $parents[1].allAddresses()[$index()][0].address -->
+						<span align="left" data-bind="text: $data.firstName"></span>&nbsp;
+						<span align="left" data-bind="text: $data.lastName"></span>
+						<br> <span align="left" data-bind="text: $data.address1"></span>,
+						<br> <span align="left" data-bind="text: $data.city"></span>, 
+						<span align="left" data-bind="text: $data.state"></span>,
+						<span align="left" data-bind="text: $data.postalCode"></span>,
+						<br> <span align="left" data-bind="text: $data.phoneNumber"></span>
+						<!--    /ko  -->
+					    <!--    /ko  -->
+					</div>
+					<!--Phani Sekhar on 07/01/21 added the KO Conditions to display Credit Hold-->
+					<!-- ko if: $parents[1].isCreditHoldArray()[$index()] !== true  &&  $parents[1].isSlowPayArray()[$index()] !== true -->
+					
+                     <div class="col-md-2 profile-btn-div">
+                         <!-- ko if: $parentContext.hasOwnProperty("$popupId") -->
+                          <a href="#" data-bind="click: $parents[1].showOrderDetails.bind($parents[1], $data, $data.hasIncompleteOrder, $popupId ),
+                                            attr: { id: 'cc-incompleteOrder-link-' + repositoryId }">
+                            <button class="btn profile-btn">New Order</button>
+                          </a>
+                        <!-- /ko -->
+                     </div>
+                     <div class="col-md-2 profile-btn-div">
+                         <!-- ko if: $parentContext.hasOwnProperty("$popupId") -->
+                          <a  href="#" data-bind="click: $parents[1].showSavedOrderDetails.bind($parents[1], $data, $data.hasIncompleteOrder, $popupId ),
+                                            attr: { id: 'cc-incompleteOrder-link-' + repositoryId }">
+                        <button class="btn profile-btn">Saved Cart</button>
+                        </a>
+                        <!-- /ko -->
+                     </div>
+                     <!-- /ko -->
+
+                     <!--Phani Sekhar on 07/01/21 added the KO Conditions to display Credit Hold-->
+                     
+                     <!-- ko if: $parents[1].isCreditHoldArray()[$index()] === true -->
+                     <div class="col-md-3">
+                         <br>
+                        <span align="left" class="credit-hold">Credit Hold</span>
+                     </div>
+                     <!-- /ko -->
+                     <!-- ko if: $parents[1].isSlowPayArray()[$index()] === true -->
+                     <div class="col-md-3">
+                         <br>
+                        <span align="left" class="slow-pay-hold">Slow Pay Hold</span>
+                     </div>
+                     <!-- /ko -->
+                    
+                  </div>
+               </div>
+             </div>
+
+      <!-- /ko -->
+      <!-- Text to display if no customer found with given search criteria -->
+      <!-- ko if: (totalNumber() === 0 && isSearchPerformed() === true)-->
+        <div>
+          <span data-bind="widgetLocaleText: 'customerNotFoundText',
+                         attr: {'aria-label': $parent.resources().customerNotFoundText}"
+                         role="status" aria-live="polite" id="cc-customerNotFound-text">
+          </span>
+        </div>
+      <!-- /ko -->
+      <!-- Text to display if no customer search performed -->
+      <!-- ko if: (isSearchPerformed() === false)-->
+        <div>
+          <span data-bind="widgetLocaleText: 'noSearchPerformedText'"
+                id="cc-noSearchPerformed-text"></span>
+        </div>
+      <!-- /ko -->
+
+      <!-- Pagination control - Bottom -->
+      <div id="cc-paginated-controls-bottom" class="row">
+        <div class="col-md-12">
+          <div class="pull-right">
+            <div class="bottom-margin"
+                 data-bind="visible : (totalNumberOfPages() > 1),
+                            template: {name: $parent.templateAbsoluteUrl('/templates/paginationControls.template') , templateUrl: ''} ">
+            </div>
+          </div>
+        </div>
+       </div>
+             </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- /ko -->

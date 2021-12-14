@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "セカンダリ・メニュー・オプション",
+    "displayAndURLHelpText":"ストアフロントに表示するセカンダリ・ナビゲーション・メニュー・オプション名および関連URLを入力します。顧客は指定された名前を選択することでそのURLに移動します。そのメニュー・オプションにアクセスできるようになる関連アカウント・ベースの顧客ロールを入力します。ノート: これにはアカウント・ベースの顧客ロールのみが含まれる必要があります。",
+    "placeHoldersText":   "表示名、URL、ロール",
+    "addMoreRowsText": "さらに行を追加",
+    "displayOptionsHelpText":" ページ・レイアウト上でメニュー・オプションを垂直方向または水平方向のどちらで表示するかを選択します。",
+	"displayOptionsLabel":"ナビゲーションの方向",
+	"horizontalText": "水平方向",
+	"verticalText": "垂直方向"
+  }
+}

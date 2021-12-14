@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Sekundære menyvalg",
+    "displayAndURLHelpText":"Angi navnet på et sekundært navigeringsmenyvalg som skal vises i nettbutikken, og en tilknyttet URL-adresse. Kjøpere dirigeres til denne URL-adressen ved å velge det aktuelle navnet. Angi de tilknyttede kontobaserte kjøperrollene som skal ha tilgang til dette menyvalget. Merknad: Dette skal bare inkludere kontobaserte kjøperroller.",
+    "placeHoldersText":   "Visningsnavn, URL-adresse, rolle",
+    "addMoreRowsText": "Legg til flere rader",
+    "displayOptionsHelpText":" Velg om menyvalgene skal vises vertikalt eller horisontalt på sideoppsettet.",
+	"displayOptionsLabel":"Navigeringsretning",
+	"horizontalText": "Horisontalt",
+	"verticalText": "Vertikalt"
+  }
+}

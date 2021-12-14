@@ -1,0 +1,28 @@
+{
+  "config": {},
+  "global": false,
+  "globalEnabled": false,
+  "i18nresources": "UltraSourceAddresses",
+  "imports": [
+    "shippingCountries",
+    "defaultShippingCountry"
+  ],
+  "javascript": "UltraSource-Addresses",
+  "jsEditable": true,
+  "minWidth": 1,
+  "pageTypes": ["profile"],
+  "source": 101,
+  "translations": [
+    {
+      "language": "en",
+      "name": "UltraSource Addresses"
+    },
+    {
+      "language": "en_GB",
+      "name": "UltraSource Addresses"
+    }
+  ],
+  "version": 3,
+  "widgetFamily": "UltraSourceAddresses",
+  "widgetType": "UltraSourceAddresses"
+}

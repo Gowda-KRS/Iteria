@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Dodatkowe opcje menu",
+    "displayAndURLHelpText":"Należy wprowadzić nazwę dodatkowej opcji menu nawigacyjnego w sklepie oraz powiązany adres URL. Kupujący będą kierowani do tego adresu URL po wybraniu danej nazwy. Należy wprowadzić powiązane role kupujących na podstawie kont, które będą miały dostęp do tej opcji menu. Uwaga: Powinno to dotyczyć tylko ról kupujących na podstawie kont.",
+    "placeHoldersText":   "Nazwa wyświetlana, adres URL, rola",
+    "addMoreRowsText": "Dodaj więcej wierszy",
+    "displayOptionsHelpText":" Określanie, czy opcje menu mają być wyświetlane w układzie strony pionowo, czy poziomo.",
+	"displayOptionsLabel":"Orientacja nawigacji",
+	"horizontalText": "Poziomo",
+	"verticalText": "Pionowo"
+  }
+}

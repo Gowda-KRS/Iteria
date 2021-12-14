@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Opciones del menú secundario",
+    "displayAndURLHelpText":"Introduzca un nombre de opción de menú de navegación secundario que se mostrará en el escaparate y una URL asociada. Los compradores se dirigirán a dicha URL mediante la selección del nombre indicado. Introduzca los roles de comprador asociados basados en cuenta que tendrán acceso a la opción de menú. Nota: solo deberán incluirse roles de comprador basados en cuenta.",
+    "placeHoldersText":   "Nombre mostrado, URL, rol",
+    "addMoreRowsText": "Agregar más filas",
+    "displayOptionsHelpText":"Seleccione si las opciones de menú se mostrarán en el diseño de página de modo horizontal o vertical.",
+	"displayOptionsLabel":"Orientación de navegación",
+	"horizontalText": "Horizontal",
+	"verticalText": "Vertical"
+  }
+}

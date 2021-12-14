@@ -1,0 +1,6 @@
+{
+  "resources": {
+    "itemsPerPageDisplayHelpText": "Items Per Page",
+    "itemsPerPageDisplayLabel": "Items Per Page to display when we have pagination."
+  }
+}

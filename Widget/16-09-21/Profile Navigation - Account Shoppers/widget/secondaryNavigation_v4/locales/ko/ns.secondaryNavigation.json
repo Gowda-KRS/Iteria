@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "계정 세부정보",
+    "accountAddressBookText": "계정 주소록",
+    "updatePasswordText": "비밀번호 업데이트",
+    "orderHistoryText":"주문 기록",
+    "scheduledOrdersText": "스케줄링된 주문",
+    "purchaseListsText": "구매 목록",
+    "orderApprovalSettingsText": "주문 승인 설정",
+    "accountContactsText": "계정 연락처",
+    "ordersPendingApprovalText": "주문 승인 대기 중",
+    "addressBookText": "주소록",
+    "wishListText": "희망 목록",
+    "myAccountText": "내 계정",
+    "customerDetailsText": "프로파일 세부정보",
+    "accountOrderHistoryText": "주문 기록",
+    "accountScheduledOrdersText": "스케줄링된 주문",
+    "customerSearchText":"고객 검색",
+    "selfRegistrationText":"등록 요청",
+    "registrationRequestsText": "등록 요청"
+    
+  }
+}

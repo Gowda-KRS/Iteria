@@ -1,0 +1,19 @@
+{
+  "availableToAllPages": true,
+  "config": {},
+  "global": false,
+  "globalEnabled": true,
+  "i18nresources": "ultrasourceCustomRegistration",
+  "imports": ["selfRegistrationViewModel"],
+  "javascript": "ultrasourceCustomRegistration",
+  "jsEditable": true,
+  "minWidth": 1,
+  "source": 101,
+  "translations": [{
+    "language": "en",
+    "name": "UltraSource Custom Registration"
+  }],
+  "version": 1,
+  "widgetFamily": "ultrasourceCustomRegistration",
+  "widgetType": "ultrasourceCustomRegistration"
+}

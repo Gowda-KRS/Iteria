@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Sekundarne opcije izbornika",
+    "displayAndURLHelpText":"Unesite naziv sekundarne opcije navigacijskog izbornika koja će se prikazati u izlogu te povezani URL. Kupci će se usmjeriti na taj URL kad odaberu navedeni naziv. Unesite povezane uloge kupaca koje se temelje na računu i koje će imati pristup toj opciji izbornika. Napomena: uključiti se trebaju samo uloge kupaca koje se temelje na računu.",
+    "placeHoldersText":   "Naziv za prikaz, URL, uloga",
+    "addMoreRowsText": "Dodaj još redaka",
+    "displayOptionsHelpText":"Odaberite hoće li se opcije izbornika na stranici prikazati okomito ili vodoravno.",
+	"displayOptionsLabel":"Orijentacija navigacije",
+	"horizontalText": "Vodoravno",
+	"verticalText": "Okomito"
+  }
+}

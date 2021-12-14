@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Kontodetaljer",
+    "accountAddressBookText": "Kontots adressbok",
+    "updatePasswordText": "Uppdatera lösenord",
+    "orderHistoryText":"Orderhistorik",
+    "scheduledOrdersText": "Schemalagda order",
+    "purchaseListsText": "Inköpslistor",
+    "orderApprovalSettingsText": "Inställningar av ordergodkännande",
+    "accountContactsText": "Kontokontakter",
+    "ordersPendingApprovalText": "Order som avvaktar godkännande",
+    "addressBookText": "Adressbok",
+    "wishListText": "Önskelista",
+    "myAccountText": "Mitt konto",
+    "customerDetailsText": "Profildetaljer",
+    "accountOrderHistoryText": "Orderhistorik",
+    "accountScheduledOrdersText": "Schemalagda order",
+    "customerSearchText":"Sök efter kund",
+    "selfRegistrationText":"Registreringsbegäranden",
+    "registrationRequestsText": "Registreringsbegäranden"
+    
+  }
+}

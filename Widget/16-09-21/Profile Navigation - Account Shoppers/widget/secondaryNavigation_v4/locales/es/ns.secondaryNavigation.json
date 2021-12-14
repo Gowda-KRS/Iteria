@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Detalles de cuenta",
+    "accountAddressBookText": "Libreta direcciones de cuenta",
+    "updatePasswordText": "Actualizar contraseña",
+    "orderHistoryText":"Historial de órdenes",
+    "scheduledOrdersText": "Órdenes programadas",
+    "purchaseListsText": "Listas de compra",
+    "orderApprovalSettingsText": "Configuración de aprobación de orden",
+    "accountContactsText": "Contactos de cuenta",
+    "ordersPendingApprovalText": "Órdenes pendientes de aprobación",
+    "addressBookText": "Libreta de direcciones",
+    "wishListText": "Lista de deseos",
+    "myAccountText": "Mi cuenta",
+    "customerDetailsText": "Detalles de perfil",
+    "accountOrderHistoryText": "Historial de órdenes",
+    "accountScheduledOrdersText": "Órdenes programadas",
+    "customerSearchText":"Búsqueda de cliente",
+    "selfRegistrationText":"Solicitudes de registro",
+    "registrationRequestsText": "Solicitudes de registro"
+    
+  }
+}

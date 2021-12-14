@@ -1,0 +1,695 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<style>
+    
+       @font-face {
+  font-family: 'FontAwesome';
+  src: url('https://use.fontawesome.com/releases/v5.0.13/css/all.css');
+}
+
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+
+
+
+
+.box {
+      width: 100%;
+position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.box select {
+  background: white;
+  color: black;
+  width: 100%;
+  height: 31px;
+  border: 1.5px solid #d3d3d3;
+  font-size: 13px;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+.box:before { 
+margin-right: 0px;
+  content: '\f0d7';
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  color: white;
+  right: 0%;
+  width: 40px;
+  height: 31px;
+  text-align: center;
+    line-height: 31px;
+  font-size: 30px;
+  background: #d3d3d3;
+  pointer-events: none;
+}
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ko if: $data.contactDetailsMode -->
+<div id="CC-contacts-main" class="container-fluid container">
+  
+  <!-- ko if: $data.newContact -->
+  
+  <div class="container">
+       <br>
+<div class="row">
+    <div class="col-md-2 col-4 back-button-div" data-bind="attr:{title: $data.translate('buttonCancel')}, click: $data.cancelContactData.bind($data)"><img class="img-bck" src="/file/general/arrow-back.png"><span class="back-top font-light">  Back</span></div>
+   <div class="col-md-3 col-7"><h2 class="font-bold">Add Contact</h2></div>
+</div>
+</div>
+  <br>
+  
+  <!-- /ko -->
+    <!-- ko ifnot: $data.newContact -->
+  
+  <div class="container">
+<div class="row">
+    <div class="col-md-2 col-4 back-button-div" data-bind="attr:{title: $data.translate('buttonCancel')}, click: $data.cancelContactData.bind($data)"><img class="img-bck" src="/file/general/arrow-back.png"><span class="back-top font-light">  Back</span></div>
+   <div class="col-md-3 col-7"><h2 class="font-bold">Edit Contact</h2></div>
+</div>
+</div>
+ <br>
+ <br>
+  
+  <!-- /ko -->
+  
+
+
+<div class="row namerow">
+  <div class="col-md-2 col-3 prefix-padd" > 
+      <label for="fname">Prefix</label>
+ <div class="box col-md-12 col-12 tab-lite" tabindex="1">
+<select data-bind="options:$data.titleArray, value: $data.selectedTitle , valueUpdate: 'afterkeydown' ">
+</select>
+ </div>
+</div>
+<div class="col-md-10 col-9">
+<div class="row">
+  <div class="col-md-6 col-6 zero-padd">
+    <label for="fname" id="cc-contact-first-name-label">* First name</label>
+
+  <input type="text" maxlength="254" class="firstname" data-bind="attr: {title: $data.translate('firstName')}, validatableValue: firstName, widgetLocaleText: {value : 'firstNameText', attr : 'placeholder'}, event: {blur: function(data, event) { return $data.validatingData.bind(data, $data, event)() }}" id="cc-contact-first-name">
+  
+
+
+
+                      <br><br>
+  </div>
+  <div class="col-md-6 col-6 zero-padd">
+    <label for="fname" id="cc-contact-last-name-label">* Last name</label>
+  
+  <input type="text" maxlength="254" class="firstname" data-bind="attr: {title: $data.translate('lastName')}, validatableValue: lastName, widgetLocaleText: {value : 'lastNameText', attr : 'placeholder'}, event: {blur: function(data, event) { return $data.validatingData.bind(data, $data, event)() }}" id="cc-contact-last-name">
+
+                      <br><br>
+  </div>
+   
+  
+  </div>  
+  </div>
+  
+  
+
+</div>
+
+
+<div class="email-div">
+   <label class="email" id="cc-contact-email-label">* Email Address</label>
+  
+       
+  <input type="text" class="firstname1 email-text" data-bind="attr: {title: $data.translate('emailAddress')}, disable: ($data.contactId), validatableValue: emailAddress, widgetLocaleText: {value : 'emailAddressText', attr : 'placeholder'} , event: {blur: function(data, event) { return $data.validateEmailAddress.bind(event)() }}" id="cc-contact-email">
+                <p id="cc-contact-email-error" class="error-message" style="display: none;">*Please enter valid email address.</p>
+                            <br><br>
+</div>
+
+
+
+
+
+
+<div class="top-div">
+          <div class="row">
+ <div class="col-md-6 col-6 number-Div">
+    <label for="fname" id="cc-contact-officenumber-label">* Office Number</label>
+<!-- 
+, event: {keyup:function(data, event) { return $parents[0].validateHomePhoneNumber.bind(data, $parents[0], event,'business')() },blur: function(data, event) { return $parents[0].validateHomePhoneNumber.bind(data, $parents[0], event,'business')() }}
+-->
+  <input type="text" id="cc-contact-officenumber" class="firstname" data-bind=" value: $data.officeNumber ,valueUpdate: 'afterkeydown' , event: {keyup:function(data, event) { return $data.validateHomePhoneNumber.bind(data, $data, event)() },blur: function(data, event) { return $data.validateHomePhoneNumber.bind(data, $data, event)() }}"> 
+  
+<p id="cc-contact-officenumber-error" class="error-message" style="display: none;">*Please enter valid office number.</p>
+  
+  
+  
+ <br class="br-div"> 
+     </div>
+ <div class="col-md-6 col-6 number-Div mbnumber">
+    <label for="fname" id="cc-contact-mobilenumber-label">Mobile Number</label>
+     <input type="text" id="cc-contact-mobilenumber" class="firstname" data-bind="value:$data.mobileNumber, valueUpdate: 'afterkeydown', event: {blur:function(data, event) { return $data.validateHomePhoneNumber1.bind(data, $data, event)() }}">
+     <p id="cc-contact-mobilenumber-error" class="error-message" style="display: none;">*Please enter valid mobile number.</p>
+     </div> 
+     </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row receive-div">
+<div class="col-md-6 col-6">
+   <div class="number-Div mbnumber">
+    <label for="fname" id="cc-contact-faxnumber-label">Fax Number</label>
+  <input type="text" class="firstname" id="cc-contact-faxnumber" data-bind="value:$data.faxNumber, valueUpdate: 'afterkeydown', event: {blur:function(data, event) { return $data.validateHomePhoneNumber1.bind(data, $data, event)() }}">
+ 
+  <br><br>
+     </div>
+
+</div>
+
+<div class="col-md-6 col-6">
+   <div class="number-Div mbnumber">
+    <label for="fname" id="CC-userRegistration-role-label">Role</label>
+ <div class="box col-md-12 col-12">
+<select data-bind="options:$data.rolesArray,optionsCaption:'Select Role', value: $data.roleSelected">
+</select>
+ </div>
+
+ 
+     </div>
+
+</div>
+
+
+<div class="col-md-6 col-6 rolespadd">
+
+  <div class="row">
+        <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="mail" name="type" value="mail" data-bind="checked:$data.receiveMails , valueUpdate: 'afterkeydown'">
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="mail" class="receive acc-a-m">Receive mailings</label>
+        </div>
+</div>
+
+<div class="row receive-padd">
+        <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="email" name="type1" value="email" data-bind="checked:user.emailMarketingMails , valueUpdate: 'afterkeydown'">
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="email" class="receive acc-a-m">Receive emails</label>
+        </div>
+        </div>
+
+<div class="row">
+        <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="text" name="type2" value="text" data-bind="checked:$data.receiveTexts , valueUpdate: 'afterkeydown'">
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="text" class="receive acc-a-m">Receive texts</label>
+        </div>
+        </div>
+
+
+
+
+
+
+</div>
+
+
+<div class="col-md-6 col-6 titlepadd">
+   <div class="number-Div mbnumber">
+    <label for="fname" id="CC-userRegistration-title-label">Title</label>
+  <input type="text" class="firstname" id="CC-userRegistration-title" name="fname" data-bind="value:$data.title, valueUpdate: 'afterkeydown'">
+  <br><br>
+     </div>
+
+</div>
+
+
+
+</div>
+<br>
+
+<div class="row">
+<div class="col-md-6 col-6">
+  <h5 class="font-bold account-level RoleNames">Account Level</h5>
+
+
+
+
+        <!-- ko foreach: contactRoles -->
+             <div class="row">
+        <div class="col-md-1 col-2 name-padd1">
+<input type="checkbox" class="role-checkbox RoleNamesbox" data-bind="
+		      attr: {
+		        title: $data.displayText,
+		        id: 'cc-contact-permissions-' + $data.function,
+		        name: 'cc-contact-permissions-' + $data.function
+		      },
+		      validatableValue: $parent.roles,
+		      checked: $data.isRoleSelected,
+		      'enable' : $parent.status
+		      disable: ($data.function == 'buyer') || ($data.function== 'admin' && $parent.isCurrentUser() && $parent.user().isDelegatedAdmin())">
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label class="receive RoleNames acc-a-m" data-bind="attr: {for: 'cc-contact-permissions-' + $data.function }, text: $data.displayText,'enable' : $parent.status" >Account Address Manager</label>
+        </div>
+</div>
+        <!-- /ko -->
+</div>
+<div class="col-md-6 col-6">
+
+<div class="form-group row">
+  <label for="checkbox3" class="form-control-label col-md-3 col-8">Active</label>
+  <div class="o-switch">
+    <input class="checkbox success sr-only" id="checkbox3" type="checkbox"/>
+    <label for="checkbox3" class="toggle form-control-label" aria-hidden="true">
+      <span class="on icon-checkbox-tick" role="presentation"><span class="sr-only">on</span></span>
+      <span class="off icon-delete" role="presentation"><span class="sr-only">off</span></span>
+    </label>
+  </div>
+</div>
+
+
+      <div id="CC-contact-status" class="col-md-12">
+        <div class="toggleswitch switch">
+          <input type="checkbox" name="contacttoggleswitch" class="toggleswitch-checkbox" id="contacttoggleswitch" data-bind="checked: $data.status, disable: $data.disableActive">
+          
+          
+          <!-- ,click:function(data,event){return $data.changeState($data)}  -->
+          
+          <label class="toggleswitch-label" for="contacttoggleswitch">
+          <span class="toggleswitch-inner" data-bind="attr: {title: $data.statusTranslation()}, css: { toggleswitchdisabled : $data.disableActive() === true}"></span>
+          <span tabindex="0" class="toggleswitch-switch switch-true" data-bind="attr: {title: $data.statusTranslation()}, event: {keypress: $data.toggleSwitch.bind($data)}, css: { switchdisabled : $data.disableActive() === true}"></span>
+          </label>
+        </div>
+      </div>
+
+
+
+
+<button class="btn-clr" id="cc-save-button" data-bind="attr: {title: $data.translate('buttonSave')}, click: $data.saveContactData.bind($data,true)"><span>Save</span></button>  
+
+<p id="saveError" style="
+    text-align: center;
+    color: #ff3333;
+    display: none;
+    font-weight: 600;
+">
+* All required fields must be filled out before submitting
+</p>
+
+
+  </div>
+    </div>
+ <br>
+ <br>
+  <br><br>
+</div>
+<!-- /ko -->
+
+<!-- ko if: $data.user().isDelegatedAdmin -->
+<!-- ko ifnot: $data.contactDetailsMode -->
+<div id="CC-delegatedAdminContactsList" class="container">
+    <!--rk-->
+    <br>
+    <div class="container">
+<div class="row">
+    <div class="col-md-2 col-4 back-button-div" data-bind="click: function(data, event) { $data.backToMyAccount.bind(data, event)() }"><img class="img-bck" src="/file/general/arrow-back.png"><span class="back-top font-light">  Back</span></div>
+   <div class="col-md-3 col-7"><h2 class="font-bold">Contacts</h2></div>
+</div>
+</div>
+ <br>
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+<div class="row" id="CC-delegatedAdminContactsList-create-search-Contacts">
+  <div class="col-md-6 col-12">
+          <form class="example22" action="action_page.php" id="search-div1" >
+               <input type="text" placeholder="Search for names, email #" name="search" id="CC-contact-search-text" data-bind="value:contactSearchValue, valueUpdate: 'afterkeydown',event:{keypress: searchContactKeyPress.bind($data)},widgetLocaleText:{value:'searchContacts',attr:'placeholder'}">
+              <button type="submit" id="submit" data-bind="click: function(data,event){return $data.searchContactDetails(data,event)}"><img id="icon-search" src="/file/general/HOMPEAGE-search.png"></button>
+            </form>
+</div>
+<div class="col-md-6 col-12 margin-drop">
+   <div class="margin-bt">
+<label for="fname" class="txtbold sub-name font-medium">Show by Account Level</label><br>
+ <div class="box col-md-12 col-12">
+<select class="size-txt-v" id="CC-delegatedAdminContactsList-roleFilter" data-bind="
+	    options: organizationRolesFilterList,
+	    optionsText: 'displayText',
+	    optionsValue: 'function',
+	    value: roleFilterText,
+	    event: { change: $data.roleFilterChanged }">
+</select>
+ </div>
+  </div>
+</div>
+</div>  
+  
+  
+  
+  
+  
+  
+  
+  <div class="row hidden-sm hidden-md hidden-lg" id="CC-delegatedAdminContactsList-create-search-Contacts-xs">
+   <div class="col-xs-6">
+	  <label for="CC-delegatedAdminContactsList-roleFilter-xs" data-bind="widgetLocaleText: 'showText'"></label>
+      <select class="form-control" id="CC-delegatedAdminContactsList-roleFilter" data-bind="
+	    options: organizationRolesFilterList,
+	    optionsText: 'displayText',
+	    optionsValue: 'function',
+	    value: roleFilterText,
+	    event: { change: $data.roleFilterChanged }">
+	  </select>
+   </div>
+       <div id="CC-delegatedAdminContactsList-stepper-xs" class="col-xs-6 text-right">
+    <span data-bind="widgetLocaleText:'showCountText'"></span><span>&nbsp;</span>
+    <select data-bind="value:fetchSize, event: { change: $data.roleFilterChanged }" id="CC-fetchFilter-xs" aria-label="Fetch Filter" class="form-control CC-delegatedAdminContactsList-fetchSizeFilter">
+	    <option>15</option>
+	    <option>30</option>
+	    <option>45</option>
+	    <option>60</option>
+	   </select>
+    <span>&nbsp;</span><span data-bind="widgetLocaleText:'itemsPerPageText'"></span>
+    </div>
+  </div>
+  
+  
+  <div class="row" id="CC-delegatedAdminContactsList-table-md-lg-sm">
+  <div class="col-md-2 col-2">
+          		<!-- ko if : ($data.sortDirections().firstName == "asc") -->
+          		<span class="fa fa-sort-desc" data-bind="click : $data.clickContactSort.bind($data,'desc','firstName')" aria-hidden="true"></span>
+          		<!-- /ko -->
+          		<!-- ko if : ($data.sortDirections().firstName == "desc") -->
+          		<span class="fa fa-sort-asc" data-bind="click : $data.clickContactSort.bind($data,'asc','firstName')" aria-hidden="true"></span>
+          		<!-- /ko -->
+          		<!-- ko if : ($data.sortDirections().firstName == "both") -->
+          		<span class="fa fa-sort" data-bind="click : $data.clickContactSort.bind($data,'asc','firstName')" aria-hidden="true"></span>
+          		<!-- /ko -->
+
+
+<label class="shipping-add font-semi-bold">First Name</label>
+  </div>
+  <div class="col-md-2 col-2">
+          		<!-- ko if : ($data.sortDirections().lastName == "asc") -->
+          		<span class="fa fa-sort-desc" data-bind="click : $data.clickContactSort.bind($data,'desc','lastName')" aria-hidden="true"></span>
+          		<!-- /ko -->
+          		<!-- ko if : ($data.sortDirections().lastName == "desc") -->
+          		<span class="fa fa-sort-asc" data-bind="click : $data.clickContactSort.bind($data,'asc','lastName')" aria-hidden="true"></span>
+          		<!-- /ko -->
+          		<!-- ko if : ($data.sortDirections().lastName == "both") -->
+          		<span class="fa fa-sort" data-bind="click : $data.clickContactSort.bind($data,'asc','lastName')" aria-hidden="true"></span>
+          		<!-- /ko -->
+                <label class="shipping-add font-semi-bold">Last Name</label>
+  </div>
+    
+  <div class="col-md-1 col-1 align-cls">
+
+<label class="shipping-add font-semi-bold mbl-act">Active</label>
+  </div>
+  <div class="col-md-3 col-3">
+    <h6 class="shipping-add font-semi-bold acc-l-mb">Account Level</h6>
+  </div>
+  <div class="col-md-4 col-4">
+            	<!-- ko if : ($data.sortDirections().email == "asc") -->
+          		<span class="fa fa-sort-desc" data-bind="click : $data.clickContactSort.bind($data,'desc','email')" aria-hidden="true"></span>
+          		<!-- /ko -->
+          		<!-- ko if : ($data.sortDirections().email == "desc") -->
+          		<span class="fa fa-sort-asc" data-bind="click : $data.clickContactSort.bind($data,'asc','email')" aria-hidden="true"></span>
+          		<!-- /ko -->
+          		<!-- ko if : ($data.sortDirections().email == "both") -->
+          		<span class="fa fa-sort" data-bind="click : $data.clickContactSort.bind($data,'asc','email')" aria-hidden="true"></span>
+          		<!-- /ko -->
+<label class="shipping-add font-semi-bold e-m">Email</label>
+  </div>
+  
+</div>
+
+<hr class="horizon">
+        <!-- ko if : ($data.delegatedAdminContactsListGrid().length > 0) -->
+<div class="row" data-bind="foreach: $data.delegatedAdminContactsListGrid">
+  <div class="col-md-2 col-2">
+      <!-- ko if : ($data[0].id == $parent.punchoutUserId()) -->
+       <h6 class="font-semi-bold pat" data-bind="attr:{title:$data[0].firstName},text : $data[0].firstName"></h6>
+              <!-- /ko -->
+              <!-- ko ifnot : ($data[0].id == $parent.punchoutUserId()) -->
+              <a data-bind="attr: {id: 'CC-delegatedAdminContactsList-firstName-'+ $data[0].id}, 
+                click: $parent.clickContactDetails.bind($parent, $data, $index())"
+                class="text-underline" 
+                href="#">
+                  <h6 class="font-semi-bold burn" data-bind="attr:{title:$data[0].firstName},text : $data[0].firstName"></h6>
+                  
+              </a>
+              <!-- /ko -->
+
+  </div>
+  <div class="col-md-2 col-2">
+              <!-- ko if : ($data[0].id == $parent.punchoutUserId()) -->
+    <h6 class="font-semi-bold burn" data-bind="attr:{title:$data[0].lastName},text : $data[0].lastName"></h6>
+              <!-- /ko -->
+              <!-- ko ifnot : ($data[0].id == $parent.punchoutUserId()) -->
+              <a data-bind="attr: {id: 'CC-delegatedAdminContactsList-lastName-'+ $data[0].id}, 
+                click: $parent.clickContactDetails.bind($parent, $data, $index())"
+                class="text-underline" 
+                href="#">
+   <h6 class="font-semi-bold burn" data-bind="attr:{title:$data[0].lastName},text : $data[0].lastName"></h6>
+              </a>
+              <!-- /ko -->
+</div>
+  <div class="col-md-1 col-1" align="center" data-bind="attr:{title:$data[0].active}">
+            	<!-- ko if: ($data[0].active) -->
+    <img class="green-mark-img" src="/file/general/green-mark.png">
+            	<!--/ko-->
+  </div>
+  <div class="col-md-3 col-2" >
+  
+  <div data-bind="foreach: $data[0].roleString.split(',')">
+      	<!-- ko if: ($parent[0].active) -->
+  <p  class="font-medium paragraph-acc" data-bind="text : $data"></p>
+  <!--/ko-->
+  </div>
+
+
+
+
+
+
+
+  </div>
+  
+  
+ 
+  
+  
+  
+  
+  
+  <div class="col-md-4 col-4">
+   <p class="font-medium paragraph-acc email-jnd" data-bind="attr:{title:$data[0].email},text : $data[0].email"></p>
+  </div>  
+  <div class="col-md-12"><hr class="loop-hr"></div>
+
+  
+  
+  <hr>
+</div>
+
+  <!-- /ko -->
+		<!-- ko if : ($data.delegatedAdminContactsListGrid().length <= 0) -->
+        <!-- /ko -->
+  
+
+
+
+
+
+<br>
+
+
+<div class="row" id="add-button">
+  <div class="col-md-6 col-6">
+        <button type="button" class="btn btn-default add-contact" id="CC-delegatedAdminContactsList-addContactBtn1" data-bind="click: $data.clickRequestDetails" ><span class="font-bold">Contact Requests</span></button>
+  </div>
+  <div class="col-md-6 col-6">
+  <button type="button" class="btn btn-default add-contact" id="CC-delegatedAdminContactsList-addContactBtn" data-bind="click: $data.clickContactDetails,attr: {title: $data.translate('addContact')}" ><span class="font-bold">Add Contact</span></button>
+  </div>
+</div>
+
+
+
+
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  <div id="CC-delegatedAdminContactsList-table-xs" class="row visible-xs">
+    <section id="CC-delegatedAdminContactsList-mobile" class="col-md-12">
+      <table data-bind="widgetLocaleText:{value:'manageContacts',attr:'summary'}" class="table" id="CC-delegatedAdminContactsList-mobileView">
+        <tbody data-bind="foreach: $data.delegatedAdminContactsListGrid">
+          <tr>
+            <td>
+              <div>
+                <!-- ko if : ($data[0].id == $parent.punchoutUserId()) -->
+                  <span data-bind="attr:{title:$data[0].firstName},text : $data[0].firstName"></span>
+                  <span data-bind="attr:{title:$data[0].firstName},text : $data[0].lastName"></span>
+                <!-- /ko -->
+                <!-- ko ifnot : ($data[0].id == $parent.punchoutUserId()) -->
+                <a data-bind="attr: {id: 'CC-delegatedAdminContactsList-xs-Name-' + $data[0].id},
+                  click: $parent.clickContactDetails.bind($parent, $data, $index())" 
+                  class="cc-back-to-contacts" 
+                  href="#">
+                <span data-bind="attr:{title:$data[0].firstName},text : $data[0].firstName"></span>
+                <span data-bind="attr:{title:$data[0].firstName},text : $data[0].lastName"></span>
+                </a>
+                <!-- /ko -->
+              </div>
+              <div data-bind="text : $data[0].roleString"></div>
+            </td>
+            <td class="text-right">
+            	<!--ko if: $data[0].active-->
+            	<div data-bind="widgetLocaleText : 'active'"></div>
+            	<!--/ko-->
+              
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+   </div>
+  <!-- ko with: listingViewModel -->
+  <div id="cc-paginated-controls-bottom" class="row col-md-12 visible-xs visible-sm visible-md visible-lg">
+    <div data-bind="visible : (totalNumberOfPages() > 1)">
+      <div>
+        <div data-bind="template: { name: $parent.templateAbsoluteUrl('/templates/paginationControls.template') , templateUrl: ''}" 
+          class="row pull-right"></div>
+      </div>
+    </div>
+  </div>
+  <!-- /ko -->
+</div>
+<!-- /ko -->
+<!-- /ko -->
+
+
+<!-- Modal -->
+  <div class="modal fade" id="newContactModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content pop-up-cart">
+       <div class="container">
+        <div class="container">
+        <div class="morginbox" align="right"><button type="button" class="btn btn-default intomark" data-dismiss="modal"><span class="cartx"><span class="lBbtTb z1asCe rzyADb" jsname="itVqKe" tabindex="0" aria-label="Clear"><img class="img-xmark" src="/file/general/xmark.png"></span></span></button></div>
+    <div align="center">
+<div class="padd-cls">
+  <h2 class="are-you-w font-bold" align="center">New Contact Has Been Added</h2>
+<p class="if-y-have font-medium" >A confirmation email has been sent<br> to the email address provided.</p>
+  </div>
+        </div>
+      </div>
+      
+    </div>
+</div>
+</div>
+</div>
+
+
+<!-- Modal -->
+  <div class="modal fade" id="EditContactModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content pop-up-cart">
+       <div class="container">
+        <div class="container">
+        <div class="morginbox" align="right"><button type="button" class="btn btn-default intomark" data-dismiss="modal"><span class="cartx"><span class="lBbtTb z1asCe rzyADb" jsname="itVqKe" tabindex="0" aria-label="Clear"><img class="img-xmark" src="/file/general/xmark.png"></span></span></button></div>
+    <div align="center">
+<div class="padd-cls">
+  <h2 class="are-you-w font-bold" align="center">Contact Has Been Updated Successfully</h2>
+  </div>
+        </div>
+      </div>
+      
+    </div>
+</div>
+</div>
+</div>
+
+
+<!-- Modal -->
+  <div class="modal fade" id="ErrorContactModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content pop-up-cart">
+       <div class="container">
+        <div class="container">
+        <div class="morginbox" align="right"><button type="button" class="btn btn-default intomark" data-dismiss="modal"><span class="cartx"><span class="lBbtTb z1asCe rzyADb" jsname="itVqKe" tabindex="0" aria-label="Clear"><img class="img-xmark" src="/file/general/xmark.png"></span></span></button></div>
+    <div align="center">
+<div class="padd-cls">
+  <h2 class="are-you-w font-bold" align="center">Error Occured While Updating the Contact Details</h2>
+  </div>
+        </div>
+      </div>
+      
+    </div>
+</div>
+</div>
+</div>
+
+
+<!-- Modal -->
+  <div class="modal fade" id="SaveErrorContactModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content pop-up-cart">
+       <div class="container">
+        <div class="container">
+        <div class="morginbox" align="right"><button type="button" class="btn btn-default intomark" data-dismiss="modal"><span class="cartx"><span class="lBbtTb z1asCe rzyADb" jsname="itVqKe" tabindex="0" aria-label="Clear"><img class="img-xmark" src="/file/general/xmark.png"></span></span></button></div>
+    <div align="center">
+<div class="padd-cls">
+  <h2 class="are-you-w font-bold" align="center">Error Occured While Saving the Contact Details</h2>
+  </div>
+        </div>
+      </div>
+      
+    </div>
+</div>
+</div>
+</div>

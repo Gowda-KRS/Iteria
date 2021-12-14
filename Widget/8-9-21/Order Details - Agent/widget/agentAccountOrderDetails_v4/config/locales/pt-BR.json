@@ -1,0 +1,6 @@
+{
+  "resources": {
+    "enableExchangeOrder":"Permitir Pedido de Troca",
+    "enableExchangeInOrderDetails":"Marque para ativar o pedido de troca"
+  }
+}

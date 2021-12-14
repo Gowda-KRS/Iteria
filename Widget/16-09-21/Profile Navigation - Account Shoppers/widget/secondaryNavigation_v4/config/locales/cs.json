@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Sekundární volby nabídky",
+    "displayAndURLHelpText":"Zadejte název sekundární volby navigační nabídky, který se zobrazí na stránkách obchodu, a příslušnou adresu URL. Na tuto adresu URL kupující přejdou, když zvolí daný název. Zadejte příslušné role založené na účtu, které k této volbě nabídky budou mít přístup. Poznámka: Měli byste zadat jen role kupujících založené na účtu.",
+    "placeHoldersText":   "Zobrazovaný název, adresa URL, role",
+    "addMoreRowsText": "Přidat další řádky",
+    "displayOptionsHelpText":" Zvolte, zda se mají volby nabídky v rozložení stránky zobrazit svisle nebo vodorovně.",
+	"displayOptionsLabel":"Orientace navigace",
+	"horizontalText": "Vodorovně",
+	"verticalText": "Svisle"
+  }
+}

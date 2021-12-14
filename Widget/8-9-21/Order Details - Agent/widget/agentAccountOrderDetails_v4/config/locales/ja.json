@@ -1,0 +1,6 @@
+{
+  "resources": {
+    "enableExchangeOrder":"交換オーダー使用可能",
+    "enableExchangeInOrderDetails":"交換オーダーを使用可能にする場合は選択します"
+  }
+}

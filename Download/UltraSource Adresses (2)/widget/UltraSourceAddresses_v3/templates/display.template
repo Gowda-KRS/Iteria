@@ -1,0 +1,1290 @@
+<style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    
+    @font-face {
+  font-family: 'FontAwesome';
+  src: url('https://use.fontawesome.com/releases/v5.0.13/css/all.css');
+}
+.customCheckbox{
+    box-sizing: border-box;
+    appearance: none;
+    background: #fff;
+    outline: 2px solid #333;
+    border: 1px solid #fff;
+    width: 16px;
+    height: 16px;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.customCheckboxSelect{
+   background: rgb(255, 51, 51); 
+}
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+.red-txt {
+    display: block;
+    color: #f33;
+    font-style: italic;
+    padding-top: 10px !important;
+}
+.box {
+      width: 97%;
+position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 15px;
+}
+.box select {
+  background: white;
+  color: black;
+  padding: 10px;
+  width: 100%;
+  height: 59px;
+  border: 1.5px solid #d3d3d3;
+  font-size: 16px;
+  -webkit-appearance: none;
+  outline: none;
+}
+.box:before {
+margin-right: 0px;
+  content: '\f0d7';
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  color: white;
+  right: 0%;
+  width: 40px;
+  height: 59px;
+  text-align: center;
+    line-height: 58px;
+  font-size: 30px;
+  background: #d3d3d3;
+  pointer-events: none;
+}
+
+.addshipping {
+    letter-spacing: 0.6;
+    border: #ff3333 solid 4px;
+    background: white;
+    height: 62px;
+    margin-bottom: 1px;
+    color: #ff3333;
+    font-size: 18px;
+    width: 98%;
+    margin-top: 30px;
+    cursor: pointer;
+    padding: 10px 22px 0px 0px;
+}
+</style>
+<!-- ko if: (user().loggedIn() || user().isUserSessionExpired()) -->
+
+<!-- ko ifnot: $data.user().parentOrganization -->
+
+
+
+
+<div class="container" id="b2cAddresses" data-bind="visible: !$data.isUserProfileShippingEdited()">
+
+ 
+ <div class="row">
+   
+   <div class="col-md-2 col-4 back-div" data-bind="click: $data.backToMyaccount"><img class="img-bck" src="/file/general/arrow-back.png"><span class="back-top font-light">  Back</span></div>
+   <div class="col-md-2 col-7"><h2 class="font-bold addr-txt">Addresses</h2></div>
+ </div>
+<br>
+<br>
+
+
+<div>
+  <h4 class="font-semi-bold">Default Billing Address</h4>
+
+<div class="background-color-ultra">
+  <div class="row">
+    <div class="col-md-3 col-3" align="right">
+      
+      <button id="save-btn3" class="editbutton1" data-bind="click: function(data,event){ $data.editBillingAddress() }"><span class="font-bold">Edit</span></button>
+
+      
+    </div>
+    <div class="col-md-6 col-8">
+        
+      
+          <!-- ko if: $data.alias -->
+          <h4 class="font-semi-bold ultra-llc" data-bind="text: $data.alias"> </h4>
+            <!-- /ko -->
+             <!-- ko ifnot: $data.alias -->
+              <h4 class="font-semi-bold ultra-llc" >
+          <span data-bind="text: $data.firstName"></span>&nbsp;<span data-bind="text: $data.lastName"></span>
+           </h4>
+            <!-- /ko -->
+            
+     
+      <span class="font-medium ultra-text-si" data-bind="text: $data.address1"></span>
+      <!-- ko if: $data.address2 -->
+      <span class="font-medium ultra-text-si" data-bind="text: $data.address2"></span>
+      <!-- /ko -->      
+      <span class="font-medium ultra-text-si" data-bind="text: $data.city"></span>
+      <span class="font-medium ultra-text-si" data-bind="text: $data.state"></span>
+      <span class="font-medium ultra-text-si" data-bind="text: $data.postalCode"></span>
+      
+
+      <span class="font-medium ultra-text-si"><br>United States</span>
+
+      
+      
+      
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+<br>
+<br>
+
+</div>
+
+
+<div class="row">
+  <div class="col-md-4 col-5">
+    <h4 class="shipping-add font-semi-bold">Shipping Address</h4>
+  </div>
+  <div class="col-md-3 cls-mb"></div>
+  <div class="col-md-5 col-7 Shipping Contact">
+    
+
+<label for="fname" class="txtbold sub-name font-medium">View By</label>
+ <div class="box col-md-12 col-12">
+<select data-bind="value: $data.addressStatus">
+
+    <option value="Active" class="font-medium">Active</option>
+    <option value="InActive">InActive</option>
+    <option value="All">All</option>
+
+</select>
+ </div>
+
+  </div>
+</div>
+
+<hr class="horizon">
+
+<br>
+
+
+
+        
+        
+<!-- ko ifnot: $data.user().parentOrganization -->
+  <!-- ko with: user -->
+   <!-- ko foreach: shippingAddressBook -->
+       <!-- ko if: postalCode -->
+
+        
+<!-- ko if: $parents[1].addressStatus() === "All" -->  
+<div class="row" style="margin-bottom: 4%;">
+  <div class="col-md-2 col-8" align="center">
+    <span class="make-def font-medium">Make Default</span>
+    
+    <!-- ko if: isDefaultAddress -->
+  <label class="container receive1 collect-chec font-medium">
+  <input type="radio" name="type" checked data-bind="click: $parents[1].handleSelectDefaultShippingAddress,
+                                 disable: isDefaultAddress(),
+                                 attr: {id: 'CC-customerProfile-select-default-addr-btn-' + $index()},
+                                 widgetLocaleText: {value:'selectDefaultAddressBtnTitle', attr:'title'}">
+  <span class="checkmark-circle red-background" data-bind="attr: {id: 'CC-customerProfile-select-default-addr-btnnew-' + $index()}"></span>
+  </label>
+    <!-- /ko -->
+    <!-- ko ifnot: isDefaultAddress -->
+  <label class="container receive1 collect-chec font-medium">
+  <input type="radio" name="type" data-bind="click: $parents[1].handleSelectDefaultShippingAddress,
+                                 disable: isDefaultAddress(),
+                                 attr: {id: 'CC-customerProfile-select-default-addr-btn-' + $index()},
+                                 widgetLocaleText: {value:'selectDefaultAddressBtnTitle', attr:'title'}">
+  <span class="checkmark-circle white-background" data-bind="attr: {id: 'CC-customerProfile-select-default-addr-btnnew-' + $index()}"></span>
+  </label>
+    <!-- /ko -->
+    
+
+  </div>
+  <div class="col-md-5">
+          <!-- ko if: $data.alias -->
+          <h4 class="font-semi-bold ultra-llc" data-bind="text: $data.alias"> </h4>
+            <!-- /ko -->
+             <!-- ko ifnot: $data.alias -->
+  <h4 class="font-semi-bold ult-llc"><span class="address-field" data-bind="text: firstName"></span>&nbsp;<span class="address-field" data-bind="text: lastName"></span></h4>
+
+            <!-- /ko -->
+
+
+
+
+
+      <span class="address-field font-medium" data-bind="text: address1"></span>,
+                <!-- ko if: address2 -->        
+            <span class="address-field" data-bind="text: address2"></span>
+          <!-- /ko -->
+                <span class="address-field" data-bind="text: city"></span>, <span class="address-field" data-bind="text: state"></span>, <span class="address-field" data-bind="text: postalCode"></span>
+<br>
+    <span>  United States</span> 
+      
+      <br>
+      
+        <!-- ko if: isDefaultAddress -->
+         <button id="save-btn" class="editbutton" data-bind="click: $parents[1].editShippingAddress,
+                               attr: {id: 'CC-customerProfile-edit-addr-btn-' + $index()},
+                               widgetLocaleText: {value:'editAddressBtnTitle', attr:'title'}"><span class="font-bold" >Edit</span></button>          
+          <!-- /ko -->      
+          <!-- ko ifnot: isDefaultAddress -->
+          <!-- ko if: $data.Address_Status()  -->
+                   <button id="save-btn" class="editbutton" data-bind="click: $parents[1].editShippingAddress,
+                               attr: {id: 'CC-customerProfile-edit-addr-btn-' + $index()},
+                               widgetLocaleText: {value:'editAddressBtnTitle', attr:'title'}"><span class="font-bold" >Edit</span></button>  
+                               
+        <button id="save-btn" class="deactivatebutton"
+                            data-bind=" click: function(data,event){return  $parents[1].changestatus($index()) }"
+                            ><span class="font-bold">Deactivate?</span></button>
+ 
+         <!-- /ko -->                   
+         
+          <!-- ko ifnot: $data.Address_Status() -->
+          <button id="save-btn" class="editbutton" data-bind="click: $parents[1].editShippingAddress,
+                               attr: {id: 'CC-customerProfile-edit-addr-btn-' + $index()},
+                               widgetLocaleText: {value:'editAddressBtnTitle', attr:'title'}"><span class="font-bold" >Edit</span></button>  
+                               
+        <button id="save-btn" class="deactivatebutton"
+                            data-bind=" click: function(data,event){return  $parents[1].changestatus1($index()) }"
+                            ><span class="font-bold">Activate?</span></button>
+          
+             <!-- /ko -->                   
+             
+                            
+             <!-- /ko -->                      
+                               
+  </div>
+  <div class="col-md-5 Shipping Contact">
+    <div class="margin-bt">
+    <label for="fname" class="txtbold sub-name font-medium">Main Contact</label><br>
+ <div class="box col-md-12 col-12">
+<!--<select data-bind="value: x_main_contact ">
+<option data-bind="text : x_main_contact "></option>
+
+</select>-->
+
+
+<select data-bind="options: $parents[1].ContactList,
+                    optionsText: 'name',
+                    optionsValue: 'id',
+                    value: x_main_contact,
+                    event: {change: function(data,event){return  $parents[1].updateShippingAddressContact($data,event)  }}
+                    ">
+</select>
+
+
+ </div>
+  </div>
+
+  <div class="margin-bt">
+<label for="fname" class="txtbold sub-name font-medium">Shipping Contact</label><br>
+ <div class="box col-md-12 col-12">
+<!--<select data-bind="value: x_shipping_contact ">
+<option data-bind="text : x_shipping_contact "></option>
+
+
+</select>-->
+
+<select data-bind="options: $parents[1].ContactList,
+                    optionsText: 'name',
+                    optionsValue: 'id',
+                    value: x_shipping_contact,
+                    event: {change: function(data,event){return  $parents[1].updateShippingAddressContact($data,event)  }}
+                    ">
+</select>
+
+
+ </div>
+  </div>
+
+
+<div class="margin-bt">
+<label for="fname" class="txtbold sub-name font-medium">Billing Contact</label><br>
+<div class="box col-md-12 col-12">
+<!--<select data-bind="value: x_billing_contact ">
+<option data-bind="text : x_billing_contact "></option>
+
+
+</select>-->
+
+<select data-bind="options: $parents[1].ContactList,
+                    optionsText: 'name',
+                    optionsValue: 'id',
+                    value: x_billing_contact,
+                    event: {change: function(data,event){return  $parents[1].updateShippingAddressContact($data,event)  }}
+                    ">
+</select>
+
+ </div>
+</div>
+
+
+
+  </div>
+</div>
+<!-- /ko -->
+
+<!-- ko if: $parents[1].addressStatus() === "Active" -->
+<!-- ko if: $data.Address_Status() -->                               
+<div class="row" style="margin-bottom: 4%;">
+  <div class="col-md-2 col-8" align="center">
+    <span class="make-def font-medium">Make Default</span>
+    
+    <!-- ko if: isDefaultAddress -->
+  <label class="container receive1 collect-chec font-medium">
+  <input type="radio" name="type" checked data-bind="click: $parents[1].handleSelectDefaultShippingAddress,
+                                 disable: isDefaultAddress(),
+                                 attr: {id: 'CC-customerProfile-select-default-addr-btn-' + $index()},
+                                 widgetLocaleText: {value:'selectDefaultAddressBtnTitle', attr:'title'}">
+  <span class="checkmark-circle red-background"></span>
+  </label>
+    <!-- /ko -->
+    <!-- ko ifnot: isDefaultAddress -->
+  <label class="container receive1 collect-chec font-medium">
+  <input type="radio" name="type" data-bind="click: $parents[1].handleSelectDefaultShippingAddress,
+                                 disable: isDefaultAddress(),
+                                 attr: {id: 'CC-customerProfile-select-default-addr-btn-' + $index()},
+                                 widgetLocaleText: {value:'selectDefaultAddressBtnTitle', attr:'title'}">
+  <span class="checkmark-circle white-background"></span>
+  </label>
+    <!-- /ko -->
+    
+
+  </div>
+  <div class="col-md-5">
+          <!-- ko if: $data.alias -->
+          <h4 class="font-semi-bold ultra-llc" data-bind="text: $data.alias"> </h4>
+            <!-- /ko -->
+             <!-- ko ifnot: $data.alias -->
+  <h4 class="font-semi-bold ult-llc"><span class="address-field" data-bind="text: firstName"></span>&nbsp;<span class="address-field" data-bind="text: lastName"></span></h4>
+
+            <!-- /ko -->
+
+
+
+
+
+      <span class="address-field font-medium" data-bind="text: address1"></span>,
+                <!-- ko if: address2 -->        
+            <span class="address-field" data-bind="text: address2"></span>
+          <!-- /ko -->
+                <span class="address-field" data-bind="text: city"></span>, <span class="address-field" data-bind="text: state"></span>, <span class="address-field" data-bind="text: postalCode"></span>
+<br>
+    <span>  United States</span> 
+      
+      <br>
+      
+        <!-- ko if: isDefaultAddress -->
+         <button id="save-btn" class="editbutton" data-bind="click: $parents[1].editShippingAddress,
+                               attr: {id: 'CC-customerProfile-edit-addr-btn-' + $index()},
+                               widgetLocaleText: {value:'editAddressBtnTitle', attr:'title'}"><span class="font-bold" >Edit</span></button>          
+          <!-- /ko -->      
+          <!-- ko ifnot: isDefaultAddress -->
+          <button id="save-btn" class="editbutton" data-bind="click: $parents[1].editShippingAddress,
+                               attr: {id: 'CC-customerProfile-edit-addr-btn-' + $index()},
+                               widgetLocaleText: {value:'editAddressBtnTitle', attr:'title'}"><span class="font-bold" >Edit</span></button>  
+                               
+        <button id="save-btn" class="deactivatebutton"
+                            data-bind=" click: function(data,event){return  $parents[1].changestatus($index()) }"
+                            ><span class="font-bold">Deactivate?</span></button>
+                            
+                            <!--
+                                                        data-bind="attr: {id: 'CC-customerProfile-remove-addr-btn-' + $index()},
+                               click: $parents[1].removeOrganizationAddress.bind($parent, address,$element.id)"
+                            
+                            data-bind="click: $parents[1].handleRemoveShippingAddress,
+                               attr: {id: 'CC-customerProfile-remove-addr-btn-' + $index()},
+                               widgetLocaleText: {value:'removeAddressBtnTitle', attr:'title'}"
+                            
+                            -->
+                            
+                            
+                            
+          <!-- /ko -->                      
+                               
+  </div>
+  <div class="col-md-5 Shipping Contact">
+    <div class="margin-bt">
+    <label for="fname" class="txtbold sub-name font-medium">Main Contact</label><br>
+ <div class="box col-md-12 col-12">
+<!--<select data-bind="value: x_main_contact ">
+<option data-bind="text : x_main_contact "></option>
+
+</select>-->
+
+<select data-bind="options: $parents[1].ContactList,
+                    optionsText: 'name',
+                    optionsValue: 'id',
+                    value: x_main_contact,
+                    event: {change: function(data,event){return  $parents[1].updateShippingAddressContact($data,event)  }}
+                    ">
+</select>
+
+
+ </div>
+  </div>
+
+  <div class="margin-bt">
+<label for="fname" class="txtbold sub-name font-medium">Shipping Contact</label><br>
+ <div class="box col-md-12 col-12">
+<!--<select data-bind="value: x_shipping_contact ">
+<option data-bind="text : x_shipping_contact "></option>
+
+</select>-->
+
+<select data-bind="options: $parents[1].ContactList,
+                    optionsText: 'name',
+                    optionsValue: 'id',
+                    value: x_shipping_contact,
+                    event: {change: function(data,event){return  $parents[1].updateShippingAddressContact($data,event)  }}
+                    ">
+</select>
+
+ </div>
+  </div>
+
+
+<div class="margin-bt">
+<label for="fname" class="txtbold sub-name font-medium">Billing Contact</label><br>
+<div class="box col-md-12 col-12">
+<!--<select data-bind="value: x_billing_contact ">
+<option data-bind="text : x_billing_contact "></option>
+
+</select>-->
+
+<select data-bind="options: $parents[1].ContactList,
+                    optionsText: 'name',
+                    optionsValue: 'id',
+                    value: x_billing_contact,
+                    event: {change: function(data,event){return  $parents[1].updateShippingAddressContact($data,event)  }}
+                    ">
+</select>
+
+ </div>
+</div>
+
+
+
+  </div>
+</div>
+<!-- /ko -->
+<!-- /ko -->
+<!-- ko if: $parents[1].addressStatus() === "InActive" -->
+<!-- ko ifnot: $data.Address_Status() -->
+<div class="row" style="margin-bottom: 4%;">
+  <div class="col-md-2 col-8" align="center">
+    <span class="make-def font-medium">Make Default</span>
+    
+    <!-- ko if: isDefaultAddress -->
+  <label class="container receive1 collect-chec font-medium">
+  <input type="radio" name="type" checked data-bind="click: $parents[1].handleSelectDefaultShippingAddress,
+                                 disable: isDefaultAddress(),
+                                 attr: {id: 'CC-customerProfile-select-default-addr-btn-' + $index()},
+                                 widgetLocaleText: {value:'selectDefaultAddressBtnTitle', attr:'title'}">
+  <span class="checkmark-circle"></span>
+  </label>
+    <!-- /ko -->
+    <!-- ko ifnot: isDefaultAddress -->
+  <label class="container receive1 collect-chec font-medium">
+  <input type="radio" name="type" data-bind="click: $parents[1].handleSelectDefaultShippingAddress,
+                                 disable: isDefaultAddress(),
+                                 attr: {id: 'CC-customerProfile-select-default-addr-btn-' + $index()},
+                                 widgetLocaleText: {value:'selectDefaultAddressBtnTitle', attr:'title'}">
+  <span class="checkmark-circle"></span>
+  </label>
+    <!-- /ko -->
+    
+
+  </div>
+  <div class="col-md-5">
+          <!-- ko if: $data.alias -->
+          <h4 class="font-semi-bold ultra-llc" data-bind="text: $data.alias"> </h4>
+            <!-- /ko -->
+             <!-- ko ifnot: $data.alias -->
+  <h4 class="font-semi-bold ult-llc"><span class="address-field" data-bind="text: firstName"></span>&nbsp;<span class="address-field" data-bind="text: lastName"></span></h4>
+
+            <!-- /ko -->
+
+
+
+
+
+      <span class="address-field font-medium" data-bind="text: address1"></span>,
+                <!-- ko if: address2 -->        
+            <span class="address-field" data-bind="text: address2"></span>
+          <!-- /ko -->
+                <span class="address-field" data-bind="text: city"></span>, <span class="address-field" data-bind="text: state"></span>, <span class="address-field" data-bind="text: postalCode"></span>
+<br>
+    <span>  United States</span> 
+      
+      <br>
+      
+        <!-- ko if: isDefaultAddress -->
+         <button id="save-btn" class="editbutton" data-bind="click: $parents[1].editShippingAddress,
+                               attr: {id: 'CC-customerProfile-edit-addr-btn-' + $index()},
+                               widgetLocaleText: {value:'editAddressBtnTitle', attr:'title'}"><span class="font-bold" >Edit</span></button>          
+          <!-- /ko -->      
+          <!-- ko ifnot: isDefaultAddress -->
+          <button id="save-btn" class="editbutton" data-bind="click: $parents[1].editShippingAddress,
+                               attr: {id: 'CC-customerProfile-edit-addr-btn-' + $index()},
+                               widgetLocaleText: {value:'editAddressBtnTitle', attr:'title'}"><span class="font-bold" >Edit</span></button>  
+                               
+        <button id="save-btn" class="deactivatebutton"
+                            data-bind="click: function(data,event){return  $parents[1].changestatus1($index()) }"
+                            ><span class="font-bold">Activate?</span></button>
+                            
+                            <!--
+                                                        data-bind="attr: {id: 'CC-customerProfile-remove-addr-btn-' + $index()},
+                               click: $parents[1].removeOrganizationAddress.bind($parent, address,$element.id)"
+                            
+                            data-bind="click: $parents[1].handleRemoveShippingAddress,
+                               attr: {id: 'CC-customerProfile-remove-addr-btn-' + $index()},
+                               widgetLocaleText: {value:'removeAddressBtnTitle', attr:'title'}"
+                            
+                            -->
+                            
+                            
+                            
+          <!-- /ko -->                      
+                               
+  </div>
+  <div class="col-md-5 Shipping Contact">
+    <div class="margin-bt">
+    <label for="fname" class="txtbold sub-name font-medium">Main Contact</label><br>
+ <div class="box col-md-12 col-12">
+<!--<select data-bind="value: x_main_contact ">
+<option data-bind="text : x_main_contact "></option>
+
+</select>-->
+
+<select data-bind="options: $parents[1].ContactList,
+                    optionsText: 'name',
+                    optionsValue: 'id',
+                    value: x_main_contact,
+                    event: {change: function(data,event){return  $parents[1].updateShippingAddressContact($data,event)  }}
+                    ">
+</select>
+
+
+ </div>
+  </div>
+
+  <div class="margin-bt">
+<label for="fname" class="txtbold sub-name font-medium">Shipping Contact</label><br>
+ <div class="box col-md-12 col-12">
+<!--<select data-bind="value: x_shipping_contact ">
+<option data-bind="text : x_shipping_contact "></option>
+
+</select>-->
+
+<select data-bind="options: $parents[1].ContactList,
+                    optionsText: 'name',
+                    optionsValue: 'id',
+                    value: x_shipping_contact,
+                    event: {change: function(data,event){return  $parents[1].updateShippingAddressContact($data,event)  }}
+                    ">
+</select>
+
+
+ </div>
+  </div>
+
+
+<div class="margin-bt">
+<label for="fname" class="txtbold sub-name font-medium">Billing Contact</label><br>
+<div class="box col-md-12 col-12">
+<!--<select data-bind="value: x_billing_contact ">
+<option data-bind="text : x_billing_contact "></option>
+
+</select>-->
+
+<select data-bind="options: $parents[1].ContactList,
+                    optionsText: 'name',
+                    optionsValue: 'id',
+                    value: x_billing_contact,
+                    event: {change: function(data,event){return  $parents[1].updateShippingAddressContact($data,event)  }}
+                    ">
+</select>
+
+ </div>
+</div>
+
+
+
+  </div>
+</div>
+<!-- /ko -->
+<!-- /ko -->
+
+
+
+<!-- /ko -->
+<!-- /ko -->
+
+<!-- /ko -->
+<!-- /ko -->
+
+<hr>
+<br>
+
+<br>
+<div class="row" align="right">
+  <div class="col-md-6 col-4"></div>
+  <div class="col-md-6 col-8" align="right">
+<button class="add-to-ship font-bold" id="cc-customer-profile-shipping-address-add"
+              data-bind="click:$data.handleCreateShippingAddress">Add Shipping Address</button>
+</div>
+</div>
+
+
+
+
+
+<br>
+<br>
+</div>
+
+
+
+
+
+
+<div class="container" id="edit-shipping-address" data-bind="visible:(isUserProfileShippingEdited()||isUserProfileDefaultAddressEdited())">
+<div data-bind="visible: !$data.isUserProfileBillingEdited()"> 
+ <div class="row">
+   
+   <div class="col-md-2 col-4 font-medium" id="CC-customerProfile-cancel" data-bind="click: $data.backtomain"><img class="img-bck" src="/file/general/arrow-back.png"><span class="back-top font-light">  Back</span></div>
+<!-- ko if:$data.currentEdit() == "new" -->
+   <div class="col-md-6 col-8"><h2 class="cls-add-shi font-bold">Add Shipping Address</h2></div>
+<!-- /ko -->
+<!-- ko if:$data.currentEdit() == "ship" -->
+   <div class="col-md-6 col-8"><h2 class="cls-add-shi font-bold">Edit Shipping Address</h2></div>
+<!-- /ko -->
+<!-- ko if:$data.currentEdit() == "bill" -->
+   <div class="col-md-6 col-8"><h2 class="cls-add-shi font-bold">Edit Billing Address</h2></div>
+<!-- /ko -->
+
+ </div>
+<br>
+<br>
+  <!-- ko with: user -->
+       <!-- ko with: editShippingAddress -->
+<div class="container">
+<div class="row">
+
+<div class="col-md-12 col-12">
+    <label for="fname" class="nick-name font-medium"> Nickname</label><br>
+  <input type="text" class="firstname1" id="fname" name="fname" data-bind="validatableValue: alias"><br><br>
+
+  </div>
+
+
+
+</div>
+
+
+<div>
+      <label for="fname" id="ship-street-label" class="nick-name txtbold  font-medium">* Street Address</label><br>
+  <input type="text" class="firstname1 Instructions" id="ship-street" name="fname" data-bind="validatableValue: address1 , event: {blur: function(data, event) { return $parents[1].validatingData(data, $data, event) },keydown: function(data, event) {
+            return  $parents[1].validateAddress1('1', event,$data)}}"><br><br>
+</div>
+
+<br>
+<div class="row">
+  <div class="col-md-3 col-5 paading">
+       <i class="textit">Suite, Apartment, Building, P.O. Box</i><br>
+    <label for="fname" ><span class="txtbold11">Type</span></label><br>
+ <div class="box col-md-12 col-12">
+<select  data-bind="options:$parents[1].addressArray, validatableValue: $parents[1].addressLine2Part1, valueUpdate: 'afterkeydown',event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress1('1', event,$data)}} ">
+   
+</select>
+ </div><br>
+</div>
+  <div class="col-md-3 col-3 paddtop">
+ <label for="fname" class="txtbold11" id="CC-userRegistration-suite-label">Number
+      
+       </label>
+  <input type="text" class="firstname2 name-box" id="fname" name="fname" data-bind="validatableValue: $parents[1].addressLine2Part2 , valueUpdate: 'afterkeydown' ,event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress1('1', event,$data)}}"><br>
+   
+  </div>
+
+  <div class="col-md-6 col-4">
+      <div class="font-city">
+      <label for="fname" class="nick-name txtbold font-medium" id="ship-city-label">* City</label><br>
+  <input type="text" class="firstname Instructions" id="ship-city" name="fname" data-bind="validatableValue: city, event: {blur: function(data, event) { return $parents[1].validatingData(data, $data, event) },keydown: function(data, event) {
+            return  $parents[1].validateAddress1('1', event,$data)}}"><br><br>
+</div>
+</div>
+
+</div>
+<br>
+
+
+<div class="row">
+  <div class="col-md-6 col-6 font-city">
+
+ <label id="ship-state-label" for="fname" class="txtbold state-margin nick-name"><span class="sub-name font-medium">* State</span></label><br>
+<div class="box col-md-12 col-12">
+    <!-- ko if:$parents[1].currentEdit() == "new"-->
+<select id="ship-state" data-bind="enable: stateList().length, options: stateList,
+                                   optionsText: 'displayName', optionsValue: 'abbreviation',
+                                   optionsCaption: $parents[1].resources().stateRegionText, value: state, 
+                                   validatableTarget: state, validationElement: state, event: {blur: function(data, event) { return $parents[1].validatingData(data, $data, event) },keydown: function(data, event) {
+            return  $parents[1].validateAddress1('1', event,$data)}}">
+
+
+</select>
+<!-- /ko -->
+
+    <!-- ko if:$parents[1].currentEdit() == "ship"-->
+<select id="ship-state" data-bind="enable: stateList().length, options: stateList,
+                                   optionsText: 'displayName', optionsValue: 'abbreviation',
+                                   optionsCaption: $parents[1].resources().stateRegionText, value: selectedState, 
+                                   validatableTarget: selectedState, validationElement: selectedState, event: {blur: function(data, event) { return $parents[1].validatingData(data, $data, event) },keydown: function(data, event) {
+            return  $parents[1].validateAddress1('1', event,$data)}}">
+
+
+</select>
+<!-- /ko -->
+
+ </div><br><br>
+
+</div>
+<div class="col-md-6 col-6">
+
+<div class="font-city">
+      <label for="fname" class="txtbold font-medium nick-name" id="ship-zip-label">* Zip Code</label><br>
+  <input type="text" class="firstname Instructions" id="ship-zip" name="fname" data-bind="validatableValue: postalCode, event: {blur: function(data, event) { return $parents[1].validatingData(data, $data, event) },keydown: function(data, event) {
+            return  $parents[1].validateAddress1('1', event,$data)}}"><br><br>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+<div class="row">
+  <div class="col-md-6 col-6 font-city">
+
+ <label id="ship-country-label" for="fname" class="txtbold"><h6 class="nick-name sub-name font-medium">* Country</h6></label><br>
+       <div class="box col-md-12 col-12">
+<select id="ship-country" data-bind="enable: $parents[1].shippingCountries().length, optionsValue: 'countryCode',
+                                   options: $parents[1].shippingCountries(), optionsText: 'displayName',
+                                   optionsCaption: $parents[1].resources().countryText, value: country, 
+                                   validatableTarget: country, validationElement: country, event: {blur: function(data, event) { return $parents[1].validatingData(data, $data, event) }}">
+
+</select>
+ </div><br><br>
+
+</div>
+<div class="col-md-6 col-6 font-city">
+ <label for="fname" id="ship-type-label" class="txtbold"><h6 class="nick-name sub-name font-medium">* Type of Address</h6></label><br>
+       <div class="box box1 col-md-12 col-12">
+<select id="ship-type" data-bind="options: $parents[1].addressTypeArray,value: x_account_type,  valueUpdate: 'afterkeydown', event: {blur: function(data, event) { return $parents[1].validatingData(data, $data, event) }}">
+
+
+</select>
+ </div><br><br>
+
+
+
+
+</div>
+
+
+
+
+</div>
+<div class="row">
+   <div class="col-md-6 col-5 order-xs-3">
+    <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="customCheckboxLift" name="type" value="" class="customCheckbox" data-bind="checked:$parents[1].liftGateFee, valueUpdate: 'afterkeydown'" >
+        </div>
+        
+        <div class="col-md-9 col-10 name-padd">
+<label for="mail" class="receive">Liftgate Fee</label>
+        </div>
+</div>
+
+<div class="col-md-6 col-5 order-xs-3">
+    <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="customCheckboxInside" name="type" value="" class="customCheckbox" data-bind="checked:$parents[1].insidePickup , valueUpdate: 'afterkeydown'" >
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="mail" class="receive">Inside Pickup</label>
+        </div>
+</div>
+<br><br>
+<div class="col-md-6 col-5 order-xs-3">
+    <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="customCheckboxRes" name="type" value="" class="customCheckbox" data-bind="checked:$parents[1].resPickup , valueUpdate: 'afterkeydown'" >
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="mail" class="receive">Residential Pickup</label>
+        </div>
+</div>
+
+<div class="col-md-6 col-5 order-xs-3">
+    <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="customCheckboxLimit" name="type" value="" class="customCheckbox" data-bind="checked:$parents[1].limitedAccessPickup , valueUpdate: 'afterkeydown'" >
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="mail" class="receive">Limited Access Pickup</label>
+        </div>
+</div>
+<br><br>
+</div>
+<div class="row">
+  <div class="col-md-6 col-6 ">
+
+<div>
+      <label for="fname" class="txtbold font-medium font-bold-text-deleviry"> Special Delivery Instructions</label><br>
+  <input type="text" class="firstname22 Instructions11" id="fname" name="fname"  data-bind="validatableValue: special_delivery_instructions"><br><br>
+  
+
+  
+</div>
+
+</div>
+
+<div class="col-md-6 col-6">
+<!-- ko if:$parents[1].currentEdit() == "new"-->
+<button id="save-btn" class="Checkoutcart1 addshipping" data-bind="click: $parents[1].handleUpdateProfileForAddressBookNew , disable: $parents[1].addressExisted()"><h2 class="font-bold save-button">Save</h2></button>
+<!-- /ko -->
+<!-- ko if:$parents[1].currentEdit() == "ship"-->
+<button id="save-btn" class="Checkoutcart1 addshipping" data-bind="click: $parents[1].handleUpdateProfileForAddressBook"><h2 class="font-bold save-button">Save</h2></button>
+<!-- /ko -->
+
+ <!-- ko if: $parents[1].allfieldserror() -->
+ <div class="req-txt-error">
+    <span id="required-txt" class="red-txt font-medium"  style="color: #f33;font-style: italic;padding-top: 10px !important;">* All required fields must be filled out before submitting</span>
+    </div>
+ <!-- /ko -->
+ 
+  <!-- ko if: $parents[1].addressExisted() -->
+ <div class="req-txt-error">
+    <span id="required-txt" class="red-txt font-medium"  style="color: #f33;font-style: italic;padding-top: 10px !important;">* Address is Already Registered</span>
+    </div>
+ <!-- /ko -->
+ 
+ 
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+<br>
+<br>
+
+
+
+<br>
+<br>
+
+        <!-- /ko -->
+         <!-- /ko -->
+</div>
+</div>
+
+<div data-bind="visible: $data.isUserProfileBillingEdited()">
+<div class="container" id="edit-billing-address">
+    
+ <div class="row">
+   <div class="col-md-2 col-4 font-medium back-div" data-bind="click: $data.backtomain"><img class="img-bck" src="/file/general/arrow-back.png"><span class="back-top font-light">  Back</span></div>
+   <div class="col-md-6 col-8"><h2 class="cls-add-shi font-bold">Edit Default Billing Address</h2></div>
+ </div>
+<br>
+<br>
+<div class="container">
+<div class="row">
+
+<div class="col-md-12 col-12">
+    <label for="fname" class="nick-name font-medium"> Nickname</label><br>
+  <input type="text" class="firstname1" id="fname" name="fname" data-bind="value: $data.alias"><br><br>
+  </div>
+ 
+
+</div>
+
+
+<div>
+      <label for="fname" class="nick-name txtbold  font-medium" id="bill-street-label">* Street Address</label><br>
+  <input type="text" class="firstname1 Instructions" id="bill-street" name="fname" data-bind="value: $data.address1, event: {blur: function(data, event) { return $data.validatingData(data, $data, event) },keydown: function(data, event) {
+            return  $data.validateAddress(data,'1', event)}}"><br><br>
+</div>
+
+<br>
+<div class="row">
+  <div class="col-md-3 col-5 paading">
+       <i class="textit">Suite, Apartment, Building, P.O. Box</i><br>
+    <label for="fname" ><span class="txtbold11">Type</span></label><br>
+ <div class="box1 col-md-12 col-12">
+<select data-bind="options:$data.addressArray,value: $data.addressLine2Part1"></select>
+ </div><br>
+</div>
+  <div class="col-md-3 col-3 paddtop">
+ <label for="fname" class="txtbold11" id="CC-userRegistration-suite-label">Number
+      
+       </label>
+  <input type="text" class="firstname2 name-box" id="fname" name="fname" data-bind="value: $data.addressLine2Part2"><br>
+  </div>
+
+  <div class="col-md-6 col-4">
+      <div class="font-city">
+      <label for="fname" class="nick-name txtbold font-medium" id="bill-city-label">* City</label><br>
+  <input type="text" class="firstname Instructions" id="bill-city" name="fname" data-bind="value: $data.city, event: {blur: function(data, event) { return $data.validatingData(data, $data, event) },keydown: function(data, event) {
+            return  $data.validateAddress(data,'1', event)}}"><br><br>
+</div>
+</div>
+
+</div>
+<br>
+
+
+<div class="row">
+  <div class="col-md-6 col-6 font-city">
+
+ <label for="fname" id="bill-state-label" class="nick-name txtbold state-margin"><span class="sub-name font-medium">* State</span></label><br>
+<div class="box1 col-md-12 col-12">
+
+<select id="bill-state" data-bind="enable: $data.shippingCountries()[0].regions.length, options: $data.shippingCountries()[0].regions,
+                                   optionsText: 'displayName', optionsValue: 'abbreviation',
+                                   optionsCaption: $data.resources().stateRegionText, value: $data.state, 
+                                   validatableTarget: state, validationElement: state, event: {blur: function(data, event) { return $data.validatingData(data, $data, event) },keydown: function(data, event) {
+            return  $data.validateAddress(data,'1', event)}}" >
+
+</select>
+ </div><br><br>
+
+</div>
+<div class="col-md-6 col-6">
+
+<div class="font-city">
+      <label for="fname" id="bill-zip-label" class="nick-name txtbold font-medium">* Zip Code</label><br>
+  <input type="text" class="firstname Instructions" id="bill-zip" name="fname" data-bind="value: $data.postalCode, event: {blur: function(data, event) { return $data.validatingData(data, $data, event) },keydown: function(data, event) {
+            return  $data.validateAddress(data,'1', event)}}"><br><br>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+<div class="row">
+   <div class="col-md-6 col-6 font-city">
+
+ <label id="bill-country-label" for="fname" class="nick-name txtbold">* Country</label><br>
+       <div class="box1 col-md-12 col-12">
+
+<!--<select id="bill-country" data-bind="enable: $data.shippingCountries().length, options: $data.shippingCountries(),
+                                   optionsText: 'displayName', optionsValue: 'abbreviation',
+                                   optionsCaption: $data.resources().countryText, value: $data.country, 
+                                   validatableTarget: country, validationElement: country">
+</select>
+-->
+
+<!--<select id="bill-state" data-bind="enable: $data.shippingCountries().length, options: $data.shippingCountries(),
+                                   optionsText: 'displayName', optionsValue: 'abbreviation',
+                                   optionsCaption: $data.resources().countryText, value: $data.country(), 
+                                   validatableTarget: $data.country() , validationElement: $data.country() , event: {blur: function(data, event) { return $data.validatingData.bind(data, $data, event)() }}" >
+
+</select>
+-->
+          <select aria-required="true"    name="sCountry" id="bill-country"
+                  data-bind="value: country ">
+         <option value="">Country</option>
+         <option value="US">United States</option>
+          </select>
+          
+ </div><br><br>
+
+</div>
+
+<div class="col-md-6 col-6 font-save-margin">
+
+<button id="save-btn" class="Checkoutcart1 addshipping" data-bind="click: function(event,data){ $data.updateBilling()}"><h2 class="font-bold">Save</h2></button>
+
+ <!-- ko if: $data.allfieldserror1() -->
+ <div class="req-txt-error">
+    <span id="required-txt" class="red-txt font-medium"  style="color: #f33;font-style: italic;padding-top: 10px !important;">* All required fields must be filled out before submitting</span>
+    </div>
+ <!-- /ko -->
+   <!-- ko if: $data.addressExisted() -->
+ <div class="req-txt-error">
+    <span id="required-txt" class="red-txt font-medium"  style="color: #f33;font-style: italic;padding-top: 10px !important;">* Address is Already Registered</span>
+    </div>
+ <!-- /ko -->
+ 
+</div>
+
+
+
+
+</div>
+
+
+
+
+<br>
+<br>
+
+
+
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+<!-- /ko -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- /ko -->
+
+
+
+<div class="modal" id="CC-companyAddressAlreadyRegistered-Modal">
+    <div class="modal-dialog modal-div">
+      <div class="modal-content modal-height">
+        <div>
+          <button type="button" class="close close-btn" data-bind="click: $data.closecompanyaddressexistmodal" data-dismiss="modal">
+                            <img class="img-xmark" src="/file/general/xmark.png">
+          </button>
+          </div>
+          <div align="center" class="text-d">
+          <h2 class="email-headertxt">Address is<br>Already Registered</h2>
+          <h5 class="email-des">
+         The Address information you provided<br>
+         has already been registered.<br>
+          </h5>
+         <br>
+          </div>
+
+        
+      </div>
+    </div>
+  </div> 
+
+
+<div class="modal" id="Save-Modal">
+    <div class="modal-dialog modal-div modal-op">
+      <div class="modal-content modal-height">
+        <div>
+          <button type="button" class="close close-btn" data-dismiss="modal">
+              <img class="img-xmark" src="/file/general/xmark.png">
+          </button>
+          </div>
+          <div align="center" class="email-d">
+          <h2 class="email-headertxt">Changes Updated<br class="mob">  Successfully</h2>
+
+          </div>
+
+        
+      </div>
+    </div>
+  </div>
+  
+    <div class="modal" id="Error-Modal">
+    <div class="modal-dialog modal-div modal-op">
+      <div class="modal-content modal-height">
+        <div>
+          <button type="button" class="close close-btn" data-dismiss="modal">
+              <img class="img-xmark" src="/file/general/xmark.png">
+              </button>
+          </div>
+          <div align="center" class="email-d">
+          <h2 class="email-headertxt" data-bind="text: $data.errormessage"></h2>
+
+          </div>
+
+        
+      </div>
+    </div>
+  </div>
+  
+  
+    <div id="CC-addressSuggestionMessagePane" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-div" role="document">
+          <div class="modal-content">
+            <div class="modal-header CC-header-modal-heading">
+              <h3 class="modal-title" id="CC-forgotPwdText-titleMessage">Address Suggestions </h3>
+            </div>
+            <div class="modal-body cc-modal-body">
+                  <!-- ko if: validAddresses().length === 0-->
+<!--                <div>
+                   <span>There are no suggesstions for this address</span>
+                </div>
+                -->
+                <!-- /ko -->
+                
+                <!-- ko if: $data.addressvalidationMessage()-->
+                <div>
+                    <span data-bind="text:$data.addressvalidationMessage()"></span>
+                </div>
+                <!-- /ko -->
+                
+                
+                  <!-- ko if: validAddresses().length > 0-->
+                <!-- ko foreach: validAddresses -->
+              <div id="CC-forgotPassword-message">
+                  <span data-bind="text:$data.line1"></span><br>
+                <!-- ko if: line2-->
+                  <span data-bind="text:$data.line2"></span><br>
+                   <!-- /ko -->
+                  <span data-bind="text:$data.city"></span><br>
+                  <span data-bind="text:$data.region"></span>,  <span data-bind="text:$data.postalCode"></span><br>
+                   <span data-bind="text:$data.country"></span><br>
+                  </div> <!-- /ko -->
+                  <!-- /ko --><br>
+            </div>
+             <!-- ko if: validAddresses().length > 0-->
+            <div class="modal-footer CC-header-modal-footer">
+              <div class="center-block">
+                 <button type="button" id="CC-messagePaneClose"  data-bind="click: $data.setSelectedAddress()" data-dismiss="modal">Accept</button>
+                <button type="button" id="CC-messagePaneClose1" data-bind="click: $data.closesuggesionmodal"  data-dismiss="modal">Decline</button>
+              </div>
+            </div>
+            <!-- /ko -->
+              <!-- ko if: validAddresses().length === 0-->
+               <div class="modal-footer CC-header-modal-footer">
+              <div class="center-block">
+                                  <button type="button" id="CC-messagePaneClose1" data-bind="click: $data.closesuggesionmodal"   data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- /ko -->
+          </div>
+</div>
+</div>
+
+
+    <div id="CC-addressSuggestionMessagePane1" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-div" role="document">
+          <div class="modal-content">
+            <div class="modal-header CC-header-modal-heading">
+              <h3 class="modal-title" id="CC-forgotPwdText-titleMessage">Address Suggestions </h3>
+            </div>
+            <div class="modal-body cc-modal-body">
+                  <!-- ko if: validAddresses().length === 0-->
+<!--                <div>
+                   <span>There are no suggesstions for this address</span>
+                </div>
+                -->
+                <!-- /ko -->
+                
+                <!-- ko if: $data.addressvalidationMessage()-->
+                <div>
+                    <span data-bind="text:$data.addressvalidationMessage()"></span>
+                </div>
+                <!-- /ko -->
+                
+                
+                  <!-- ko if: validAddresses().length > 0-->
+                <!-- ko foreach: validAddresses -->
+              <div id="CC-forgotPassword-message">
+                  <span data-bind="text:$data.line1"></span><br>
+                <!-- ko if: line2-->
+                  <span data-bind="text:$data.line2"></span><br>
+                   <!-- /ko -->
+                  <span data-bind="text:$data.city"></span><br>
+                  <span data-bind="text:$data.region"></span>,  <span data-bind="text:$data.postalCode"></span><br>
+                   <span data-bind="text:$data.country"></span><br>
+                  </div> <!-- /ko -->
+                  <!-- /ko --><br>
+            </div>
+             <!-- ko if: validAddresses().length > 0-->
+            <div class="modal-footer CC-header-modal-footer">
+              <div class="center-block">
+                 <button type="button" id="CC-messagePaneClose"  data-bind="click: $data.setSelectedAddress1()" data-dismiss="modal">Accept</button>
+                <button type="button" id="CC-messagePaneClose1" data-bind="click: $data.closesuggesionmodal1"  data-dismiss="modal">Decline</button>
+              </div>
+            </div>
+            <!-- /ko -->
+              <!-- ko if: validAddresses().length === 0-->
+               <div class="modal-footer CC-header-modal-footer">
+              <div class="center-block">
+                                  <button type="button" id="CC-messagePaneClose1" data-bind="click: $data.closesuggesionmodal1"   data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- /ko -->
+          </div>
+</div>
+</div>
+  
+  
+<div class="modal" id="CC-companyAlreadyRegistered-Modal">
+    <div class="modal-dialog modal-div">
+      <div class="modal-content modal-height">
+        <div>
+          <button type="button" class="close close-btn" data-bind="click: $data.closecompanyexistmodal" data-dismiss="modal">
+                            <img class="img-xmark" src="/file/general/xmark.png">
+          </button>
+          </div>
+          <div align="center" class="text-d">
+          <h2 class="email-headertxt">Company is<br>Already Registered</h2>
+          <h5 class="email-des">
+         The company information you provided<br>
+         has already been registered.<br>
+         Please contact the owner/administrator<br>
+         (pat.brune@ultrasourceusa.com)<br>
+         to be added to their account.
+          
+          </h5>
+       
+          <button class="login" data-bind="click:  function(data, event) {  $data.createContactRequest(data, $data, event)}">Send Email</button>
+          <br>
+          </div>
+
+        
+      </div>
+    </div>
+  </div>
+  
+  

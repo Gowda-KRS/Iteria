@@ -1,0 +1,22 @@
+{
+  "availableToAllPages": true,
+  "config": {
+    "itemsPerPage": "15",
+    "sourceMedia": "defaultContent"
+  },
+  "global": false,
+  "globalEnabled": false,
+  "i18nresources": "winzerFindCreateOrder",
+  "imports": [],
+  "javascript": "winzerFindCreateOrder",
+  "jsEditable": true,
+  "minWidth": 1,
+  "source": 101,
+  "translations": [{
+    "language": "en",
+    "name": "Winzer POS Find Create Order"
+  }],
+  "version": 1,
+  "widgetFamily": "winzerFindCreateOrder",
+  "widgetType": "winzerFindCreateOrder"
+}

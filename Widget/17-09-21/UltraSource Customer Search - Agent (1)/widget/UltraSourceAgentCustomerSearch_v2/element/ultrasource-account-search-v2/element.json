@@ -1,0 +1,18 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": true,
+  "inline": false,
+  "supportedWidgetType" :["UltraSourceAgentCustomerSearch"],
+  "tag": "ultrasource-account-search-v2",
+  "translations": [
+    {
+      "description": "Ultrasource Account Search V2",
+      "language": "en",
+      "title": "Ultrasource Account Search V2"
+    }
+  ],
+  "type": "fragment",
+  "version": 1
+}

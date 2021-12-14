@@ -1,0 +1,25 @@
+{
+  "availableToAllPages": true,
+  "config": {"isExchangeEnabled": true},
+  "global": false,
+  "globalEnabled": false,
+  "i18nresources": "ultraSourceOrderDetailsAgent",
+  "imports": ["orderDetailsAgent"],
+  "javascript": "ultrasource-account-order-details-section",
+  "jsEditable": true,
+  "minWidth": 1,
+  "source": 101,
+  "translations": [
+    {
+      "language": "en",
+      "name": "UltraSource Order Details - Agent"
+    },
+    {
+      "language": "en_GB",
+      "name": "UltraSource Order Details - Agent"
+    }
+  ],
+  "version": 4,
+  "widgetFamily": "ultraSourceOrderDetailsAgent",
+  "widgetType": "ultraSourceOrderDetailsAgent"
+}

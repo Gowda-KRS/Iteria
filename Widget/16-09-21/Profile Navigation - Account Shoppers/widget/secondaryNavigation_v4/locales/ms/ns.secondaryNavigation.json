@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Butiran Akaun",
+    "accountAddressBookText": "Buku Alamat Akaun",
+    "updatePasswordText": "Kemas Kini Kata Laluan",
+    "orderHistoryText":"Sejarah Pesanan",
+    "scheduledOrdersText": "Pesanan Berjadual",
+    "purchaseListsText": "Senarai Pembelian",
+    "orderApprovalSettingsText": "Tetapan Kelulusan Pesanan",
+    "accountContactsText": "Hubungan Akaun",
+    "ordersPendingApprovalText": "Pesanan Belum Diluluskan",
+    "addressBookText": "Buku Alamat",
+    "wishListText": "Senarai Hajat",
+    "myAccountText": "Akaun Saya",
+    "customerDetailsText": "Butiran Profil",
+    "accountOrderHistoryText": "Sejarah Pesanan",
+    "accountScheduledOrdersText": "Pesanan Berjadual",
+    "customerSearchText":"Carian Pelanggan",
+    "selfRegistrationText":"Permintaan Pendaftaran",
+    "registrationRequestsText": "Permintaan Pendaftaran"
+    
+  }
+}

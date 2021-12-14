@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Détails du compte",
+    "accountAddressBookText": "Carnet d'adresses du compte",
+    "updatePasswordText": "Mettre à jour le mot de passe",
+    "orderHistoryText":"Historique des commandes",
+    "scheduledOrdersText": "Commandes planifiées",
+    "purchaseListsText": "Listes d'achats",
+    "orderApprovalSettingsText": "Paramètres d'approbation de commande",
+    "accountContactsText": "Contacts du compte",
+    "ordersPendingApprovalText": "Commandes en attente d'approbation",
+    "addressBookText": "Carnet d'adresses",
+    "wishListText": "Liste de souhaits",
+    "myAccountText": "Mon compte",
+    "customerDetailsText": "Détails du profil",
+    "accountOrderHistoryText": "Historique des commandes",
+    "accountScheduledOrdersText": "Commandes planifiées",
+    "customerSearchText":"Recherche de clients",
+    "selfRegistrationText":"Demandes d'enregistrement",
+    "registrationRequestsText": "Demandes d'enregistrement"
+    
+  }
+}

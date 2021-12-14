@@ -1,0 +1,181 @@
+{
+  "config": {},
+  "defaultLayout": "delegatedAdminContactsDefaultLayout",
+  "global": false,
+  "globalEnabled": false,
+  "i18nresources": "delegatedadmincontacts",
+  "imports": [],
+  "javascript": "delegated-admin-contacts",
+  "jsEditable": false,
+  "minWidth": 1,
+  "pageTypes": [
+    "profile",
+    "agentAccountContacts"
+  ],
+  "source": 100,
+  "translations": [
+    {
+      "language": "th",
+      "name": "ผู้ติดต่อของบัญชี"
+    },
+    {
+      "language": "pt_BR",
+      "name": "Contatos da Conta"
+    },
+    {
+      "language": "zh_CN",
+      "name": "账户联系人"
+    },
+    {
+      "language": "uk",
+      "name": "Контакти облікового запису"
+    },
+    {
+      "language": "bg",
+      "name": "Контакти на акаунта"
+    },
+    {
+      "language": "et",
+      "name": "Konto kontaktid"
+    },
+    {
+      "language": "lv",
+      "name": "Konta kontaktpersonas"
+    },
+    {
+      "language": "no",
+      "name": "Kontaktpersoner for konto"
+    },
+    {
+      "language": "lt",
+      "name": "Paskyros kontaktai"
+    },
+    {
+      "language": "fr_CA",
+      "name": "Contacts du compte"
+    },
+    {
+      "language": "ro",
+      "name": "Contacte cont"
+    },
+    {
+      "language": "ja",
+      "name": "アカウント連絡先"
+    },
+    {
+      "language": "sl",
+      "name": "Kontakti računa"
+    },
+    {
+      "language": "ru",
+      "name": "Контакты аккаунта"
+    },
+    {
+      "language": "hr",
+      "name": "Kontakt-osobe za račun"
+    },
+    {
+      "language": "tr",
+      "name": "Hesap İlgili Kişileri"
+    },
+    {
+      "language": "pl",
+      "name": "Osoby kontaktowe konta"
+    },
+    {
+      "language": "zh_TW",
+      "name": "帳戶聯絡人"
+    },
+    {
+      "language": "ko",
+      "name": "계정 연락처"
+    },
+    {
+      "language": "cs",
+      "name": "Kontaktní osoby účtu"
+    },
+    {
+      "language": "hu",
+      "name": "Ügyfél kapcsolattartói"
+    },
+    {
+      "language": "el",
+      "name": "Επαφές λογαριασμού"
+    },
+    {
+      "language": "da",
+      "name": "Kontokontakter"
+    },
+    {
+      "language": "en",
+      "name": "Account Contacts"
+    },
+    {
+      "language": "sr",
+      "name": "Контакти за налог"
+    },
+    {
+      "language": "ar",
+      "name": "ممثلو الحساب"
+    },
+    {
+      "language": "de",
+      "name": "Accountkontakte"
+    },
+    {
+      "language": "sr_Latn",
+      "name": "Kontakti za nalog"
+    },
+    {
+      "language": "es",
+      "name": "Contactos de cuenta"
+    },
+    {
+      "language": "ca",
+      "name": "Contactes de compte"
+    },
+    {
+      "language": "fr",
+      "name": "Contacts du compte"
+    },
+    {
+      "language": "id",
+      "name": "Kontak Akun"
+    },
+    {
+      "language": "it",
+      "name": "Contatti account"
+    },
+    {
+      "language": "ms",
+      "name": "Hubungan Akaun"
+    },
+    {
+      "language": "en_GB",
+      "name": "Account Contacts"
+    },
+    {
+      "language": "vi",
+      "name": "Thông tin liên hệ tài khoản"
+    },
+    {
+      "language": "nl",
+      "name": "Accountrelaties"
+    },
+    {
+      "language": "sv",
+      "name": "Kontokontakter"
+    },
+    {
+      "language": "pt",
+      "name": "Contactos da Conta"
+    },
+    {
+      "language": "fi",
+      "name": "Tilin yhteystiedot"
+    }
+  ],
+  "version": 10,
+  "widgetFamily": "delegatedAdminContacts",
+  "widgetType": "delegatedAdminContacts"
+}

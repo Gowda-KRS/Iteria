@@ -1,0 +1,18 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": true,
+  "inline": false,
+  "supportedWidgetType" :["ultraSourceOrderSearchAgent"],
+  "tag": "ultrasource-product-search-v1",
+  "translations": [
+    {
+      "description": "Ultrasource Product Search V1",
+      "language": "en",
+      "title": "Ultrasource Product Search V1"
+    }
+  ],
+  "type": "fragment",
+  "version": 1
+}

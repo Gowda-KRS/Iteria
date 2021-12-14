@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "تفاصيل الحساب",
+    "accountAddressBookText": "دفتر عناوين الحساب",
+    "updatePasswordText": "تحديث كلمة السر",
+    "orderHistoryText":"تاريخ الطلب",
+    "scheduledOrdersText": "الطلبات المجدولة",
+    "purchaseListsText": "قوائم الشراء",
+    "orderApprovalSettingsText": "إعدادات اعتماد الطلب",
+    "accountContactsText": "ممثلو الحساب",
+    "ordersPendingApprovalText": "طلبات في انتظار الاعتماد",
+    "addressBookText": "دفتر العناوين",
+    "wishListText": "قائمة الرغبات",
+    "myAccountText": "الحساب الخاص بي",
+    "customerDetailsText": "تفاصيل ملف التعريف",
+    "accountOrderHistoryText": "تاريخ الطلب",
+    "accountScheduledOrdersText": "الطلبات المجدولة",
+    "customerSearchText":"بحث عن عميل",
+    "selfRegistrationText":"طلبات التسجيل",
+    "registrationRequestsText": "طلبات التسجيل"
+    
+  }
+}

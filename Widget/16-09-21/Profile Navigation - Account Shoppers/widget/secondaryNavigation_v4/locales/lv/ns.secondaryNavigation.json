@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Konta dati",
+    "accountAddressBookText": "Konta adrešu grāmata",
+    "updatePasswordText": "Atjaunināt paroli",
+    "orderHistoryText":"Pasūtījumu vēsture",
+    "scheduledOrdersText": "Ieplānotie pasūtījumi",
+    "purchaseListsText": "Iepirkumu saraksti",
+    "orderApprovalSettingsText": "Pasūtījumu apstiprināšanas iestatījumi",
+    "accountContactsText": "Konta kontaktpersonas",
+    "ordersPendingApprovalText": "Pasūtījumi, kas gaida apstiprināšanu",
+    "addressBookText": "Adrešu grāmata",
+    "wishListText": "Vēlmju saraksts",
+    "myAccountText": "Mans konts",
+    "customerDetailsText": "Detalizēta informācija par profilu",
+    "accountOrderHistoryText": "Pasūtījumu vēsture",
+    "accountScheduledOrdersText": "Ieplānotie pasūtījumi",
+    "customerSearchText":"Klientu meklēšana",
+    "selfRegistrationText":"Reģistrācijas pieprasījumi",
+    "registrationRequestsText": "Reģistrācijas pieprasījumi"
+    
+  }
+}

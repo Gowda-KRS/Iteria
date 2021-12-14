@@ -1,0 +1,25 @@
+{
+  "availableToAllPages": true,
+  "config": {"registrationRequestItemsPerPage": "10"},
+  "global": false,
+  "globalEnabled": false,
+  "i18nresources": "ultraSourceRegistrationRequestSearch",
+  "imports": [],
+  "javascript": "ultrasource-registration-request-search",
+  "jsEditable": true,
+  "minWidth": 1,
+  "source": 101,
+  "translations": [
+    {
+      "language": "en",
+      "name": "UltraSource Registration Request Search"
+    },
+    {
+      "language": "en_GB",
+      "name": "UltraSource Registration Request Search"
+    }
+  ],
+  "version": 2,
+  "widgetFamily": "ultraSourceRegistrationRequestSearch",
+  "widgetType": "ultraSourceRegistrationRequestSearch"
+}

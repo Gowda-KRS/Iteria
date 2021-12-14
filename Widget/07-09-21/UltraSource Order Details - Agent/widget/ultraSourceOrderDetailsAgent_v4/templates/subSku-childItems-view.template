@@ -1,0 +1,81 @@
+  <li style="display : inline;">
+    <!-- Expanding the childItems -->
+    <!-- ko if: !$data.childItems -->
+      <div><a href="#" data-bind="click: $widgetViewModel.onClickChildItems.bind($widgetViewModel,$data,$popupId),
+text: displayName, attr: { id: 'CC-confirmation-configDetails-' + $data.id}"></a>
+
+        <span  data-bind="currency: { price: $data.externalPrice ? $data.externalPrice : $data.rawTotalPrice, currencyObj:$widgetViewModel.site().selectedPriceListGroup().currency}"></span> -x<span data-bind="text: quantity"></span>
+        <!-- ko if: ($data.backOrderQuantity > 0 || $data.preOrderQuantity > 0) -->
+          <span class="title" data-bind="widgetLocaleText: 'asteriskSymbol'"></span>
+        <!-- /ko -->
+        <!-- ko if: $data.actionCode -->
+          (<span data-bind="text: actionCode"></span>)
+        <!-- /ko -->
+        <!-- ko foreach: externalData -->
+          <div>
+            <!-- ko with: values -->
+              <span data-bind="text: $data.label"></span>
+              <span data-bind="text: $data.displayValue"></span>
+            <!-- /ko -->
+            <!-- ko if: $data.actionCode -->
+              (<span data-bind="text: actionCode"></span>)
+            <!-- /ko -->
+          </div>
+        <!-- /ko -->
+        <!-- ko if: $data.addOnItem -->
+           <!-- ko if: $data.shopperInput -->
+             <!-- ko foreach: Object.keys($data.shopperInput) -->
+               <div class="addOnshopperInputStyle">
+                 <span data-bind="text: $data"></span>
+                 <span>: &nbsp;</span>
+                 <span data-bind="text: $parent.shopperInput[$data]"></span><br>
+               </div>
+             <!-- /ko -->
+           <!-- /ko -->
+        <!-- /ko -->
+      </div>
+    <!-- /ko -->
+    <!-- ko if: $data.childItems -->
+      <div class = "agentAlignChild"><a data-bind="click:  $widgetViewModel.toggleExpandedFlag.bind($data), attr: { href: '#CC-confirmation-configDetails-' + $data.id}" data-toggle="collapse" class="agentConfigDetailsLink collapsed" role="configuration"></a>
+      <a href="#" data-bind="click:  $widgetViewModel.onClickChildItems.bind($widgetViewModel,$data,$popupId),text: displayName"></a>
+
+        <!-- ko ifnot: ($data.expanded) -->
+          <span  data-bind="currency: { price: amount, currencyObj:  $widgetViewModel.site().selectedPriceListGroup().currency}"></span> -x
+          <span data-bind="text: quantity"></span>
+          <!-- ko if: ($data.backOrderQuantity > 0 || $data.preOrderQuantity > 0) -->
+            <span class="title" data-bind="widgetLocaleText: 'asteriskSymbol'"></span>
+          <!-- /ko -->
+        <!-- /ko -->
+        <!-- ko if: ($data.expanded) -->
+          <span  data-bind="currency: { price: $data.externalPrice ? $data.externalPrice : rawTotalPrice, currencyObj: $widgetViewModel.site().selectedPriceListGroup().currency}"></span> -x<span data-bind="text: quantity"></span>
+        <!-- /ko -->
+        <!-- ko if: $data.actionCode -->
+          (<span data-bind="text: actionCode"></span>)
+        <!-- /ko -->
+        <!-- ko foreach: externalData -->
+          <div>
+            <!-- ko with: values -->
+              <span data-bind="text: $data.label"></span>
+              <span data-bind="text: $data.displayValue"></span>
+            <!-- /ko -->
+            <!-- ko if: $data.actionCode -->
+              (<span data-bind="text: actionCode"></span>)
+            <!-- /ko -->
+          </div>
+        <!-- /ko -->
+        <!-- ko if: $data.addOnItem -->
+           <!-- ko if: $data.shopperInput -->
+             <!-- ko foreach: Object.keys($data.shopperInput) -->
+               <div class="addOnshopperInputStyle">
+                 <span data-bind="text: $data"></span>
+                 <span>: &nbsp;</span>
+                 <span data-bind="text: $parent.shopperInput[$data]"></span><br>
+               </div>
+             <!-- /ko -->
+           <!-- /ko -->
+        <!-- /ko -->
+        <ul data-bind="template: {name: $widgetViewModel.templateAbsoluteUrl('/templates/subSku-childItems-view.template'), foreach: $data.childItems}, attr: { id: 'CC-confirmation-configDetails-' + $data.id}" class="collapse">
+        </ul>
+      </div>
+    <!-- /ko -->
+  </li>

@@ -1,0 +1,19 @@
+{
+  "config": {"itemsPerPage": "15"},
+  "global": false,
+  "globalEnabled": false,
+  "i18nresources": "ultrasourceagentcustomersearch",
+  "imports": [],
+  "javascript": "ultrasource-agent-customer-search",
+  "jsEditable": true,
+  "minWidth": 1,
+  "pageTypes": ["agentCustomerSearch"],
+  "source": 101,
+  "translations": [{
+    "language": "en",
+    "name": "UltraSource Customer Search - Agent"
+  }],
+  "version": 2,
+  "widgetFamily": "UltraSourceAgentCustomerSearch",
+  "widgetType": "UltraSourceAgentCustomerSearch"
+}

@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Antrinio meniu parinktys",
+    "displayAndURLHelpText":"Įveskite antrinio naršymo meniu parinkties pavadinimą, kuris turėtų būti rodomas jūsų parduotuvės vitrinoje, ir susijusį URL. Pirkėjai nukreipiami į šį URL, kai pasirenka nurodytą pavadinimą. Įveskite susieta paskyra pagrįstus pirkėjų vaidmenis, kurie turės prieigą prie šios meniu parinkties. Pastaba: turėtų būti įtraukiami tik paskyra pagrįsti pirkėjų vaidmenys.",
+    "placeHoldersText":   "Rodyti pavadinimą, URL, vaidmenį",
+    "addMoreRowsText": "Pridėti daugiau eilučių",
+    "displayOptionsHelpText":" Pasirinkite, ar puslapio išdėstyme meniu parinktys turėtų būti rodomos vertikaliai, ar horizontaliai.",
+	"displayOptionsLabel":"Naršymo padėtis",
+	"horizontalText": "Horizontaliai",
+	"verticalText": "Vertikaliai"
+  }
+}

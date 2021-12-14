@@ -1,0 +1,110 @@
+<div class="address-container col-md-12 col-sm-12 col-xs-12"> 
+ <address class="col-md-12 col-sm-12 col-xs-12 no-right-padding">
+     <div class="row col-md-12 col-sm-12 col-xs-12 no-right-padding">
+     <!-- ko if: ($parent.user().isProfileAddressManager() || $parent.user().isAccountAddressManager() || $parent.user().isDelegatedAdmin()) -->
+      <div class="col-xs-6 col-sm-6 col-md-6 pull-right text-right">
+      	<!-- ko ifnot: (($data.isProfile && $data.isProfile == true) || !($parent.user().isAccountAddressManager() || $parent.user().isDelegatedAdmin())) -->
+      	<button class="btn btn-default btn-sm iconButtons"
+                data-bind="attr: {id: 'CC-organization-address-select-default-billing-btn-' + $index()},
+                                 widgetLocaleText: {value:'selectDefaultBillingAddressBtnTitle', attr:'title'},
+                                 click: $parent.setDefaultBillingAddress.bind($parent, $data),
+                                 disabled:false,
+                                 style:{'background-color':   ($parent.defaultBillingAddress() === null || address ===null) ? '' : address.repositoryId === $parent.defaultBillingAddress().repositoryId ? 'dimgrey': ''}">
+          <i class="fa fa-credit-card" data-bind="style:{color:  ($parent.defaultBillingAddress() === null || address ===null) ? '' : address.repositoryId === $parent.defaultBillingAddress().repositoryId ? 'lightgrey': ''}"></i>
+        </button>
+        <button class="btn btn-default btn-sm btn-margin iconButtons"
+                data-bind="attr: {id: 'CC-organization-address-select-default-shipping-btn-' + $index()},
+                                 widgetLocaleText: {value:'selectDefaultShippingAddressBtnTitle', attr:'title'},
+                                 click: $parent.setDefaultShippingAddress.bind($parent, $data),
+                                 disabled:false,
+                                 style:{'background-color':  ($parent.defaultShippingAddress() === null || address ===null) ? '' : address.repositoryId === $parent.defaultShippingAddress().repositoryId ? 'dimgrey': ''}">
+          <i class="fa fa-truck" data-bind="style:{color:  ($parent.defaultShippingAddress() === null || address ===null) ? '' : address.repositoryId === $parent.defaultShippingAddress().repositoryId ? 'lightgrey': ''}"></i>
+        </button>
+        <!-- /ko -->
+       <!-- ko ifnot: ($data.isInherited == true ||
+           ($parent.defaultBillingAddress() && $parent.defaultBillingAddress().isInherited == true)||
+           ($parent.defaultShippingAddress() && $parent.defaultShippingAddress().isInherited == true) ) -->
+        <!-- ko if: (!($data.isProfile && $data.isProfile==true) && ($parent.user().isAccountAddressManager() || $parent.user().isDelegatedAdmin())) -->   
+        <button class="btn btn-default btn-sm btn-margin"
+                data-bind="attr: {id: 'CC-customerProfile-edit-addr-btn-' + $index()},
+                            widgetLocaleText: {value:'editOrganizationAddressBtnTitle', attr:'title'},
+                            click: $parent.handleCreateOrEditOrganizationAddress.bind($parent, false)">
+          <i class="fa fa-pencil"></i>
+          <span class="sr-only" data-bind="widgetLocaleText: 'screenReaderEditOrganizationAddressLabel'"></span>
+        </button>
+         <button class="btn btn-default btn-sm btn-margin"
+                data-bind="attr: {id: 'CC-account-remove-addr-btn-' + $index()},
+                               click: $parent.removeOrganizationAddress.bind($parent, address,$element.id),
+                               widgetLocaleText: {value:'removeOrganizationAddressBtnTitle', attr:'title'}">
+          <i class="fa fa-trash-o"></i>
+          <span class="sr-only" data-bind="widgetLocaleText: 'screenReaderRemoveOrganizationAddressLabel'"></span>
+        </button>
+        <!-- /ko -->     
+         <!-- ko if: ($data.isProfile && $data.isProfile==true && $parent.user().isProfileAddressManager()) -->   
+        <button class="btn btn-default btn-sm btn-margin"
+                data-bind="attr: {id: 'CC-customerProfile-edit-addr-btn-' + $index()},
+                            widgetLocaleText: {value:'editProfileAddressBtnTitle', attr:'title'},
+                            click: $parent.handleCreateOrEditOrganizationAddress.bind($parent, false)">
+          <i class="fa fa-pencil"></i>
+          <span class="sr-only" data-bind="widgetLocaleText: 'screenReaderEditProfileAddressLabel'"></span>
+        </button>
+         <button class="btn btn-default btn-sm btn-margin"
+                data-bind="attr: {id: 'CC-customerProfile-remove-addr-btn-' + $index()},
+                               click: $parent.removeOrganizationAddress.bind($parent, address,$element.id),
+                               widgetLocaleText: {value:'removeProfileAddressBtnTitle', attr:'title'}">
+          <i class="fa fa-trash-o"></i>
+          <span class="sr-only" data-bind="widgetLocaleText: 'screenReaderRemoveProfileAddressLabel'"></span>
+        </button>
+        <!-- /ko -->             
+        <!-- /ko -->
+      </div>
+      <!-- /ko -->
+      <div class="col-md-6 col-sm-6 col-xs-6">
+      <!-- ko if: $parent.defaultBillingAddress() === null ? false:  address.repositoryId === $parent.defaultBillingAddress().repositoryId ? true: false -->
+      <span id="organizationDefaultBillingAddress" data-bind="widgetLocaleText: 'defaultBillingAddressLabel'"></span>
+      <br />
+      <!-- /ko -->
+      <!-- ko if: $parent.defaultShippingAddress() === null ? false:  address.repositoryId === $parent.defaultShippingAddress().repositoryId ? true: false -->
+      <span id="organizationDefaultShippingAddress" data-bind="widgetLocaleText: 'defaultShippingAddressLabel'"></span>
+      <br />
+      <!-- /ko -->
+      <div data-bind="css: {'accountAddressTextLine': ($data.isInherited===false), 'profileAddressTextLine': ($data.isProfile===true || $data.isInherited===true)}">
+      	<span class="address-field" data-bind="text: addressType"></span>
+      	<br/>
+      </div>      
+      <!-- ko if: address.firstName -->
+      <span class="address-field" data-bind="text: address.firstName"></span>
+      <!-- /ko -->
+      <!-- ko if: address.lastName -->
+      <span class="address-field profileAddressTextLine" data-bind="text: address.lastName"></span>
+      <br/>
+      <!-- /ko -->
+      <div data-bind="css: {'accountAddressTextLine': ($data.isInherited===false), 'profileAddressTextLine': ($data.isProfile===true || $data.isInherited===true)}">
+	      <span class="address-field" data-bind="text: address.companyName"></span>
+	
+      </div>
+      <div class="textLine">
+	      <span class="address-field" data-bind="text: address.address1"></span>
+	      <br/>
+      </div>
+      <!-- ko if: address.address2 -->
+      	<div class="textLine">
+        <span class="address-field" data-bind="text: address.address2"></span>
+        </div>       
+      <!-- /ko -->
+      <div class="textLine">
+	      <span class="address-field" data-bind="text: address.city"></span>, <span class="address-field" data-bind="text: address.state"></span>, <span class="address-field" data-bind="text: address.postalCode"></span>
+	      <br/>
+      </div>
+      <div>
+	      <span class="address-field" data-bind="text: address.country"></span>
+	      <br/>
+      </div>
+      <div>
+	      <span class="address-field" data-bind="text: address.phoneNumber"></span>
+	      <br />
+      </div>
+       </div>
+      </div>
+    </address>
+</div>

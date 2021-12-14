@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["agentAccountOrderDetails"],
+  "tag": "agent-order-price-details",
+  "translations": [{
+    "description": "Agent Order Price Details",
+    "language": "en",
+    "title": "Agent Order Price Details"
+  }],
+  "type": "fragment",
+  "version": 5
+}

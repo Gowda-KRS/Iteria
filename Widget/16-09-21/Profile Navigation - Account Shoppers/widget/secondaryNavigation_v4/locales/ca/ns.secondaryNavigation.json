@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Detalls de compte",
+    "accountAddressBookText": "Llibreta d'adreces de compte",
+    "updatePasswordText": "Actualitzar contrasenya",
+    "orderHistoryText":"Historial d'ordres",
+    "scheduledOrdersText": "Ordres programades",
+    "purchaseListsText": "Llistes de compra",
+    "orderApprovalSettingsText": "Configuració d'aprovació d'ordres",
+    "accountContactsText": "Contactes de compte",
+    "ordersPendingApprovalText": "Ordres pendents d'aprovació",
+    "addressBookText": "Llibreta d'adreces",
+    "wishListText": "Llista de desitjos",
+    "myAccountText": "El meu compte",
+    "customerDetailsText": "Detalls de perfil",
+    "accountOrderHistoryText": "Historial d'ordres",
+    "accountScheduledOrdersText": "Ordres programades",
+    "customerSearchText":"Cerca de client",
+    "selfRegistrationText":"Sol·licituds de registre",
+    "registrationRequestsText": "Sol·licituds de registre"
+    
+  }
+}

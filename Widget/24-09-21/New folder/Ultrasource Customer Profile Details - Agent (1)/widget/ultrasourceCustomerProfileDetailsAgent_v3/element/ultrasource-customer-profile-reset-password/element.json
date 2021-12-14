@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["ultrasourceCustomerProfileDetailsAgent"],
+  "tag": "ultrasource-customer-profile-reset-password",
+  "translations": [{
+    "description": "Ultrasource Customer Profile Reset Password",
+    "language": "en",
+    "title": "Ultrasource Customer Profile Reset Password"
+  }],
+  "type": "fragment",
+  "version": 3
+}

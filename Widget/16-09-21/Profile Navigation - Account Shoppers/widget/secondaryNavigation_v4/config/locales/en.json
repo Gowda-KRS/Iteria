@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Secondary Menu Options",
+    "displayAndURLHelpText":"Enter a secondary navigation menu option name to be displayed on your storefront, and an associated URL. Shoppers are directed to that URL by selecting the given name. Enter the associated account based shopper roles which will have access to that menu option. Note: this should only include account based shopper roles.",
+    "placeHoldersText":   "Display Name, URL, Role",
+    "addMoreRowsText": "Add More Rows",
+    "displayOptionsHelpText":" Choose whether to display the menu options on the page layout vertically, or horizontally.",
+	"displayOptionsLabel":"Navigation Orientation",
+	"horizontalText": "Horizontal",
+	"verticalText": "Vertical"
+  }
+}

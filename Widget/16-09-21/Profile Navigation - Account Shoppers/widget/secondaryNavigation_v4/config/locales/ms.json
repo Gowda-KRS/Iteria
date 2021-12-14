@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Pilihan Menu Kedua",
+    "displayAndURLHelpText":"Masukkan nama pilihan menu navigasi kedua yang akan dipaprkan pada muka kedai anda dan URL yang dikaitkan, Pembeli akan dihala ke URL tersebut dengan memilih nama yang diberikan. Masukkan akaun yang dikaitkan berdasarkan peranan pembeli yang akan dapat mengakses pilihan menu tersebut. Nota: ini harus disertakan dengan akaun berdasarkan peranan pembeli sahaja.",
+    "placeHoldersText":   "Nama Paparan, URL, Peranan",
+    "addMoreRowsText": "Tambahkan Lagi Baris",
+    "displayOptionsHelpText":"Pilih cara pilihan menu dipaparkan pada tataletak halaman, sama ada secara menegak atau mendatar.",
+	"displayOptionsLabel":"Orientasi Navigasi",
+	"horizontalText": "Mendatar",
+	"verticalText": "Menegak"
+  }
+}

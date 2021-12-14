@@ -1,0 +1,20 @@
+{
+  "config": {},
+  "defaultLayout": "ultrasourceCustomerProfileDetailsAgent_v3_lyt1",
+  "global": false,
+  "globalEnabled": false,
+  "i18nresources": "ultrasourceCustomerProfileDetailsAgent",
+  "imports": [],
+  "javascript": "ultrasourceCustomerProfileDetailsAgent",
+  "jsEditable": true,
+  "minWidth": 1,
+  "pageTypes": ["agentCustomerDetails"],
+  "source": 101,
+  "translations": [{
+    "language": "en",
+    "name": "Ultrasource Customer Profile Details - Agent"
+  }],
+  "version": 3,
+  "widgetFamily": "ultrasourceCustomerProfileDetailsAgent",
+  "widgetType": "ultrasourceCustomerProfileDetailsAgent"
+}

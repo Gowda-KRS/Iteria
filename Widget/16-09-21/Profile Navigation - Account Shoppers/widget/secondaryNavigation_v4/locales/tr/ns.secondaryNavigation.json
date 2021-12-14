@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Hesap Detayları",
+    "accountAddressBookText": "Hesap Adres Defteri",
+    "updatePasswordText": "Parolayı Güncelle",
+    "orderHistoryText":"Sipariş Tarihçesi",
+    "scheduledOrdersText": "Çizelgelenen Siparişler",
+    "purchaseListsText": "Satın Alma Listeleri",
+    "orderApprovalSettingsText": "Sipariş Onayı Ayarları",
+    "accountContactsText": "Hesap İlgili Kişileri",
+    "ordersPendingApprovalText": "Onay Bekleyen Siparişler",
+    "addressBookText": "Adres Defteri",
+    "wishListText": "İstek Listesi",
+    "myAccountText": "Hesabım",
+    "customerDetailsText": "Profil Detayları",
+    "accountOrderHistoryText": "Sipariş Tarihçesi",
+    "accountScheduledOrdersText": "Çizelgelenen Siparişler",
+    "customerSearchText":"Müşteri Arama",
+    "selfRegistrationText":"Kayıt İstekleri",
+    "registrationRequestsText": "Kayıt İstekleri"
+    
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["customerProfileDetails"],
+  "tag": "ultrasource-customer-pending-orders",
+  "translations": [{
+    "description": "Customer Pending Orders",
+    "language": "en",
+    "title": "Customer Pending Orders"
+  }],
+  "type": "fragment",
+  "version": 3
+}

@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["ultraSourceAccountDetailsAgent"],
+  "tag": "ultrasource-registration-request-details",
+  "translations": [{
+    "description": "Registration Request Details New",
+    "language": "en",
+    "title": "Registration Request Details New"
+  }],
+  "type": "fragment",
+  "version": 2
+}

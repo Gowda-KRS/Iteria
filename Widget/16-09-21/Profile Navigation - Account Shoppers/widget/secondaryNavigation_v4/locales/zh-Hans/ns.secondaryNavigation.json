@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "账户详细信息",
+    "accountAddressBookText": "账户通讯簿",
+    "updatePasswordText": "更新密码",
+    "orderHistoryText":"订单历史记录",
+    "scheduledOrdersText": "预定订单",
+    "purchaseListsText": "采购清单",
+    "orderApprovalSettingsText": "订单审批设置",
+    "accountContactsText": "账户联系人",
+    "ordersPendingApprovalText": "等待审批的订单",
+    "addressBookText": "通讯簿",
+    "wishListText": "收藏列表",
+    "myAccountText": "我的账户",
+    "customerDetailsText": "配置文件详细信息",
+    "accountOrderHistoryText": "订单历史记录",
+    "accountScheduledOrdersText": "预定订单",
+    "customerSearchText":"客户搜索",
+    "selfRegistrationText":"注册请求",
+    "registrationRequestsText": "注册请求"
+    
+  }
+}

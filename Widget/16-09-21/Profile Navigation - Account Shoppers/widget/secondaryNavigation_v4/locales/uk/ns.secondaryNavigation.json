@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Докладні відомості про обліковий запис",
+    "accountAddressBookText": "Адресна книга облікового запису",
+    "updatePasswordText": "Оновити пароль",
+    "orderHistoryText":"Журнал замовлень",
+    "scheduledOrdersText": "Планові замовлення",
+    "purchaseListsText": "Списки покупок",
+    "orderApprovalSettingsText": "Параметри затвердження замовлення",
+    "accountContactsText": "Контакти облікового запису",
+    "ordersPendingApprovalText": "Замовлення, які очікують затвердження",
+    "addressBookText": "Адресна книга",
+    "wishListText": "Список бажаних товарів",
+    "myAccountText": "Мій обліковий запис",
+    "customerDetailsText": "Докладні відомості про профіль",
+    "accountOrderHistoryText": "Хронологія замовлень",
+    "accountScheduledOrdersText": "Планові замовлення",
+    "customerSearchText":"Пошук замовників",
+    "selfRegistrationText":"Запити на реєстрацію",
+    "registrationRequestsText": "Запити на реєстрацію"
+    
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Konto üksikasjad",
+    "accountAddressBookText": "Konto aadressiraamat",
+    "updatePasswordText": "Parooli värskendamine",
+    "orderHistoryText":"Tellimisajalugu",
+    "scheduledOrdersText": "Ajastatud tellimused",
+    "purchaseListsText": "Ostuloendid",
+    "orderApprovalSettingsText": "Tellimuse kinnituse sätted",
+    "accountContactsText": "Konto kontaktid",
+    "ordersPendingApprovalText": "Kinnitamise ootel tellimused",
+    "addressBookText": "Aadressiraamat",
+    "wishListText": "Sooviloend",
+    "myAccountText": "Minu konto",
+    "customerDetailsText": "Profiili üksikasjad",
+    "accountOrderHistoryText": "Tellimisajalugu",
+    "accountScheduledOrdersText": "Ajastatud tellimused",
+    "customerSearchText":"Kliendiotsing",
+    "selfRegistrationText":"Registreerimistaotlused",
+    "registrationRequestsText": "Registreerimistaotlused"
+    
+  }
+}

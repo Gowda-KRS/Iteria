@@ -1,0 +1,13 @@
+{
+  "widgetDescriptorName": "ultraSourceRegistrationRequestSearch",
+  "properties": [
+    {
+      "id": "registrationRequestItemsPerPage",
+      "type": "stringType",
+      "name": "registrationRequestItemsPerPage",
+      "helpTextResourceId": "itemsPerPageDisplayHelpText",
+      "labelResourceId": "itemsPerPageDisplayLabel",
+      "defaultValue": "10"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+<span data-bind="widgetLocaleText: {value:'successMsgProductName', attr:'innerText', params: {productname: successMessageProductName()}}"></span>
+<a data-bind="ccLink: successMessagePurchaseListIdLink">
+  <span data-bind="widgetLocaleText: {value:'successMsgPurchaseListName', attr:'innerText', params: {purchaselistname: successMessagePurchaseListName()}}"></span>
+</a>

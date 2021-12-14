@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["ultraSourceOrderDetailsAgent"],
+  "tag": "ultrasource-agent-email-order-details",
+  "translations": [{
+    "description": "Agent Email Order Button",
+    "language": "en",
+    "title": "Agent Email Order Button"
+  }],
+  "type": "fragment",
+  "version": 5
+}

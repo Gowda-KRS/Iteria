@@ -1,0 +1,25 @@
+{
+  "availableToAllPages": true,
+  "config": {},
+  "global": false,
+  "globalEnabled": false,
+  "i18nresources": "ultraSourceAccountDetailsAgent",
+  "imports": [],
+  "javascript": "ultrasource-agent-account-details",
+  "jsEditable": true,
+  "minWidth": 1,
+  "source": 101,
+  "translations": [
+    {
+      "language": "en",
+      "name": "UltraSource Account Details - Agent"
+    },
+    {
+      "language": "en_GB",
+      "name": "UltraSource Account Details - Agent"
+    }
+  ],
+  "version": 2,
+  "widgetFamily": "ultraSourceAccountDetailsAgent",
+  "widgetType": "ultraSourceAccountDetailsAgent"
+}

@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["ultraSourceAccountDetailsAgent"],
+  "tag": "ultrasource-account-approval-setting",
+  "translations": [{
+    "description": "Account Approval Setting New",
+    "language": "en",
+    "title": "Account Approval Setting New"
+  }],
+  "type": "fragment",
+  "version": 2
+}

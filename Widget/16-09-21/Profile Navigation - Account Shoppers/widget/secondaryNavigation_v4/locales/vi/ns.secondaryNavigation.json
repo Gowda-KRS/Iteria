@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Chi tiết tài khoản",
+    "accountAddressBookText": "Sổ địa chỉ tài khoản",
+    "updatePasswordText": "Cập nhật mật khẩu",
+    "orderHistoryText":"Lịch sử đơn hàng",
+    "scheduledOrdersText": "Đơn hàng theo lịch",
+    "purchaseListsText": "Danh sách mua",
+    "orderApprovalSettingsText": "Cài đặt phê duyệt đơn hàng",
+    "accountContactsText": "Thông tin liên hệ tài khoản",
+    "ordersPendingApprovalText": "Các đơn hàng đang chờ phê duyệt",
+    "addressBookText": "Sổ địa chỉ",
+    "wishListText": "Danh sách mặt hàng muốn mua",
+    "myAccountText": "Tài khoản của tôi",
+    "customerDetailsText": "Chi tiết hồ sơ",
+    "accountOrderHistoryText": "Lịch sử đơn hàng",
+    "accountScheduledOrdersText": "Đơn hàng theo lịch",
+    "customerSearchText":"Tìm kiếm khách hàng",
+    "selfRegistrationText":"Yêu cầu đăng ký",
+    "registrationRequestsText": "Yêu cầu đăng ký"
+    
+  }
+}

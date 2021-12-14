@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Opcije sekundarnog menija",
+    "displayAndURLHelpText":"Unesite ime opcije sekundarnog menija za navigaciju koje treba da se prikazuje u izlogu prodavnice, kao i povezanu URL adresu. Kupci se usmeravaju na tu URL adresu kada izaberu dato ime. Unesite povezane uloge za kupce zasnovane na nalozima koje će imati pristup toj opciji menija. Napomena: ovo bi trebalo da uključuje samo uloge kupaca koje su zasnovane na nalozima.",
+    "placeHoldersText":   "Prikazano ime, URL adresa, uloga",
+    "addMoreRowsText": "Dodaj još redova",
+    "displayOptionsHelpText":" Izaberite da li da se opcija menija prikazuje na stranici sa vertikalnim ili horizontalnim rasporedom.",
+	"displayOptionsLabel":"Orijentacija navigacije",
+	"horizontalText": "Horizontalno",
+	"verticalText": "Vertikalno"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "widgetDescriptorName" : "ultraSourceOrderDetailsAgent",
+  "properties": [{
+    "id": "isExchangeEnabled",
+    "type": "booleanType",
+    "name": "isExchangeEnabled",
+    "helpTextResourceId": "enableExchangeInOrderDetails",
+    "labelResourceId": "enableExchangeOrder",
+    "defaultValue": false
+  }]
+
+}

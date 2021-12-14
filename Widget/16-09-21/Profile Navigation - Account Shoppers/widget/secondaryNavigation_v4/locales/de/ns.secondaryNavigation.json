@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Accountdetails",
+    "accountAddressBookText": "Accountadressbuch",
+    "updatePasswordText": "Kennwort aktualisieren",
+    "orderHistoryText":"Bestellhistorie",
+    "scheduledOrdersText": "Geplante Bestellungen",
+    "purchaseListsText": "Kauflisten",
+    "orderApprovalSettingsText": "Einstellungen für Bestellgenehmigung",
+    "accountContactsText": "Accountkontakte",
+    "ordersPendingApprovalText": "Genehmigung ausstehend für Bestellungen",
+    "addressBookText": "Adressbuch",
+    "wishListText": "Wunschzettel",
+    "myAccountText": "Mein Account",
+    "customerDetailsText": "Profildetails",
+    "accountOrderHistoryText": "Bestellhistorie",
+    "accountScheduledOrdersText": "Geplante Bestellungen",
+    "customerSearchText":"Kundensuche",
+    "selfRegistrationText":"Registrierungsanforderungen",
+    "registrationRequestsText": "Registrierungsanforderungen"
+    
+  }
+}

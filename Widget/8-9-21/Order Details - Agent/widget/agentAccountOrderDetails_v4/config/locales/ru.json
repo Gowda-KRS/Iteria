@@ -1,0 +1,6 @@
+{
+  "resources": {
+    "enableExchangeOrder":"Включить заказы на замену",
+    "enableExchangeInOrderDetails":"Установите этот флажок, чтобы включить заказы на замену"
+  }
+}

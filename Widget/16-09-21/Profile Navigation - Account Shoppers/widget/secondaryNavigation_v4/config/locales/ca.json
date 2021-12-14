@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Opcions de menú secundari",
+    "displayAndURLHelpText":"Introduïu un nom d'opció de menú de navegació secundari que es mostrarà a l'aparador i un URL associat. Es dirigirà als compradors a aquest URL seleccionant el nom especificat. Introduïu els rols de comprador basats en comptes associats que tindran accés a aquesta opció de menú. Nota: això només ha d'incloure rols de compradors basats en comptes.",
+    "placeHoldersText":   "Mostrar nom, URL, rol",
+    "addMoreRowsText": "Afegir més files",
+    "displayOptionsHelpText":" Seleccioneu si voleu mostrar les opcions de menú al disseny de la pàgina de forma vertical o horitzontal.",
+	"displayOptionsLabel":"Orientació de navegació",
+	"horizontalText": "Horitzontal",
+	"verticalText": "Vertical"
+  }
+}

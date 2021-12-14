@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["ultraSourceOrderDetailsAgent"],
+  "tag": "ultrasource-agent-order-payment-details",
+  "translations": [{
+    "description": "Agent Order Details Payment",
+    "language": "en",
+    "title": "Agent Order Details Payment"
+  }],
+  "type": "fragment",
+  "version": 5
+}

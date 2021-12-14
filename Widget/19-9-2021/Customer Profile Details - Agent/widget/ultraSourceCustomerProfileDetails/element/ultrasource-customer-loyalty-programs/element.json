@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["customerProfileDetails"],
+  "tag": "ultrasource-customer-loyalty-programs",
+  "translations": [{
+    "description": "Customer Loyalty Programs",
+    "language": "en",
+    "title": "Customer Loyalty Programs"
+  }],
+  "type": "fragment",
+  "version": 3
+}

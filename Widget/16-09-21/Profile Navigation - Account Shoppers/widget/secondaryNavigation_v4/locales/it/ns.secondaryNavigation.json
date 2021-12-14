@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Dettagli account",
+    "accountAddressBookText": "Rubrica account",
+    "updatePasswordText": "Aggiorna password",
+    "orderHistoryText":"Cronologia ordine",
+    "scheduledOrdersText": "Ordini schedulati",
+    "purchaseListsText": "Elenchi acquisti",
+    "orderApprovalSettingsText": "Impostazioni approvazione ordine",
+    "accountContactsText": "Contatti account",
+    "ordersPendingApprovalText": "Ordini in attesa di approvazione",
+    "addressBookText": "Rubrica",
+    "wishListText": "Lista dei desideri",
+    "myAccountText": "Account personale",
+    "customerDetailsText": "Dettagli profilo",
+    "accountOrderHistoryText": "Cronologia ordine",
+    "accountScheduledOrdersText": "Ordini schedulati",
+    "customerSearchText":"Ricerca cliente",
+    "selfRegistrationText":"Richieste di registrazione",
+    "registrationRequestsText": "Richieste di registrazione"
+    
+  }
+}

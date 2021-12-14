@@ -1,0 +1,96 @@
+ <div data-bind="if: $context.length > 0" class="">
+    <!-- ko if: $data.opDynamicProperty()  === 'view'--><!-- /ko -->
+     <!-- ko if: $data.opDynamicProperty()  === 'update'-->
+      <!-- ko if: $data['elements']['ultrasource-dynamic-property'].showCustomPropertiesHeading -->
+      <h4 class="customPropertiesHeader" data-bind="widgetLocaleText:'additionalInfoText'">Additional Information</h4>
+      <!-- /ko -->
+         <!-- ko foreach: $context -->
+           <!-- ko if:  externalShopperContext() === 'false' -->
+            <!-- ko ifnot: internalOnly -->
+               <!-- ko if: (uiEditorType() === 'shortText' || uiEditorType() ==='number') -->
+               <!-- ko if: $data.label() !== "Payment Term" -->
+                  <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="text: $data.label, css: {'required' : $data.required}">Office Number</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $data.value, css : {'sf-error' : !$data.value.__valid__()}, attr: {'aria-label': $data.label}" aria-label="Office Number">
+                       <span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>
+                    </span>
+                   </div>
+                 <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="text: $data.label, css: {'required' : $data.required}">Mobile Number</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $data.value, css : {'sf-error' : !$data.value.__valid__()}, attr: {'aria-label': $data.label}" aria-label="Mobile Number">
+                       <span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>
+                    </span>
+                   </div>
+                  <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="text: $data.label, css: {'required' : $data.required}">Fax Number</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $data.value, css : {'sf-error' : !$data.value.__valid__()}, attr: {'aria-label': $data.label}" aria-label="Fax Number">
+                       <span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>
+                    </span>
+                   </div>
+                  <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="text: $data.label, css: {'required' : $data.required}">Role</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $data.value, css : {'sf-error' : !$data.value.__valid__()}, attr: {'aria-label': $data.label}" aria-label="Role">
+                       <span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>
+                    </span>
+                   </div>
+                   <div class="col-md-12 form-inline form-group">
+                   <label class="col-md-2" data-bind="text: $data.label, css: {'required' : $data.required}">Receive Mailings and Special Offers</label>
+                   <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                   <span class="col-md-6">
+                     <input type="checkbox" data-bind="checked: $data.value, attr: {'aria-label': $data.label}" aria-label="Receive Mailings and Special Offers">
+                   </span>
+                 </div>
+                 <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="text: $data.label, css: {'required' : $data.required}">SyteLine Customer ID</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $data.value, css : {'sf-error' : !$data.value.__valid__()}, attr: {'aria-label': $data.label}" aria-label="SyteLine Customer ID">
+                       <span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>
+                    </span>
+                   </div>
+                  <div class="col-md-12 form-inline form-group">
+                   <label class="col-md-2" data-bind="text: $data.label, css: {'required' : $data.required}">Receive Texts</label>
+                   <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                   <span class="col-md-6">
+                     <input type="checkbox" data-bind="checked: $data.value, attr: {'aria-label': $data.label}" aria-label="Receive Texts">
+                   </span>
+                 </div>
+                 <div class="col-md-12 form-inline form-group">
+                    <span class="col-md-2">
+                      <label data-bind="text: $data.label, css: {'required' : $data.required}">SyteLine Contact ID</label>
+                    </span>
+                    <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                    <span class="col-md-6">
+                       <input class="form-control" type="text" data-bind="value: $data.value, css : {'sf-error' : !$data.value.__valid__()}, attr: {'aria-label': $data.label}" aria-label="SyteLine Contact ID">
+                       <span class="alert-error" data-bind="visible: !$data.value.__valid__(), text: $data.value.error" style="display: none;"></span>
+                    </span>
+                   </div>
+                 <div class="col-md-12 form-inline form-group">
+                   <label class="col-md-2" data-bind="text: $data.label, css: {'required' : $data.required}">Receive Catalog</label>
+                   <span class="col-md-1" data-bind="widgetLocaleText: 'delimiterText'">:</span>
+                   <span class="col-md-6">
+                     <input type="checkbox" data-bind="checked: $data.value, attr: {'aria-label': $data.label}" aria-label="Receive Catalog">
+                   </span>
+                 </div>
+
+                 
+               
+  </div>

@@ -1,0 +1,18 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": true,
+  "inline": false,
+  "supportedWidgetType" :["ultrasourceCreateOrderHeader"],
+  "tag": "ultrasource-account-selector",
+  "translations": [
+    {
+      "description": "Ultrasource Account Selector",
+      "language": "en",
+      "title": "Ultrasource Account Selector"
+    }
+  ],
+  "type": "fragment",
+  "version": 1
+}

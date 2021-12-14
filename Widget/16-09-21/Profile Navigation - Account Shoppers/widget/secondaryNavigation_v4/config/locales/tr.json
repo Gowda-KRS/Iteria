@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "İkincil Menü Seçenekleri",
+    "displayAndURLHelpText":"Vitrininizde görüntülemek üzere ikincil bir gezinme menü seçeneği adı ve ilişkili URL girin. Alışveriş yapanlar verilen adı seçerek o URL'ye yönlendirilirler. Menü seçeneğine erişimi olan alışveriş yapan rollerini esas alan ilişkili hesabı girin. Not: bu sadece hesap esaslı alışveriş yapan rollerini içermelidir.",
+    "placeHoldersText":   "Görünen Ad, URL, Rol",
+    "addMoreRowsText": "Daha Fazla Satır Ekle",
+    "displayOptionsHelpText":" Menü seçeneklerini sayfa yerleşiminde dikey veya yatay olarak görüntülemeyi seçin",
+	"displayOptionsLabel":"Gezinme Sayfa Yönü",
+	"horizontalText": "Yatay",
+	"verticalText": "Dikey"
+  }
+}

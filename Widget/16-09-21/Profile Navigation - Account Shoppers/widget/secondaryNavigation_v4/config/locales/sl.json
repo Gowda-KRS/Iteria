@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Možnosti sekundarnega menija",
+    "displayAndURLHelpText":"Vnesite ime možnosti sekundarnega menija za krmarjenje, ki bo prikazana v izložbi, in povezani URL. Nakupovalci bodo usmerjeni na ta URL z izbiro danega imena. Vnesite povezani račun na osnovi vlog nakupovalcev, ki bodo imeli dostop do te možnosti menija. Opomba: to naj vključuje samo vloge nakupovalcev na osnovi računa.",
+    "placeHoldersText":   "Prikazno ime, URL, vloga",
+    "addMoreRowsText": "Dodaj več vrstic",
+    "displayOptionsHelpText":" Izberite, ali bodo možnosti menija v postavitvi strani prikazane navpično ali vodoravno.",
+	"displayOptionsLabel":"Usmerjenost krmarjenja",
+	"horizontalText": "Vodoravno",
+	"verticalText": "Navpično"
+  }
+}

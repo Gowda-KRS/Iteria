@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Λεπτομέρειες λογαριασμού",
+    "accountAddressBookText": "Βιβλίο διευθύνσεων λογαριασμού",
+    "updatePasswordText": "Ενημέρωση κωδικού πρόσβασης",
+    "orderHistoryText":"Ιστορικό παραγγελιών",
+    "scheduledOrdersText": "Προγραμματισμένες παραγγελίες",
+    "purchaseListsText": "Λίστες αγορών",
+    "orderApprovalSettingsText": "Ρυθμίσεις έγκρισης παραγγελίας",
+    "accountContactsText": "Επαφές λογαριασμού",
+    "ordersPendingApprovalText": "Παραγγελίες με εκκρεμότητα έγκρισης",
+    "addressBookText": "Βιβλίο διευθύνσεων",
+    "wishListText": "Λίστα επιθυμιών",
+    "myAccountText": "Ο λογαριασμός μου",
+    "customerDetailsText": "Λεπτομέρειες προφίλ",
+    "accountOrderHistoryText": "Ιστορικό παραγγελιών",
+    "accountScheduledOrdersText": "Προγραμματισμένες παραγγελίες",
+    "customerSearchText":"Αναζήτηση πελάτη",
+    "selfRegistrationText":"Αιτήματα εγγραφής",
+    "registrationRequestsText": "Αιτήματα εγγραφής"
+    
+  }
+}

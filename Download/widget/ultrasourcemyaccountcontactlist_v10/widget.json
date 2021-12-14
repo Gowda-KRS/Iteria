@@ -1,0 +1,29 @@
+{
+  "config": {},
+  "defaultLayout": "ultrasourcemyaccountcontactlist_v10_lyt1",
+  "global": false,
+  "globalEnabled": false,
+  "i18nresources": "ultrasourcemyaccountcontactlist",
+  "imports": [],
+  "javascript": "ultrasource-myaccount-contactlist",
+  "jsEditable": true,
+  "minWidth": 1,
+  "pageTypes": [
+    "profile",
+    "agentAccountContacts"
+  ],
+  "source": 101,
+  "translations": [
+    {
+      "language": "en",
+      "name": "UltraSource My Account Contact List"
+    },
+    {
+      "language": "en_GB",
+      "name": "UltraSource My Account Contact List"
+    }
+  ],
+  "version": 10,
+  "widgetFamily": "ultrasourcemyaccountcontactlist",
+  "widgetType": "ultrasourcemyaccountcontactlist"
+}

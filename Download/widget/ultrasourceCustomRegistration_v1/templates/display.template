@@ -1,0 +1,2501 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<style>
+
+  @font-face {
+  font-family: 'FontAwesome';
+  src: url('https://use.fontawesome.com/releases/v5.0.13/css/all.css'); 
+}
+.customCheckbox{
+    box-sizing: border-box;
+    appearance: none;
+    background: #fff;
+    outline: 2px solid #333;
+    border: 1px solid #fff;
+    width: 16px;
+    height: 16px;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.customCheckboxSelect{
+   background: rgb(255, 51, 51); 
+}
+
+
+
+    .box {
+    position: relative;
+   padding-left: 0px;
+   padding-right: 0px;
+}
+
+
+.box select {
+    /* margin-left: 64%; */
+    background: white;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    font-size: 22px;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+
+.box:before {
+    margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0%;
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+
+.box:hover:before{
+	background:#d3d3d3;
+}
+.box:active{
+	    border: 1px black solid;
+}
+.box select:focus{
+	       border: 2px solid black;
+}
+
+.box select:focus::before {
+   border: 2px solid black;
+}
+
+
+    .box1 {
+    position: relative;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+
+
+.box1 select {
+margin-left: 0%;
+    background: white;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    font-size: 16px;
+    -webkit-appearance: none;
+    outline: none;
+}
+.paading{
+    margin-top:-24px;
+}
+.box1:before {
+    margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0%;
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    background: #d3d3d3;
+    pointer-events: none;
+   // border-right:2px solid rgb(255, 51, 51);
+    //border-top:2px solid rgb(255, 51, 51);
+    //border-bottom:2px solid rgb(255, 51, 51);
+}
+
+.box1:hover:before{
+	background:#d3d3d3;
+}
+.box1:active{
+	    border: 1px black solid;
+}
+.box1 select:focus{
+	       border: 2px solid black;
+}
+.box1 select:focus::before {
+   border: 2px solid black;
+}
+
+    .boxtype {
+ position: relative;
+     padding-left: 0px;
+     padding-right: 0px;
+ 
+}
+.firstname9{
+     border: 1px solid lightgray;
+  height: 50px;
+  padding:10px;
+    width: 100%;
+    font-size: 22px;
+    
+}
+.txtbold11{
+font-size: 12px;
+    color: gray;
+    margin-bottom:2px;
+    
+}
+
+.boxtype select {
+    margin-left: 0%;
+    background: white;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    font-size: 16px;
+    -webkit-appearance: none;
+    outline: none;
+}
+.boxtype:before {
+    margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0%;
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+.boxtype select:focus{
+	       border: 2px solid black;
+}
+.boxtype select:focus::before {
+   border: 2px solid black;
+}
+
+
+    .box2 {
+    position: relative;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+
+
+.box2 select {
+/* margin-left: 64%; */
+    margin-top: 0px;
+    background: white;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    font-size: 16px;
+    -webkit-appearance: none;
+    outline: none;
+}
+.box2:before {
+    margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0%;
+    width: 40px;
+    margin-top: 0px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+
+.box2:hover:before{
+	background:#d3d3d3;
+}
+.box2:active{
+	    border: 1px black solid;
+}
+.box2 select:focus{
+	       border: 2px solid black;
+}
+.box2 select:focus::before {
+   border: 2px solid black;
+}
+    .box3 {
+     position: relative;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+
+
+.box3 select {
+   /* margin-left: 64%; */
+    /* margin-top: 46px; */
+    background: white;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    font-size: 16px;
+    -webkit-appearance: none;
+    outline: none;
+}
+.box3:before {
+margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0px;
+    width: 40px;
+    /* margin-top: 46px; */
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+
+.box3:hover:before{
+	background:#d3d3d3;
+}
+.box3:active{
+	    border: 1px black solid;
+}
+.box3 select:focus{
+	       border: 2px solid black;
+}
+.box3 select:focus::before {
+   border: 2px solid black;
+}
+
+.box4 {
+     position: relative;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+
+
+.box4 select {
+   /* margin-left: 64%; */
+    /* margin-top: 46px; */
+    background: white;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    font-size: 16px;
+    -webkit-appearance: none;
+    outline: none;
+}
+.box4:before {
+margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0px;
+    width: 40px;
+    /* margin-top: 46px; */
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+
+.box4:hover:before{
+	background:#d3d3d3;
+}
+.box4:active{
+	    border: 1px black solid;
+}
+.box4 select:focus{
+	       border: 2px solid black;
+}
+.box4 select:focus::before {
+   border: 2px solid black;
+}
+
+
+
+    
+    
+    .boxcountry {
+ position: relative;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+
+
+.boxcountry select {
+    /* margin-left: 64%; */
+    background: white;
+    color: black;
+    padding: 10px;
+       width: 100%;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    font-size: 16px;
+    -webkit-appearance: none;
+    outline: none;
+}
+.boxcountry:before {
+     margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0%;
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+
+.boxcountry:hover:before{
+	background:#d3d3d3;
+}
+
+.boxcountry:active{
+	    border: 1px black solid;
+}
+.boxcountry select:focus{
+	       border: 2px solid black;
+}
+.boxcountry select:focus::before {
+   border: 2px solid black;
+}
+
+    .boxbusiness {
+ position: relative;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+
+
+.boxbusiness select {
+
+    background: white;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    font-size: 16px;
+    -webkit-appearance: none;
+    outline: none;
+}
+.boxbusiness:before {
+    margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0%;
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+
+.boxbusiness:hover:before{
+	background:#d3d3d3;
+}
+
+.boxbusiness:active{
+	    border: 1px black solid;
+}
+.boxbusiness select:focus{
+	       border: 2px solid black;
+}
+.boxbusiness select:focus::before {
+   border: 2px solid black;
+}
+   .boxprimarybusiness {
+ position: relative;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+
+
+.boxprimarybusiness select {
+
+    background: white;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    font-size: 16px;
+    -webkit-appearance: none;
+    outline: none;
+}
+.boxprimarybusiness:before {
+    margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0%;
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+
+.boxprimarybusiness:hover:before{
+	background:#d3d3d3;
+}
+
+.boxprimarybusiness:active{
+	    border: 1px black solid;
+}
+.boxprimarybusiness select:focus{
+	       border: 2px solid black;
+}
+.boxprimarybusiness select:focus::before {
+   border: 2px solid black;
+}
+
+
+    .boxrole {
+ position: relative;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+
+
+.boxrole select {
+    background: white;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    font-size: 22px;
+    -webkit-appearance: none;
+    outline: none;
+}
+.boxrole:before {
+    margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0%;
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+
+.boxrole:hover:before{
+	background:#d3d3d3;
+}
+.boxrole:active{
+	    border: 1px black solid;
+}
+.boxrole select:focus{
+	       border: 2px solid black;
+}
+.boxrole select:focus::before{
+	       border: 2px solid black;
+}
+
+
+    .boxrole1 {
+ position: relative;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+
+
+.boxrole1 select {
+    background: white;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    font-size: 22px;
+    -webkit-appearance: none;
+    outline: none;
+}
+.boxrole1:before {
+    margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0%;
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+
+.boxrole1:hover:before{
+	background:#d3d3d3;
+}
+.boxrole1:active{
+	    border: 1px black solid;
+}
+.boxrole1 select:focus{
+	       border: 2px solid black;
+}
+
+.boxrole1 select:focus::before {
+   border: 2px solid black;
+}
+
+    
+    @media only screen and (max-width: 500px){
+        
+            .boxcountry {
+ position: relative;
+ padding-right: 0px;
+     padding-left: 0px;
+}
+
+
+.boxcountry select {
+    /* margin-left: 64%; */
+    background: white;
+    color: black;
+    padding: 5px;
+    width: 100%;
+    height: 32px;
+    border: 1px solid #d3d3d3;
+    font-size: 12px;
+    -webkit-appearance: none;
+    outline: none;
+}
+.boxcountry:before {
+    margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0%;
+    width: 26px;
+    height: 32px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 22px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+
+.boxcountry:hover:before{
+	background:#d3d3d3;
+}
+
+.boxcountry:active{
+	    border: 1px black solid;
+}
+
+.box2 {
+ position: relative;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+.box2:before {
+    margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0%;
+    width: 29px;
+    margin-top: 0px;
+    height: 32px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 22px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+
+.box2 select {
+    /* margin-left: 64%; */
+    margin-top: 0px;
+    background: white;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    height: 32px;
+    border: 1px solid #d3d3d3;
+    font-size: 12px;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+
+        
+        .box {
+ position: relative;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+.box select {
+    /* margin-left: 64%; */
+    background: white;
+    color: black;
+    padding: 5px;
+    width: 100%;
+    height: 32px;
+    /* height: 50px; */
+    border: 1px solid #d3d3d3;
+    font-size: 12px;
+    -webkit-appearance: none;
+    outline: none;
+}
+.box:before {
+    margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    height: 32px;
+    color: white;
+    right: 0%;
+    width: 28px;
+    /* height: 50px; */
+    text-align: center;
+    line-height: 31px;
+    font-size: 20px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+        
+        .boxrole {
+ position: relative;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+.boxrole:before {
+    margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0%;
+    width: 28px;
+    height: 32px;
+    text-align: center;
+    line-height: 31px;
+    font-size: 23px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+.boxrole select {
+    background: white;
+    color: black;
+    padding: 5px;
+    width: 100%;
+    height: 32px;
+    border: 1px solid #d3d3d3;
+    font-size: 12px;
+    -webkit-appearance: none;
+    outline: none;
+}
+        .boxrole1 {
+ position: relative;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+.boxrole1:before {
+    margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0%;
+    width: 28px;
+    height: 32px;
+    text-align: center;
+    line-height: 31px;
+    font-size: 23px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+.boxrole1 select {
+    background: white;
+    color: black;
+    padding: 5px;
+    width: 100%;
+    height: 32px;
+    border: 1px solid #d3d3d3;
+    font-size: 22px;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.box1 {
+ position: relative;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+.box1:before {
+    margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0%;
+    width: 25px;
+    height: 32px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 19px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+
+.box1 select {
+    margin-left: 0%;
+    background: white;
+    color: black;
+    padding: 5px;
+    width: 100%;
+    height: 32px;
+    border: 1px solid #d3d3d3;
+    font-size: 12px;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+
+.boxtype {
+ position: relative;
+     padding-left: 0px;
+     padding-right: 0px;
+}
+
+.boxtype select {
+    margin-left: 0%;
+    background: white;
+    color: black;
+    padding: 5px;
+    width: 100%;
+    height: 32px;
+    border: 1px solid #d3d3d3;
+    font-size: 12px;
+    -webkit-appearance: none;
+    outline: none;
+}
+.boxtype:before {
+    margin-right: 0px;
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 0%;
+    width: 24px;
+    height: 32px;
+    text-align: center;
+    line-height: 33px;
+    font-size: 20px;
+    background: #d3d3d3;
+    pointer-events: none;
+}
+
+        
+        
+    }
+
+
+
+
+</style>
+  <!-- ko with: user -->
+<div id="CC-submitSelfRegistrationRequestPane" class="container">
+    
+<div class="row section1">
+ <div class="col-md-1"></div>   
+<div class="col-md-10 ten-div">
+<h2 class="header-txt">Contact & Login Information</h2>
+ <!-- ko with: $parent.selfRegistrationRequest().profile -->
+<div class="row namerow">
+  <div class="col-md-2 col-3 gender-Div"> 
+   <!--<div class="input-group mt-3 mb-3 dropdowngroup">
+      <input type="text" class="form-control Textgender" placeholder=" Mr.">
+      <div class="input-group-prepend">
+        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdowngender" data-toggle="dropdown"></button>       
+        <div class="dropdown-menu dropdowngendermenu" data-bind="with:$parents[1].titleArray">
+          <a class="dropdown-item" data-bind="value: $parents[1].selectedTitle">Miss</a>
+          <a class="dropdown-item" data-bind="value: $parents[1].selectedTitle">Mrs</a>
+        </div>
+      </div>
+    </div>-->
+      <label for="fname">Prefix</label>
+<!--   <select class="fas fa-caret-down dropdowngender" data-bind="options:$parents[1].titleArray, value: $parents[1].selectedTitle">  </select> -->
+ <div class="box col-md-12 col-12">
+<select data-bind="options:$parents[1].titleArray, value: $parents[1].selectedTitle">
+</select>
+ </div>
+ 
+ 
+</div>
+<div class="col-md-10 col-9">
+<div class="row">
+  <div class="col-md-6 col-12 zero-padd">
+    <label for="fname" id="CC-userRegistration-firstname-label">* First name</label>
+
+  <input type="text" maxlength="254" class="firstname" id="CC-userRegistration-firstname" aria-required="true"
+                      data-bind="validatableValue: firstName, valueUpdate: 'afterkeydown', event: {blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}"/>
+        <!--<span role="alert" class="text-danger error-text" id="CC-userRegistration-firstname-error"  data-bind="validationMessage: firstName"></span>  -->                
+                      <br><br>
+  </div>
+  <div class="col-md-6 col-12 zero-padd">
+    <label for="fname" id="CC-userRegistration-lastname-label">* Last name</label>
+  
+  <input type="text" maxlength="254" class="firstname" id="CC-userRegistration-lastname" aria-required="true"
+                      data-bind="validatableValue: lastName, valueUpdate: 'afterkeydown', event: {blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}"/>
+                        <!--<span role="alert" class="text-danger  error-text" id="CC-userRegistration-lastname-error" data-bind="validationMessage: lastName"></span>-->
+                      <br><br>
+  </div>
+    <div class="col-md-6 col-12 emptyDiv" id="rolesB2C"></div>
+  
+  </div>  
+  </div>
+  
+  
+
+</div>
+<div class="email-div">
+   <label class="email" id="CC-userRegistration-emailAddress-label">* Email Address</label>
+  
+       
+  <input type="text"  class="firstname1" id="CC-userRegistration-emailAddress" aria-required="true" data-bind="validatableValue: email,
+                           valueUpdate: 'afterkeydown',enterkey:$parents[1].userSearch.bind($parents[1]),event: {blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() },focus: $parents[1].emailAddressFocused.bind($parents[1])}"/>
+                            <span role="alert" class="text-danger error-text" data-bind="visible:$parents[1].isInvalidEmailAddress" >Please enter valid email address</span>
+                             <!--<span role="alert" class="text-danger error-text" id="CC-userRegistration-emailAddress-error" data-bind="validationMessage: email"></span>-->
+                             <br><br>
+</div>
+<!-- /ko -->
+
+ <div class="row">
+     
+     <div class="col-md-12 col-6 top-div">
+          <div class="row">
+ <div class="col-md-6 col-12 number-Div">
+    <label for="hmnumber" id="CC-userRegistration-homeNumber-label">* Home Number</label>
+
+    
+  <input type="text" class="firstname" id="CC-userRegistration-homeNumber" name="fname" data-bind=" value: $parent.homePhoneNumber ,valueUpdate: 'afterkeydown', event: {keyup:$parent.validateHomePhoneNumber,blur: function(data, event) { return $parent.submitSelfRegistrationRequest.bind(data, $parent, event)() }}"/>
+      <span role="alert" class="text-danger error-text" id="CC-login-phone-error" data-bind="visible:$parent.isInvalidHomePhoneNumber, text: $parent.invalidPhoneNumber2"></span>
+      <!-- <span role="alert" class="text-danger" id="CC-login-phone-error" data-bind="visible:$parent.isInvalidHomePhoneNumber1, text: $parent.invalidPhoneNumber3"></span>-->
+ <br><br class="br-div"> 
+     </div>
+ <div class="col-md-6 col-12 number-Div mbnumber" >
+    <label for="mbnumber" id="CC-userRegistration-mobileNumber-label">Mobile Number</label>
+
+  <input type="text" class="firstname" id="CC-userRegistration-mobileNumber" name="fname" data-bind="value:$parent.mobileNumber, valueUpdate: 'afterkeydown', event: {blur:$parent.validateMobilePhoneNumber}"/>
+      <span role="alert" class="text-danger error-text" id="CC-login-phone-error" data-bind="visible:$parent.isInvalidMobilePhoneNumber, text: $parent.invalidSecondaryPhoneNumber"></span>
+  <br><br>
+
+     </div>
+     <!--
+      <div class="col-md-6 col-12 number-Div email-div">
+    <label for="fname" id="CC-userRegistration-faxNumber-label">Fax Number</label>
+
+  <input type="text" class="firstname" id="CC-userRegistration-faxNumber" name="fname" data-bind="value:$parent.faxNumber, valueUpdate: 'afterkeydown' , event: {blur:$parent.validateFaxPhoneNumber}"/>
+      <span role="alert" class="text-danger" id="CC-login-phone-error" data-bind="visible:$parent.isInvalidFaxPhoneNumber, text: $parent.invalidFaxPhoneNumber"></span>
+  <br><br>
+
+     </div>
+     
+      <div class="col-md-6 col-12" id="roles-div">
+          
+    <label for="role" class="txtbold" id="CC-userRegistration-role-label">Role</label>
+
+ <div class="boxrole col-md-12 col-12">
+<select id="CC-userRegistration-role" data-bind="options:$parent.rolesArray,optionsCaption:'Select Role', value: $parent.role, valueUpdate: 'afterkeydown'">
+</select>
+ </div>
+
+
+<br><br>
+  </div>
+  
+  -->
+  
+  
+  
+  
+  
+  
+     
+     
+     </div>
+</div>
+
+
+   <div class="col-md-6 col-6 empty-div"></div>
+  
+
+  <div class="col-md-6 marginbox col-6" id="check-div">
+      
+      
+<!--      
+      
+          <label class="container check">Receive mailings
+  <input type="checkbox" data-bind="checked:$parent.receiveMails , valueUpdate: 'afterkeydown', event: {keydown: function(data, event) { return $parent.submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}">
+  <span class="checkmark"></span>
+</label>
+<label class="container check">Receive emails
+  <input type="checkbox" data-bind="checked: $parent.receiveEmail , valueUpdate: 'afterkeydown', event: {keydown: function(data, event) { return $parent.submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}">
+  <span class="checkmark"></span>
+</label>
+<label class="container check">Receive texts
+  <input type="checkbox" data-bind="checked:$parent.receiveTexts , valueUpdate: 'afterkeydown', event: {keydown: function(data, event) { return $parent.submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}">
+  <span class="checkmark"></span>
+</label>
+      
+      
+-->  
+      
+      
+      
+      
+<div class="row">
+        <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="mail" name="type" value="mail" data-bind="checked:$parent.receiveMails , valueUpdate: 'afterkeydown'" >
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="mail" class="receive">Receive mailings</label>
+        </div>
+</div>
+<br>
+<div class="row">
+        <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="email" name="type1" value="email" data-bind="checked: $parent.receiveEmail , valueUpdate: 'afterkeydown'">
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="email"  class="receive">Receive emails</label>
+        </div>
+        </div>
+<br>
+<div class="row">
+        <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="text" name="type2" value="text" data-bind="checked:$parent.receiveTexts , valueUpdate: 'afterkeydown'" >
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="text"  class="receive">Receive texts</label>
+        </div>
+        </div>
+<br>
+<div class="row">
+        <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="catalog" name="type3" value="catalog" data-bind="checked:$parent.receiveCatalogs , valueUpdate: 'afterkeydown'">
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="catalog"  class="receive">Receive catalogs</label>
+        </div>
+        </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+     
+</div>
+<div class="row txt-align" >
+    <div class="col-md-6"></div>
+      <div class="col-md-6 col-12">
+  <button class="btn-clr" data-bind="click: function(data, event) { $parent.showIndividualUserContactInfo.bind(data, $parent, event)() }"><span>Next</span></button>
+  <div class="req-txt">
+    <span id="required-txt" class="red-txt font-medium" data-bind="visible: $parent.nextButtonError" style="">* All required fields must be filled out before going forward</span>
+    </div>
+  <br class="br-div">
+  <div align=left class="txt-align">
+        <button class="btn-clr2" data-bind="click: function(data, event) { $parent.backContactIndividual.bind(data, $parent, event)() }"><span>Back</span></button>
+  </div>
+</div>
+
+</div>
+
+
+
+</div>
+<div class="col-md-1"></div>   
+</div>
+</div>
+
+
+<div id="CC-registerBusinessUserPane" class="container">
+<div class="row section1">
+ <div class="col-md-1"></div>   
+<div class="col-md-10 ten-div">
+<h2 class="header-txt">Contact & Login Information</h2>
+ <!-- ko with: $parent.selfRegistrationRequest().profile -->
+<div class="row namerow">
+  <div class="col-md-2 col-3 gender-Div"> 
+
+  <label for="fname">Prefix</label>
+<!--  <select class="ui dropdown dropdowngender" data-bind="options:$parents[1].titleArray, value: $parents[1].selectedTitle">
+</select>
+-->
+ <div class="box col-md-12 col-12">
+<select data-bind="options:$parents[1].titleArray, value: $parents[1].selectedTitle">
+</select>
+ </div>
+ 
+</div>
+<div class="col-md-10 col-9 zero-padd">
+<div class="row">
+  <div class="col-md-6 col-12 ">
+    <label for="fname" id="CC-userBusinessRegistration-firstname-label">* First name</label>
+
+  <input type="text" maxlength="254" class="firstname" id="CC-userBusinessRegistration-firstname" aria-required="true"
+                      data-bind="validatableValue: firstName, valueUpdate: 'afterkeydown', event: {blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}"/>
+                       <!--   <span role="alert" class="text-danger" id="CC-userRegistration-firstname-error"  data-bind="validationMessage: firstName"></span>-->
+                      <br><br>
+  </div>
+  <div class="col-md-6 col-12">
+    <label id="CC-userBusinessRegistration-lastname-label">* Last name</label>
+
+  <input type="text" maxlength="254" class="firstname" id="CC-userBusinessRegistration-lastname" aria-required="true"
+                      data-bind="validatableValue: lastName, valueUpdate: 'afterkeydown', event: {blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}"/>
+                         <!-- <span role="alert" class="text-danger" id="CC-userRegistration-lastname-error" data-bind="validationMessage: lastName"></span>-->
+                      <br><br>
+  </div>
+    <div class="col-md-6 col-12 emptyDiv" id="rolesB2B"> </div>
+  
+  </div>  
+  </div>
+  
+  
+
+</div>
+<div class="email-div">
+   <label class="email" id="CC-userBusinessRegistration-emailAddress-label">* Email Address</label>
+
+  <input type="text" class="firstname1" id="CC-userBusinessRegistration-emailAddress" aria-required="true" data-bind="validatableValue: email,
+                           valueUpdate: 'afterkeydown',event: {blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }, focus: $parents[1].emailAddressFocused.bind($parents[1])}"/>
+                               <!--<span role="alert" class="text-danger" id="CC-userRegistration-emailAddress-error" data-bind="validationMessage: email"></span>-->
+            <span role="alert" class="text-danger" data-bind="visible:$parents[1].isInvalidEmailAddress">Please enter valid email address</span>
+                           <br><br>
+</div>
+<!-- /ko -->
+
+ <div class="row">
+     
+     <div class="col-md-12 col-6 top-div">
+          <div class="row">
+ <div class="col-md-6 col-12 number-Div">
+    <label for="ofnumber" id="CC-userBusinessRegistration-officeNumber-label">* Office Number</label>
+
+  <input type="text" class="firstname" id="CC-userBusinessRegistration-officeNumber" name="fname" data-bind=" value: $parent.officeNumber ,valueUpdate: 'afterkeydown', event: {keyup:$parent.validateHomePhoneNumber,blur: function(data, event) { return $parent.submitSelfRegistrationRequest.bind(data, $parent, event)() }}"/>
+      <span role="alert" class="text-danger" id="CC-login-phone-error" data-bind="visible:$parent.isInvalidHomePhoneNumber, text: $parent.invalidPhoneNumber"></span>
+           <!--<span role="alert" class="text-danger" id="CC-login-phone-error" data-bind="visible:$parent.isInvalidHomePhoneNumber1, text: $parent.invalidPhoneNumber1"></span>-->
+
+  <br><br>     
+     </div>
+ <div class="col-md-6 col-12 number-Div">
+    <label for="mbnumber" id="CC-userBusinessRegistration-mobileNumber-label">Mobile Number</label>
+
+  <input type="text" class="firstname" id="CC-userBusinessRegistration-mobileNumber" name="fname" data-bind="value:$parent.mobileNumber, valueUpdate: 'afterkeydown', event: {blur:$parent.validateMobilePhoneNumber}"/>
+      <span role="alert" class="text-danger" id="CC-login-phone-error" data-bind="visible:$parent.isInvalidMobilePhoneNumber, text: $parent.invalidSecondaryPhoneNumber"></span>
+  <br><br>
+
+     </div>
+     </div>
+</div>
+
+ <div class="col-md-6 col-12 ">
+    <label for="fname" id="CC-userBusinessRegistration-faxNumber-label">Fax Number</label>
+
+  <input type="text" class="firstname" id="CC-userBusinessRegistration-faxNumber" name="fname" data-bind="value:$parent.faxNumber, valueUpdate: 'afterkeydown', event: {blur:$parent.validateFaxPhoneNumber}">
+      <span role="alert" class="text-danger" id="CC-login-phone-error" data-bind="visible:$parent.isInvalidFaxPhoneNumber, text: $parent.invalidFaxPhoneNumber"></span>
+  <br><br>
+
+     </div>
+
+
+ <div class="col-md-6 col-12" id="roles-div1">
+    <label for="role" class="txtbold" id="CC-userBusinessRegistration-role-label">* Role</label><br>
+
+ <div class="boxrole1 col-md-12 col-12">
+<select id="CC-userBusinessRegistration-role" data-bind="options:$parent.rolesArray,optionsCaption:'Select Role', value: $parent.role, valueUpdate: 'afterkeydown',event:{ blur: function(data, event) { return $parent.submitSelfRegistrationRequest.bind(data, $parent, event)() }}">
+</select>
+ </div>
+ 
+
+<br><br>
+  </div>
+  
+
+
+  <div class="col-md-6 marginbox col-6" id="check-div1">
+
+     
+<br>
+
+
+	<div class="row">
+        <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="mail" name="type" value="mail" data-bind="checked:$parent.receiveMails , valueUpdate: 'afterkeydown'" >
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="mail">Receive mailings</label>
+        </div>
+        </div>
+        
+<br>
+	<div class="row">
+        <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="email" name="type" value="email" data-bind="checked: $parent.receiveEmail , valueUpdate: 'afterkeydown'">
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="email">Receive emails</label>
+        </div>
+        </div>
+        
+<br>
+	<div class="row">
+        <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="text" name="type" value="text" data-bind="checked:$parent.receiveTexts , valueUpdate: 'afterkeydown'" >
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="text">Receive texts</label>
+        </div>
+        </div>
+        
+        
+<br>
+	<div class="row">
+        <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="text" name="catalog" value="catalog" data-bind="checked:$parent.receiveCatalogs , valueUpdate: 'afterkeydown'">
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="text">Receive catalogs</label>
+        </div>
+        </div>
+
+
+  </div>
+
+
+
+ <div class="col-md-6 col-12">
+    <label for="title" id="CC-userBusinessRegistration-title-label">Title</label>
+
+  <input type="text" class="firstname" id="CC-userBusinessRegistration-title" name="fname" data-bind="value:$parent.title, valueUpdate: 'afterkeydown'" />
+      <span role="alert" class="text-danger" id="CC-login-phone-error"></span>
+  <br><br>
+
+     </div>
+     
+
+     
+</div>
+<div class="row txt-align" >
+    <div class="col-md-6"></div>
+      <div class="col-md-6 col-12">
+  <button class="btn-clr" data-bind="click: function(data, event) { $parent.showBusinessUserContactInfo.bind(data, $parent, event)() }"><span>Next</span></button>
+      <div class="req-txt">
+    <span id="required-txt" class="red-txt font-medium" data-bind="visible: $parent.nextButtonError" style="">* All required fields must be filled out before going forward</span>
+    </div>
+  <br class="br-div">
+  <div align=left class="txt-align">
+        <button class="btn-clr2" data-bind="click: function(data, event) { $parent.backContactBusiness.bind(data, $parent, event)() }"><span>Back</span></button>
+  </div>
+</div>
+
+</div>
+
+
+
+</div>
+<div class="col-md-1"></div>   
+</div>
+</div>
+
+
+<div id="CC-individualUserContactInfo" class="container">
+    <div class="row section1">
+        <div class="col-md-1"></div>   
+    <div class="col-md-10">
+    <h2 ><b class="companyInfo">Billing Address</b></h2>
+    <br>
+    <br>
+  <!-- ko if: $parent.selfRegistrationRequest().organization.secondaryAddresses()[0]-->
+   <!-- ko with: $parent.selfRegistrationRequest().organization.secondaryAddresses()[0].address -->
+   <div class="row">
+       <div class="col-md-12 col-7 padding-zero">
+           
+           <label for="fname" class="txtbold">Nickname </label>
+      <input type="text" maxlength="254" class="firstname" id="fname" name="fname" data-bind="validatableValue:alias,  valueUpdate: 'afterkeydown'"  ><br><br>
+            
+  
+       </div>
+
+       
+   </div>
+   
+   
+   
+   
+    <div>
+       <label for="fname" class="txtbold" id="CC-userRegistration-address1-label">* Street Address</label>
+
+      <input type="text" class="firstname" id="CC-userRegistration-address1" name="fname"  data-bind="validatableValue:address1,  valueUpdate: 'afterkeydown',
+            event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress.bind(data,'0', event)()}, blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}">
+                        <!--  <span role="alert" class="text-danger" id="CC-login-address1-error" data-bind="validationMessage:address1" style=""></span>-->
+            <br><br>
+    </div>
+
+<div class="grid-container-1">
+  <div class="padding-zero paading">
+      <i class="textit">Suite, Apartment, Building, P.O. Box</i><br>
+       <label for="fname" class="txtbold1" id="CC-userRegistration-suite-label">
+       Type
+       </label>
+  <!--
+  <select class="ui dropdown dropdowngender" data-bind="options:$parents[1].addressArray ,value: $parents[1].selectedBillingAddress2Type">
+</select>       
+  -->     
+       <div class="box2 col-md-12 col-12">
+<select id="CC-userRegistration-suite" data-bind="options:$parents[1].addressArray ,value: $parents[1].selectedBillingAddress2Type">
+</select>
+ </div>
+ 
+ 
+
+
+  </div>
+  <div class="paddtop  padding-one padd-right name-Div1">
+      <label for="fname" class="txtbold11" id="CC-userRegistration-suite-label">Number
+      
+       </label>
+
+  <input type="text" class="firstname9" id="fname" name="fname" data-bind="validatableValue:address2,  valueUpdate: 'afterkeydown',
+            event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress.bind(data,'0', event)()}}"><br><br>
+  </div>
+  <div class=" padding-one padd-city">
+       <label for="fname" class="txtbold" id="CC-userRegistration-city-label">* City</label>
+
+  <input type="text" class="firstname" id="CC-userRegistration-city" name="fname" data-bind="validatableValue: city,  valueUpdate: 'afterkeydown',
+            event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress.bind(data, '0', event)()},blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}"/>
+                     <!--  <span role="alert" class="text-danger" id="CC-login-city-error" data-bind="validationMessage: city"></span>-->
+            <br><br>
+  </div>
+</div>
+
+
+
+<div class="row">
+
+  <div class="col-md-6 col-4 padding-zero">
+       <label for="fname" class="txtbold" id="CC-userRegistration-state-label">* State</label>
+
+          <!--
+  <select class="firstname" id="individual-BillingState" name="fname" data-bind="enable: stateList().length,
+            optionsValue: 'abbreviation', options: stateList(),optionsText: 'displayName',optionsCaption:$parents[1].translate('stateText'),
+            value: selectedState,
+            validatableTarget: state, validationElement: state , event:{ change: $parents[1].validateAddress.bind($parents[1],'0',event)()}"></select>
+            -->
+                        <div class="box1 col-md-12 col-12">
+<select id="CC-userRegistration-state" data-bind="enable: stateList().length,
+            optionsValue: 'abbreviation', options: stateList(),optionsText: 'displayName',optionsCaption:'',
+            value: selectedState,
+            validatableTarget: state, validationElement: state , event:{ change: $parents[1].validateAddress.bind($parents[1],'0',event)(), blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}">
+</select>
+ </div>
+          <!--<span role="alert" class="text-danger" id="CC-login-state-error" data-bind="validationMessage: state"></span>  -->          
+            <br><br>
+  </div>
+  <div class="col-md-6 col-4 padd-zip">
+ <label for="fname" class="txtbold" id="CC-userRegistration-zipCode-label">* Zip Code</label>
+
+  <input type="text" class="firstname" id="CC-userRegistration-zipCode" name="fname" data-bind="validatableValue: postalCode,  valueUpdate: 'afterkeydown',
+            event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress.bind(data,'0', event)()},blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}">
+                      <!-- ko if: $data.postalCode() !== ""  -->
+                           <span role="alert" class="text-danger" id="CC-login-postal-error" data-bind="validationMessage: postalCode"></span>
+                            <!-- /ko -->
+            <br><br>
+  </div>
+  
+  
+  
+                <div class="col-md-6 col-5 padding-one">
+       <label for="fname" class="txtbold" id="CC-userRegistration-country-label">* Country</label>
+
+                                 <!--
+  <select  class="firstname" id="fname" name="fname"  data-bind="optionsValue: 'repositoryId',
+            options: countriesList(), optionsText: 'displayName', value: selectedCountry, optionsCaption:$parents[1].translate('countryText'),
+            validatableTarget: country, validationElement: country,event:{ change: $parents[1].validateAddress.bind($parents[1],'0',event)()}"></select>
+            -->
+            <div class="boxcountry col-md-12 col-12">
+<select id="CC-userRegistration-country" data-bind="optionsValue: 'repositoryId',
+            options: countriesList(), optionsText: 'displayName', value: selectedCountry, optionsCaption:$parents[1].translate('countryText'),
+            validatableTarget: country, validationElement: country,event:{ change: $parents[1].validateAddress.bind($parents[1],'0',event)()}">
+</select>
+ </div>
+                                 <!-- <span role="alert" class="text-danger" id="CC-login-country-error" data-bind="validationMessage: country"></span>-->
+            
+            
+            
+            <br><br>
+            
+       </div>
+  
+  
+  
+  
+  
+  
+  
+
+</div>
+  <!-- /ko -->
+   <!-- /ko -->
+
+<br>
+<br>
+<br>
+<br>
+<h2 ><b class="companyInfo">Shipping Address</b></h2>
+<br>
+<br>
+    <div class="labelcss">
+       <input type="checkbox" id="billingAddressCopyCheck-Check" data-bind="checked: $parent.billingAddressCopyCheck">
+       <label for="billingAddressCopyCheck-Check" class="labelcss">Same as Billing Address
+       </label>
+    </div>
+  <!-- ko if: $parent.selfRegistrationRequest().organization.secondaryAddresses()[1]-->
+   <!-- ko with: $parent.selfRegistrationRequest().organization.secondaryAddresses()[1].address -->
+
+
+
+   <div class="row">
+       <div class="col-md-12 col-7 padding-zero">
+           
+           <label for="fname" class="txtbold">Nickname </label>
+      <input type="text" maxlength="254" class="firstname" id="fname" name="fname" data-bind="validatableValue:alias,  valueUpdate: 'afterkeydown', disable : $parents[1].billingAddressCopyCheck" ><br><br>
+            
+  
+       </div>
+
+       
+   </div>
+   
+   
+   
+   
+
+
+
+
+
+
+<br>
+<div>
+   <label for="fname" class="txtbold" id="CC-userRegistration-address11-label">* Street Address</label>
+   
+  <input type="text" class="firstname" id="CC-userRegistration-address11" name="fname" data-bind="validatableValue:address1,  valueUpdate: 'afterkeydown', disable : $parents[1].billingAddressCopyCheck,
+            event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress.bind(data,'1', event)()}, blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}"/>
+                         <!-- <span role="alert" class="text-danger" id="CC-login-address1-error" data-bind="validationMessage:address1" style=""></span>-->
+            <br><br>
+</div>
+<div class="grid-container-1">
+  <div class="padding-zero paading">
+      <i class="textit">Suite, Apartment, Building, P.O. Box</i><br>
+       <label for="fname" class="txtbold1" id="CC-userRegistration-suite1-label">Type</label>
+       <!--
+<select class="ui dropdown dropdowngender" id="individual-shipping-add" data-bind="options:$parents[1].addressArray , disable : $parents[1].billingAddressCopyCheck, value: $parents[1].selectedShippingAddress2Type"></select>
+-->
+
+       <div class="box2 col-md-12 col-12">
+<select id="individual-shipping-add" data-bind="options:$parents[1].addressArray , disable : $parents[1].billingAddressCopyCheck, value: $parents[1].selectedShippingAddress2Type">
+</select>
+ </div>
+ 
+
+
+  </div>
+  <div class=" paddtop  padding-one padd-right name-Div">
+      <label for="fname" class="txtbold11" id="CC-userRegistration-suite-label">Number
+      
+       </label>
+  <input type="text" class="firstname9" id="fname" name="fname" data-bind="validatableValue:address2,  valueUpdate: 'afterkeydown', disable : $parents[1].billingAddressCopyCheck,
+            event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress.bind(data,'1', event)()}}"><br><br>
+  </div>
+  <div class=" padding-one padd-city">
+       <label for="fname" class="txtbold" id="CC-userRegistration-city1-label">* City</label>
+              <!-- <span role="alert" class="text-danger" id="CC-login-city-error" data-bind="validationMessage: city"></span>-->
+
+  <input type="text" class="firstname citypadd" id="CC-userRegistration-city1" name="fname" data-bind="validatableValue: city,  valueUpdate: 'afterkeydown',value: city, disable : $parents[1].billingAddressCopyCheck,
+            event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress.bind(data,'0', event)()}, blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}"><br><br>
+  </div>
+</div>
+
+
+
+<div class="row">
+
+  <div class="col-md-6 col-4 padding-zero order-xs-1">
+       <label for="fname" class="txtbold" id="CC-userRegistration-state1-label">* State</label>
+
+<!--
+  <select class="firstname" id="individual-ShippingState" name="fname" data-bind="enable: stateList().length, disable : $parents[1].billingAddressCopyCheck,
+            optionsValue: 'abbreviation', options: stateList(), optionsText: 'displayName', optionsCaption:$parents[1].translate('stateText'),
+            value: selectedState,
+            validatableTarget: state, validationElement: state,event:{ change: $parents[1].validateAddress.bind($parents[1],'1',event)()}"></select>
+    -->        
+            
+                    <div class="box1 col-md-12 col-12">
+<select id="CC-userRegistration-state1"  data-bind="enable: stateList().length, disable : $parents[1].billingAddressCopyCheck,
+            optionsValue: 'abbreviation', options: stateList(), optionsText: 'displayName', optionsCaption:'',
+            value: selectedState,
+            validatableTarget: state, validationElement: state,event:{ change: $parents[1].validateAddress.bind($parents[1],'1',event)(),blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}">
+</select>
+ </div>
+             <!--   <span role="alert" class="text-danger" id="CC-login-state-error" data-bind="validationMessage: state"></span>    -->        
+            
+            
+            <br><br>
+  </div>
+  <div class="col-md-6  col-3 order-xs-2 padd-zip">
+ <label for="fname" class="txtbold" id="CC-userRegistration-zipCode1-label">* Zip Code</label>
+   <input type="text" class="firstname" id="CC-userRegistration-zipCode1" name="fname" data-bind="validatableValue: postalCode,  valueUpdate: 'afterkeydown', disable : $parents[1].billingAddressCopyCheck,
+            event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress.bind(data,'1', event)()},blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}">
+                                  <!-- ko if: $data.postalCode() !== ""  -->
+                                 <span role="alert" class="text-danger" id="CC-login-postal-error" data-bind="validationMessage: postalCode"></span>
+                                <!-- /ko -->
+            <br><br>
+  </div>
+
+              <div class="col-md-6 col-5 padding-one">
+       <label for="fname" class="txtbold" id="CC-userRegistration-country1-label">* Country</label>
+
+<!--  <select class="firstname" id="fname" name="fname"  data-bind="optionsValue: 'repositoryId',
+            options: countriesList(), optionsText: 'displayName', value: selectedCountry, optionsCaption:$parents[1].translate('countryText'),
+            validatableTarget: country, validationElement: country,event:{ change: $parents[1].validateAddress.bind($parents[1],'1',event)()} , disable : $parents[1].billingAddressCopyCheck"></select>
+    -->        
+            
+            
+        <div class="boxcountry country-ind col-md-12 col-12">
+<select id="CC-userRegistration-country1"  data-bind="optionsValue: 'repositoryId',
+            options: countriesList(), optionsText: 'displayName', value: selectedCountry, optionsCaption:$parents[1].translate('countryText'),
+            validatableTarget: country, validationElement: country,event:{ change: $parents[1].validateAddress.bind($parents[1],'1',event)()} , disable : $parents[1].billingAddressCopyCheck">
+</select><br><br>
+ </div>
+          <!-- <span role="alert" class="text-danger" id="CC-login-country-error" data-bind="validationMessage: country"></span>  -->          
+            
+            
+       </div>
+       
+
+ <div class="col-md-6 col-5 order-xs-3">
+            <label for="fname" class="txtbold" id="CC-userRegistration-typeAddress-label">* Type of Address</label>
+
+     <!--   <select id="individual-Shippingtype" class="ui dropdown dropdowngender1" data-bind="options: $parents[1].addressTypeArray,validatableValue: type,  valueUpdate: 'afterkeydown',
+            event: {change: function(data, event) {
+            return  $parents[1].validateAddressType.bind(data,'1', event)()}}"></select>
+         -->   
+            
+            
+<div class="boxtype col-md-12 col-12">
+<select id="CC-userRegistration-typeAddress" data-bind="options: $parents[1].addressTypeArray,validatableValue: type,  valueUpdate: 'afterkeydown',
+            event: {change: function(data, event) {
+            return  $parents[1].validateAddressType.bind(data,'1', event)()}, blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}">
+</select>
+ </div>
+                                   <!--<span role="alert" class="text-danger" id="CC-login-type-error" data-bind="visible: $parents[1].isEmptyAddressType,text: $parents[1].addressTypeError"></span>-->
+            
+            
+          <br>
+
+</div>
+<!--</div>-->
+<!--
+<div class="row">
+   <div class="col-md-6 col-5 order-xs-3">
+    <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="customCheckboxLift" name="type" value="" class="customCheckbox" data-bind="checked:$parents[1].liftGateFee, valueUpdate: 'afterkeydown'" >
+        </div>
+        
+        <div class="col-md-9 col-10 name-padd">
+<label for="mail" class="receive">Liftgate Fee</label>
+        </div>
+</div>
+
+<div class="col-md-6 col-5 order-xs-3">
+    <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="customCheckboxInside" name="type" value="" class="customCheckbox" data-bind="checked:$parents[1].insidePickup , valueUpdate: 'afterkeydown'" >
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="mail" class="receive">Inside Pickup</label>
+        </div>
+</div>
+<br><br>
+<div class="col-md-6 col-5 order-xs-3">
+    <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="customCheckboxRes" name="type" value="" class="customCheckbox" data-bind="checked:$parents[1].resPickup , valueUpdate: 'afterkeydown'" >
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="mail" class="receive">Residential Pickup</label>
+        </div>
+</div>
+
+<div class="col-md-6 col-5 order-xs-3">
+    <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="customCheckboxLimit" name="type" value="" class="customCheckbox" data-bind="checked:$parents[1].limitedAccessPickup , valueUpdate: 'afterkeydown'" >
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="mail" class="receive">Limited Access Pickup</label>
+        </div>
+</div>
+<br><br>
+</div>-->
+<div class="row col-md-12">
+   <div class="col-md-4 col-5 order-xs-3">
+    <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="customCheckboxLift" name="type" value="" class="customCheckbox" data-bind="checked:$parents[1].liftGateFee, valueUpdate: 'afterkeydown'" >
+        </div>
+        
+        <div class="col-md-9 col-10 name-padd">
+<label for="mail" class="receive">Liftgate Fee</label>
+        </div>
+
+</div>
+<div class="col-md-4 col-5 order-xs-3">
+    <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="customCheckboxInside" name="type" value="" class="customCheckbox" data-bind="checked:$parents[1].insidePickup , valueUpdate: 'afterkeydown'" >
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="mail" class="receive">Inside Pickup</label>
+        </div>
+</div>
+<!--<br><br>
+<div class="col-md-6 col-5 order-xs-3">
+    <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="customCheckboxRes" name="type" value="" class="customCheckbox" data-bind="checked:$parents[1].resPickup , valueUpdate: 'afterkeydown'" >
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="mail" class="receive">Residential Pickup</label>
+        </div>
+</div>-->
+
+<div class="col-md-4 col-5 order-xs-3">
+    <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="customCheckboxLimit" name="type" value="" class="customCheckbox" data-bind="checked:$parents[1].limitedAccessPickup , valueUpdate: 'afterkeydown'" >
+        </div>
+        <div class="col-md-9 col-12 name-padd">
+<label for="mail" class="receive">Limited Access Pickup</label>
+        </div>
+       </div>
+      <br><br>
+</div>
+
+
+
+ <div class="col-md-6 save-div col-12 order-xs-5 delivery-div" id="saveBack-Div1">
+     <div class="float-container delivery-instructions">
+         
+          <label for="fname" class="txtbold">Special Delivery Instructions</label><br>
+  <input type="text" class=" Instructions" id="fname" name="fname" data-bind="validatableValue:$parents[1].specialInstructions, valueUpdate: 'afterkeydown'">
+
+<br class="br-mb">
+
+</div>
+
+  </div>
+  
+  
+   <div class="col-md-6 col-12">
+   <div class="col-md-12 col-6" id="Instructions-Div1">
+     
+     <div class="float-child1">
+    <button class="save-button" data-bind="click:  function(data, event) {  $parents[1].createCustomer.bind(data, $parents[1], event)()}">Save</button>
+      </div>
+       <div class="req-txt">
+    <span id="required-txt" class="red-txt font-medium" data-bind="visible: $parents[1].saveButtonError" style="">* All required fields must be filled out before submitting</span>
+    </div>
+
+  </div>
+  
+  <div align=left class="float-child col-md-12 col-6 delivery-div" id="back-Div1">
+        <button class="back-button" data-bind="click: function(data, event) { $parents[1].backAddressIndividual.bind(data, $parents[1], event)() }"><span>Back</span></button>
+</div>
+  
+      
+       
+       </div>
+  
+  
+
+
+
+
+  
+  
+  <div class="col-md-6 col-12" id="empty1">
+           <div class="float-container delivery-instructions">
+         
+          <label for="fname" class="txtbold">Special Delivery Instructions</label><br>
+  <input type="text" class=" Instructions" id="fname" name="fname" data-bind="validatableValue:$parents[1].specialInstructions, valueUpdate: 'afterkeydown'">
+
+<br class="br-mb">
+
+</div>
+  </div>
+  <div class="col-md-6 col-6" id="empty2">
+              <button class="back-button" data-bind="click: function(data, event) { $parents[1].backAddressIndividual.bind(data, $parents[1], event)() }"><span>Back</span></button>
+  </div>
+  <div class="col-md-6 col-6" id="empty3" >
+           <div class="float-child1">
+    <button class="save-button" data-bind="click:  function(data, event) {  $parents[1].createCustomer.bind(data, $parents[1], event)()}">Save</button>
+      </div>
+           <div class="req-txt">
+    <span id="required-txt" class="red-txt font-medium" data-bind="visible: $parents[1].saveButtonError" style="">* All required fields must be filled out before submitting</span>
+    </div>
+  </div>
+  
+
+  
+  
+  
+  
+
+
+</div>
+
+<div class="row">
+
+
+</div>
+  <!-- /ko -->
+   <!-- /ko -->
+
+
+
+</div>
+<div class="col-md-1"></div>   
+
+</div>
+    
+    
+    
+    
+</div>
+<div id="CC-businessUserContactInfo" class="container">
+    
+    <div class="row section1">
+        <div class="col-md-1"></div>   
+<div class="col-md-10">
+    
+    
+    
+<h2 ><b class="companyInfo">Company Information</b></h2>
+<br>
+
+
+
+<div class="row">
+  <div class="col-md-6 col-6 padding-left">
+    <label for="fname" id="CC-userBusinessRegistration-primaryBusiness-label" class="txtbold busines">* Primary Business</label>
+
+<!-- <select id="Business-PrimaryBusiness" class="ui dropdown dropdowngender1" data-bind="options:$parent.primaryBusinessArray,optionsCaption:'Select Primary Business', value: $parent.primaryBusiness, event: {change: function(data, event) {
+            return  $parent.validatePrimaryBusiness.bind($data,event)()}}">
+</select>
+-->
+            <div class="boxprimarybusiness col-md-12 col-12">
+<select id="CC-userBusinessRegistration-primaryBusiness"  data-bind="options:$parent.primaryBusinessArray,optionsCaption:'Select Primary Business', value: $parent.primaryBusiness, event: {change: function(data, event) {
+            return  $parent.validatePrimaryBusiness.bind($data,event)()},blur: function(data, event) { return $parent.submitSelfRegistrationRequest.bind(data, $parent, event)() }}">
+</select>
+ </div>
+    <span role="alert" class="text-danger" id="CC-login-type-error" data-bind="visible: $parent.isEmptyPrimaryBusiness,text: $parent.primaryBusinessError"></span>
+
+<br><br>
+  </div>
+    <div class="col-md-6 col-6 padding-zero">
+    <label for="fname" class="txtbold busines">Secondary Business</label><br>
+    <!--
+ <select class="ui dropdown dropdowngender1" data-bind="options:$parent.secondaryBusinessArray, optionsCaption:'Select Secondary Business', value: $parent.secondaryBusiness">
+</select>
+-->
+<div class="boxbusiness col-md-12 col-12">
+<select  data-bind="options:$parent.secondaryBusinessArray, optionsCaption:'Select Secondary Business', value: $parent.secondaryBusiness">
+</select>
+ </div>
+ 
+ 
+<br><br>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-6 padding-left">
+    <label for="fname" class="txtbold busines" id="CC-userBusinessRegistration-numberOfEmployees-label">* Number of Employees</label><br>
+    <!--
+  <select class="ui dropdown dropdowngender1" data-bind="options:$parent.employeeArray, optionsCaption:'Select number of employees',value: $parent.noOfEmployees">
+</select>
+-->
+
+<div class="boxbusiness col-md-12 col-12">
+<select id="CC-userBusinessRegistration-numberOfEmployees"  data-bind="options:$parent.employeeArray, optionsCaption:'Select number of employees',value: $parent.noOfEmployees, event: {change: function(data, event) {
+            return  $parent.validateNoOfEmployees.bind($data,event)()},blur: function(data, event) { return $parent.submitSelfRegistrationRequest.bind(data, $parent, event)() }}">
+</select>
+ </div>
+<br><br>
+  </div>
+    <div class="col-md-6 col-6 padding-zero">
+    <label for="fname" class="txtbold busines" id="CC-userBusinessRegistration-annualRevenue-label">* Annual Revenue</label><br>
+    <!--
+   <select class="ui dropdown dropdowngender1" data-bind="options:$parent.revenueArray,optionsCaption:'Select Revenue', value: $parent.annualRevenue">
+</select>
+-->
+<div class="boxbusiness col-md-12 col-12">
+<select id="CC-userBusinessRegistration-annualRevenue"  data-bind="options:$parent.revenueArray,optionsCaption:'Select Revenue', value: $parent.annualRevenue, event: {change: function(data, event) {
+            return  $parent.validateAnnualRevenue.bind($data,event)()},blur: function(data, event) { return $parent.submitSelfRegistrationRequest.bind(data, $parent, event)() }}">
+</select>
+ </div>
+ 
+ 
+<br><br>
+    </div>
+</div>
+
+
+    
+    
+    <br>
+    <br>
+    
+    
+    
+<h2 ><b class="companyInfo">Billing Address</b></h2>
+<br>
+<br>
+  <!-- ko if: $parent.selfRegistrationRequest().organization.secondaryAddresses()[0]-->
+   <!-- ko with: $parent.selfRegistrationRequest().organization.secondaryAddresses()[0].address -->
+<div class="row">
+    <div class="col-md-12 col-7 padding-zero">
+   <label for="fname" class="txtbold" id="CC-userBusinessRegistration-billingCompany-label">* Company Name</label>
+
+  <input type="text" maxlength="254" class="firstname" id="CC-userBusinessRegistration-billingCompany" name="fname"  data-bind="validatableValue:companyName,  valueUpdate: 'afterkeydown',  event: {keydown: function(data, event) {return $parents[1].companySearch.bind($parents[1],event)()},blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}">
+         <!--<span role="alert" class="text-danger" id="CC-login-address1-error" data-bind="visible:$parents[1].isCompanyNameError,text:$parents[1].companyNameError" style=""></span>-->
+  <br><br>
+</div>
+
+    <div class="col-md-12 col-7 padding-zero">
+   <label for="fname" class="txtbold" id="CC-userBusinessRegistration-billingnickname-label">Nick Name</label>
+
+  <input type="text" maxlength="254" class="firstname" id="CC-userBusinessRegistration-billingnickname" name="fname" data-bind="validatableValue:alias,valueUpdate: 'afterkeydown'" >
+         <!--<span role="alert" class="text-danger" id="CC-login-address1-error" data-bind="visible:$parents[1].isCompanyNameError,text:$parents[1].companyNameError" style=""></span>-->
+  <br><br>
+</div>
+
+
+</div>
+<div>
+       <label for="fname" class="txtbold" id="CC-userBusinessRegistration-address1-label">* Street Address</label>
+
+      <input type="text" class="firstname" id="CC-userBusinessRegistration-address1" name="fname"  data-bind="validatableValue:address1,  valueUpdate: 'afterkeydown',
+            event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress.bind(data,'0', event)()},blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}">
+                       <!--<span role="alert" class="text-danger" id="CC-login-address1-error" data-bind="validationMessage:address1" style=""></span>-->
+            <br><br>
+</div>
+
+<div class="grid-container-1">
+  <div class="padding-zero paading">
+      <i class="textit">Suite, Apartment, Building, P.O. Box</i><br>
+       <label for="fname" class="txtbold1" id="CC-userBusinessRegistration-suite-label">
+           Type
+       </label>
+       <!--
+   <select class="ui dropdown dropdowngender" data-bind="options:$parents[1].addressArray,value: $parents[1].selectedBillingAddress2Type">
+   </select>
+   -->
+   <div class="box2 col-md-12 col-12">
+<select id="CC-userBusinessRegistration-suite" data-bind="options:$parents[1].addressArray,value: $parents[1].selectedBillingAddress2Type"></select>
+ </div>
+   
+   
+   
+  </div>
+  <div class=" paddtop  padding-one padd-right name-billing">
+<label for="fname" class="txtbold11" id="CC-userRegistration-suite-label">Number
+      
+       </label>
+  <input type="text" class="firstname9" id="fname" name="fname" data-bind="validatableValue:address2,  valueUpdate: 'afterkeydown',
+            event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress.bind(data,'0', event)()}}"><br><br>
+  </div>
+  <div class=" padding-one padd-city">
+       <label for="fname" class="txtbold" id="CC-userBusinessRegistration-city-label">* City</label>
+
+  <input type="text" class="firstname citypadd" id="CC-userBusinessRegistration-city" name="fname" data-bind="validatableValue: city,  valueUpdate: 'afterkeydown',
+            event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress.bind(data,'0', event)()},blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}"/>
+                         <!--<span role="alert" class="text-danger" id="CC-login-city-error" data-bind="validationMessage: city"></span>-->
+            <br><br>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col-md-6 col-4 padding-zero">
+       <label for="fname" class="txtbold" id="CC-userBusinessRegistration-state-label">* State</label>
+
+
+<!--  <select class="firstname" id="Business-BillingState" name="fname" data-bind="enable: stateList().length,
+            optionsValue: 'abbreviation', options: stateList(), optionsText: 'displayName', optionsCaption:$parents[1].translate('stateText'),
+            value: selectedState,
+            validatableTarget: state, validationElement: state,event:{ change: $parents[1].validateAddress.bind($parents[1],'0',event)()}"></select>
+    -->        
+            
+<div class="box1 col-md-12 col-12">
+<select id="CC-userBusinessRegistration-state" data-bind="enable: stateList().length,
+            optionsValue: 'abbreviation', options: stateList(), optionsText: 'displayName', optionsCaption:'',
+            value: selectedState,
+            validatableTarget: state, validationElement: state,event:{ change: $parents[1].validateAddress.bind($parents[1],'0',event)(),blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}"></select>
+ </div>
+                <!-- <span role="alert" class="text-danger" id="CC-login-state-error" data-bind="validationMessage: state"></span>-->
+            
+            
+            
+            <br><br>
+  </div>
+  <div class="col-md-6 col-4 zip-codediv">
+ <label for="fname" class="txtbold" id="CC-userBusinessRegistration-zipCode-label">* Zip Code</label>
+
+  <input type="text" class="firstname" id="CC-userBusinessRegistration-zipCode" name="fname" data-bind="validatableValue: postalCode,  valueUpdate: 'afterkeydown',
+           event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress.bind(data,'0', event)()},blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}">
+               <!-- ko if: $data.postalCode() !== ""  --> 
+              <span role="alert" class="text-danger" id="CC-login-postal-error" data-bind="validationMessage: postalCode"></span>
+              <!-- /ko -->
+            <br><br>
+  </div>
+      <div class="col-md-6 col-5 padding-one">
+       <label for="fname" class="txtbold" id="CC-userBusinessRegistration-country-label">* Country</label>
+
+<!--   <select class="firstname" id="fname" name="fname"  data-bind="optionsValue: 'repositoryId',
+            options: countriesList(), optionsText: 'displayName', value: selectedCountry, optionsCaption:$parents[1].translate('countryText'),
+            validatableTarget: country, validationElement: country, event:{ change: $parents[1].validateAddress.bind($parents[1],'0',event)()}"></select>
+     -->       
+            <div class="boxcountry col-md-12 col-12">
+<select id="CC-userBusinessRegistration-country"  data-bind="optionsValue: 'repositoryId',
+            options: countriesList(), optionsText: 'displayName', value: selectedCountry, optionsCaption:$parents[1].translate('countryText'),
+            validatableTarget: country, validationElement: country, event:{ change: $parents[1].validateAddress.bind($parents[1],'0',event)()}">
+</select>
+ </div>
+  <span role="alert" class="text-danger" id="CC-login-country-error" data-bind="validationMessage: country"></span>
+        <br><br>
+    </div>
+
+</div>
+
+ <!-- /ko -->
+   <!-- /ko -->
+<br>
+<br>
+<br>
+<br>
+<h2 ><b class="companyInfo">Shipping Address</b></h2>
+<br>
+<br>
+    <div class ="labelcss">
+        <input type="checkbox" id="billingAddressCopyCheck-Check1" data-bind="checked: $parent.billingAddressCopyCheck">
+        <label for="billingAddressCopyCheck-Check1" class="labelcss">Same as Billing Address
+        </label>
+    </div>
+  <!-- ko if: $parent.selfRegistrationRequest().organization.secondaryAddresses()[1]-->
+   <!-- ko with: $parent.selfRegistrationRequest().organization.secondaryAddresses()[1].address -->
+<div class="row">
+    <div class="col-md-12 col-7 padding-zero">
+   <label for="fname" class="txtbold" id="CC-userBusinessRegistration-shippingCompany-label">* Company Name</label>
+
+  <input type="text" maxlength="254" class="firstname" id="CC-userBusinessRegistration-shippingCompany" name="fname"  data-bind="validatableValue:companyName,  valueUpdate: 'afterkeydown', disable : $parents[1].billingAddressCopyCheck,
+            event: {keydown: function(data, event) {
+            return  $parents[1].submitSelfRegistrationRequest.bind(data,$parents[1], event)()},blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}">
+              <!-- <span role="alert" class="text-danger" id="CC-login-address1-error" data-bind="validationMessage:companyName" style=""></span>-->
+            <br><br>
+</div>
+    <div class="col-md-12 col-7 padding-zero">
+   <label for="fname" class="txtbold" id="CC-userBusinessRegistration-shippingnickname-label">Nick Name</label>
+
+  <input type="text" maxlength="254" class="firstname" id="CC-userBusinessRegistration-shippingnickname" name="fname" data-bind="validatableValue:alias,valueUpdate: 'afterkeydown'" >
+         <!--<span role="alert" class="text-danger" id="CC-login-address1-error" data-bind="visible:$parents[1].isCompanyNameError,text:$parents[1].companyNameError" style=""></span>-->
+  <br><br>
+</div>
+
+
+    
+
+
+
+</div>
+
+
+<div>
+       <label for="fname" class="txtbold" id="CC-userBusinessRegistration-address11-label">* Street Address</label>
+
+      <input type="text" class="firstname" id="CC-userBusinessRegistration-address11" name="fname"  data-bind="validatableValue:address1,  valueUpdate: 'afterkeydown', disable : $parents[1].billingAddressCopyCheck,
+            event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress.bind(data,'1', event)()},blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}">
+                       <!--<span role="alert" class="text-danger" id="CC-login-address1-error" data-bind="validationMessage:address1" style=""></span>-->
+            <br><br>
+</div>
+
+<div class="grid-container-1">
+  <div class="padding-zero paading">
+      <i class="textit">Suite, Apartment, Building, P.O. Box</i><br>
+       <label for="fname" class="txtbold1" id="CC-userBusinessRegistration-suite1-label">Type</label>
+       <!--
+<select class="ui dropdown dropdowngender" id="business-shipping-add" data-bind="options:$parents[1].addressArray,value: $parents[1].selectedShippingAddress2Type, disable : $parents[1].billingAddressCopyCheck"></select>
+-->
+<div class="box2 col-md-12 col-12">
+<select id="business-shipping-add" data-bind="options:$parents[1].addressArray,value: $parents[1].selectedShippingAddress2Type, disable : $parents[1].billingAddressCopyCheck"></select>
+ </div>
+
+
+  </div>
+  <div class=" paddtop  padding-one padd-right name-shipping">
+      <label for="fname" class="txtbold11" id="CC-userRegistration-suite-label">Number
+      
+       </label>
+  <input type="text" id="CC-userBusinessRegistration-address2" class="firstname9" name="fname" data-bind="validatableValue:address2,  valueUpdate: 'afterkeydown', disable : $parents[1].billingAddressCopyCheck,
+            event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress.bind(data,'1', event)()}}"><br><br>
+  </div>
+  <div class=" padding-one padd-city">
+       <label for="fname" class="txtbold" id="CC-userBusinessRegistration-city1-label">* City</label>
+
+  <input type="text" class="firstname citypadd" id="CC-userBusinessRegistration-city1" name="fname" data-bind="validatableValue: city,  valueUpdate: 'afterkeydown', disable : $parents[1].billingAddressCopyCheck,
+            event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress.bind(data,'1', event)()},blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}"/>
+                    <!--   <span role="alert" class="text-danger" id="CC-login-city-error" data-bind="validationMessage: city"></span>-->
+            <br><br>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class=" padding-zero col-md-6 col-6">
+       <label for="fname" class="txtbold" id="CC-userBusinessRegistration-state1-label">* State</label>
+
+<!--  <select class="firstname" id="Business-ShippingState" name="fname" data-bind="enable: stateList().length, disable : $parents[1].billingAddressCopyCheck,
+            optionsValue: 'abbreviation', options: stateList(), optionsText: 'displayName', optionsCaption:$parents[1].translate('stateText'),
+            value: selectedState,
+            validatableTarget: state, validationElement: state,event:{ change: $parents[1].validateAddress.bind($parents[1],'1',event)()}"></select>
+    -->        
+            
+            <div class="box3 col-md-12 col-12">
+  <select  id="CC-userBusinessRegistration-state1" name="fname" data-bind="enable: stateList().length, disable : $parents[1].billingAddressCopyCheck,
+            optionsValue: 'abbreviation', options: stateList(), optionsText: 'displayName', optionsCaption:'',
+            value: selectedState,
+            validatableTarget: state, validationElement: state,event:{ change: $parents[1].validateAddress.bind($parents[1],'1',event)(),blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}"></select>
+ </div>
+               <!-- <span role="alert" class="text-danger" id="CC-login-state-error" data-bind="validationMessage: state"></span> -->           
+            
+            
+            <br><br>
+  </div>
+  <div class=" padding-eight col-md-6 col-6">
+      
+ <label for="fname" class="txtbold" id="CC-userBusinessRegistration-zipCode1-label">* Zip Code</label>
+
+  <input type="text" class="firstname" id="CC-userBusinessRegistration-zipCode1" name="fname" data-bind="validatableValue: postalCode,  valueUpdate: 'afterkeydown', disable : $parents[1].billingAddressCopyCheck,
+           event: {keydown: function(data, event) {
+            return  $parents[1].validateAddress.bind(data,'1', event)()},blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}">
+                        <!-- ko if: $data.postalCode() !== ""  -->
+                        <span role="alert" class="text-danger" id="CC-login-postal-error" data-bind="validationMessage: postalCode"></span>
+                        <!-- /ko -->
+            <br><br>
+  </div>
+  
+  
+  
+  
+   <div class="col-md-6 col-5 padding-one">
+       <label for="fname" class="txtbold" id="CC-userBusinessRegistration-country1-label">* Country</label>
+
+            <div class="boxcountry col-md-12 col-12">
+<select id="CC-userBusinessRegistration-country1" data-bind="optionsValue: 'repositoryId',
+            options: countriesList(), optionsText: 'displayName', value: selectedCountry, optionsCaption:$parents[1].translate('countryText'), disable : $parents[1].billingAddressCopyCheck,
+            validatableTarget: country, validationElement: country,event:{ change: $parents[1].validateAddress.bind($parents[1],'1',event)()}"></select>
+ </div>
+              <!--<span role="alert" class="text-danger" id="CC-login-country-error" data-bind="validationMessage: country"></span>-->
+            
+            <br><br>
+</div> 
+
+  
+  
+  
+  
+  
+  
+  
+
+   <div class="padding-eight col-md-6 col-6">
+       <label for="fname" class="txtbold" id="CC-userBusinessRegistration-typeAddress-label">* Type of Address</label>
+
+        <div class="box4 col-md-12 col-12">
+  <select id="CC-userBusinessRegistration-typeAddress"  data-bind="options: $parents[1].addressTypeArray,validatableValue: type,  valueUpdate: 'afterkeydown',
+            event: {change: function(data, event) {
+            return  $parents[1].validateAddressType.bind(data,'1', event)()},blur: function(data, event) { return $parents[1].submitSelfRegistrationRequest.bind(data, $parents[1], event)() }}"></select>
+ </div>
+         <!--<span role="alert" class="text-danger" id="CC-login-type-error" data-bind="visible: $parents[1].isEmptyAddressType,text: $parents[1].addressTypeError"></span>  -->          
+<br><br>
+  </div>
+  
+  
+</div>
+<br>
+<br>
+<div class="row">
+   <div class="col-md-4 col-5 order-xs-3">
+    <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="customCheckboxLiftb2b" name="type" value="" class="customCheckbox" data-bind="checked:$parents[1].liftGateFee, valueUpdate: 'afterkeydown'" >
+        </div>
+        
+        <div class="col-md-6 col-8 name-padd">
+<label for="mail" class="receive">Liftgate Fee</label>
+        </div>
+
+</div>
+<div class="col-md-4 col-5 order-xs-3">
+    <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="customCheckboxInsideb2b" name="type" value="" class="customCheckbox" data-bind="checked:$parents[1].insidePickup , valueUpdate: 'afterkeydown'" >
+        </div>
+        <div class="col-md-6 col-8 name-padd">
+<label for="mail" class="receive">Inside Pickup</label>
+        </div>
+</div>
+<!--<br><br>
+<div class="col-md-6 col-5 order-xs-3">
+    <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="customCheckboxRes" name="type" value="" class="customCheckbox" data-bind="checked:$parents[1].resPickup , valueUpdate: 'afterkeydown'" >
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="mail" class="receive">Residential Pickup</label>
+        </div>
+</div>-->
+
+<div class="col-md-4 col-5 order-xs-3">
+    <div class="col-md-1 col-1 name-padd1">
+<input type="checkbox" id="customCheckboxLimitb2b" name="type" value="" class="customCheckbox" data-bind="checked:$parents[1].limitedAccessPickup , valueUpdate: 'afterkeydown'" >
+        </div>
+        <div class="col-md-9 col-10 name-padd">
+<label for="mail" class="receive">Limited Access Pickup</label>
+        </div>
+       
+</div>
+
+</div>
+
+
+
+
+<div class="delivery-div">
+      <label for="fname" class="txtbold">Special Delivery Instructions</label>
+  <input type="text" class="Instructions" id="fname" name="fname" data-bind="validatableValue:$parents[1].specialInstructions, valueUpdate: 'afterkeydown'"><br><br>
+</div>
+ <!-- /ko -->
+   <!-- /ko -->
+<br><br>
+
+
+<div class="row save-div">
+<div class="col-md-6 col-4 padding-zero">  <button class="back-button" data-bind="click:  function(data, event) {  $parents[0].backAddressBusiness.bind(data, $parents[0], event)()}">Back</button></div>
+<div class="col-md-6 col-8">  <button class="save-button" data-bind="click:  function(data, event) {  $parent.createOrganizationRequest.bind(data, $parent, event)()}">Save</button>
+       <div class="req-txt">
+    <span id="required-txt" class="red-txt font-medium" data-bind="visible: $parent.saveButtonError" style="">* All required fields must be filled out before submitting</span>
+    </div>
+    </div>
+</div>
+
+
+
+
+</div>
+<div class="col-md-1"></div>   
+</div>
+</div>
+
+
+<!-- /ko -->
+<div id="CC-submitSelfRegistrationRequestType" class="container">
+<div class="row section1">
+  <div class="col-md-6 register-div" >
+    <span class="registertxt">Register      </span>
+    
+    <svg class="svg-d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 324.23 324.23"><defs><style>.cls-1{fill:#72c8f1;}.cls-2{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><circle class="cls-1" cx="162.11" cy="162.11" r="162.11"></circle><path class="cls-2" d="M149.35,250.61,63.69,162.13l23.16-17s47.76,38.05,48.31,38.47c37-43.63,79.08-81.25,127.61-111.83C263,72.29,267,85.1,267,85.1s-27.23,27.34-39.57,42.2c-25.36,30.5-47.87,63-66.32,98.11-4.08,7.77-7.48,15.89-11.19,23.85C149.78,249.63,149.62,250,149.35,250.61Z"></path></g></g></svg>
+    
+
+    <div class="register-des">
+      <span class="boldtxt">New customers can register an account in just 
+      a few easy steps, & access additional features
+      to optimize your shopping experience.
+    </span>
+    
+    </div>
+  </div>
+  <div class="col-md-6 custmer-typediv">
+     <div class="card carddiv">
+     <div class="card-body cardbodydiv">
+      <h3 class="customer-header">Customer Type</h3>
+      
+
+
+        
+        <div class="row">
+        <div class="col-md-1 col-1">
+      <input type="radio" id="Individual" name="type" value="Individual" data-bind="checked: radioSelectedOptionValue">            
+        </div>
+        <div class="col-md-9 col-9 name-padd">
+        <label for="Individual">Individual</label><br>            
+        </div>
+        </div>
+        
+
+        
+   
+       
+        
+        
+        
+                <div class="row">
+        <div class="col-md-1 col-1">
+        <input type="radio" id="Business" name="type" value="Business" data-bind="checked: radioSelectedOptionValue">
+        </div>
+        <div class="col-md-9 name-padd col-9">
+        <label for="Business">Business</label><br>            
+        </div>
+        </div>
+        
+        
+        
+              
+                <div class="row">
+        <div class="col-md-1 col-1">
+        <input type="radio" id="Distributor" name="type" value="Distributor" data-bind="checked: radioSelectedOptionValue">
+        </div>
+        <div class="col-md-9 name-padd col-9">
+        <label for="Distributor">Distributor</label>    
+        </div>
+        </div>
+        
+        
+       
+        
+        <div>
+         <button class="next-btn" data-bind="click: $data.showRegistrationModal()">Next</button>
+</div>
+
+</div>
+     </div>
+     </div>
+     
+     <div class="col-md-6 type-account">
+     
+     
+     
+         <hr class="hr-line">
+<h4 class="cat-head">What Type of Account is Best for Me?
+</h4>
+
+<div align="center" class="center-Div">
+  <h5 class="cat-list">Individual (B2C)</h5>
+  <p class="cat-disc">Person that uses or consumes our products.
+  This type of account will only allow one user profile.</p>
+  <br>
+
+
+  <h5 class="cat-list">Business (B2B)</h5>
+  <p class="cat-disc">Company that uses or consumes our products.
+  This type of account will allow multiple user profiles.</p>
+  <br>
+
+
+  <h5 class="cat-list">Distributor (B2B)</h5>
+  <p class="cat-disc">Company that buys and resells our products.
+  This type of account will allow multiple user profiles.</p>
+  <br>
+  </div>
+     
+   </div>
+   
+     
+     
+     </div>
+     </div>
+<div id="CC-accountExistMessagePane" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header CC-header-modal-heading">
+              <h3 class="modal-title" id="CC-forgotPwdText-titleMessage">Account Exist Already !!</h3>
+            </div>
+            <div class="modal-body cc-modal-body">
+              <div id="CC-forgotPassword-message" class="alert alert-success">Account with this name already exist. Please contact administrator of this account to get you registered here.</div><br>
+            </div>
+            <div class="modal-footer CC-header-modal-footer">
+              <div class="center-block">
+                <button type="button" id="CC-messagePaneClose" class="cc-button-secondary" data-bind="widgetLocaleText: 'closeText', click: $data.navigateToLogin.bind($data)" data-dismiss="modal"></button>
+              </div>
+            </div>
+          </div>
+</div>
+</div>
+
+<div id="CC-addressSuggestionMessagePane" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-div" role="document">
+          <div class="modal-content">
+            <div class="modal-header CC-header-modal-heading">
+              <h3 class="modal-title" id="CC-forgotPwdText-titleMessage">Address Suggestions </h3>
+            </div>
+            <div class="modal-body cc-modal-body">
+                  <!-- ko if: validAddresses().length === 0-->
+<!--                <div>
+                   <span>There are no suggesstions for this address</span>
+                </div>
+                -->
+                <!-- /ko -->
+                
+                <!-- ko if: $data.addressvalidationMessage()-->
+                <div>
+                    <span data-bind="text:$data.addressvalidationMessage()"></span>
+                </div>
+                <!-- /ko -->
+                
+                
+                  <!-- ko if: validAddresses().length > 0-->
+                <!-- ko foreach: validAddresses -->
+              <div id="CC-forgotPassword-message">
+                  <span data-bind="text:$data.line1"></span><br>
+                <!-- ko if: line2-->
+                  <span data-bind="text:$data.line2"></span><br>
+                   <!-- /ko -->
+                  <span data-bind="text:$data.city"></span><br>
+                  <span data-bind="text:$data.region"></span>,  <span data-bind="text:$data.postalCode"></span><br>
+                   <span data-bind="text:$data.country"></span><br>
+                  </div> <!-- /ko -->
+                  <!-- /ko --><br>
+            </div>
+             <!-- ko if: validAddresses().length > 0-->
+            <div class="modal-footer CC-header-modal-footer">
+              <div class="center-block">
+                 <button type="button" id="CC-messagePaneClose"  data-bind="click: setSelectedAddress.bind()" data-dismiss="modal">Accept</button>
+                <button type="button" id="CC-messagePaneClose1" data-bind="click: $data.closesuggesionmodal"  data-dismiss="modal">Decline</button>
+              </div>
+            </div>
+            <!-- /ko -->
+              <!-- ko if: validAddresses().length === 0-->
+               <div class="modal-footer CC-header-modal-footer">
+              <div class="center-block">
+                                  <button type="button" id="CC-messagePaneClose1" data-bind="click: $data.closesuggesionmodal"   data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!-- /ko -->
+          </div>
+</div>
+</div>
+
+<div class="modal" id="CC-Email-Modal">
+    <div class="modal-dialog modal-div modal-op">
+      <div class="modal-content modal-height">
+        <div>
+          <button type="button" class="close close-btn" data-dismiss="modal">
+              <img class="img-xmark" src="/file/general/xmark.png">
+          </button>
+          </div>
+          <div align="center" class="email-d">
+          <h2 class="email-headertxt">Email Address is<br>Already Registered</h2>
+          <h5 class="email-des">
+          The email address you entered is<br>already assigned to an existing<br>
+          UltraSource account. Would you like<br> to try to login instead?
+          
+          </h5>
+       
+          <button class="login"  data-bind="click: $data.redirectToLogin">Login</button>
+          <br>
+          </div>
+
+        
+      </div>
+    </div>
+  </div>
+  
+  
+
+<div class="modal" id="CC-companyAlreadyRegistered-Modal">
+    <div class="modal-dialog modal-div">
+      <div class="modal-content modal-height">
+        <div>
+          <button type="button" class="close close-btn" data-bind="click: $data.closecompanyexistmodal" data-dismiss="modal">
+                            <img class="img-xmark" src="/file/general/xmark.png">
+          </button>
+          </div>
+          <div align="center" class="text-d">
+          <h2 class="email-headertxt">Company is<br>Already Registered</h2>
+          <h5 class="email-des">
+         The company information you provided<br>
+         has already been registered.<br>
+         Please contact the owner/administrator<br>
+         to be added to their account.
+          
+          </h5>
+       
+          <button class="login" data-bind="click:  function(data, event) {  $data.createContactRequest.bind(data, $data, event)()}">Send Email</button>
+          <br>
+          </div>
+
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+<div class="container" id="CC-emailRequestSent">
+        <div class="row justify-content-center align-items-center" >
+                <div class="card">
+                    <div class="card-body" align="center">
+<div> 
+  <img src="/file/v6573998928601187035/general/Brand-logo.png" class="img-cls">
+<h2 class="resettxt">Request Email Sent</h2>
+<p class="txt">
+An email has been sent to the company<br>
+owner/administrator for approval<br>
+Instructions on how to add contacts to<br>
+the company account are included.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>  
+  
+ 
+<div class="container" id="CC-verfication-emaillink">
+        <div class="row justify-content-center align-items-center" >
+                <div class="card card-emaillink">
+                    <div class="card-body card-B" align="center">
+<div> 
+  <img src="/file/v6573998928601187035/general/Brand-logo.png" class="img-cls">
+<h2 class="resettxt" style="text-transform: none;">A verification link<br>
+has been sent to<br> your email account.
+</h2><br class="br-tag">
+<p class="emaillink-p">
+Please click on the link that<br class="br-tag1"> has been<br class="br-tag">
+sent to your email to<br class="br-tag1"> verify your email<br class="br-tag">
+and continue<br class="br-tag1"> the registration process.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>

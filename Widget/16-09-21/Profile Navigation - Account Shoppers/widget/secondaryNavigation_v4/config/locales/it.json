@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Opzioni menu secondario",
+    "displayAndURLHelpText":"Inserire un nome opzione di menu di navigazione secondario da visualizzare nella vetrina, nonché l'URL associato. Gli acquirenti vengono indirizzati a questo URL selezionando il nome specificato. Inserire l'account associato in basi ai ruoli degli acquirenti che potranno accedere all'opzione di menu. Nota: includere solo i ruoli degli acquirenti basati su account.",
+    "placeHoldersText":   "Nome visualizzato, URL, ruolo",
+    "addMoreRowsText": "Aggiungi altre righe",
+    "displayOptionsHelpText":" Scegliere se visualizzare le opzioni di menu verticalmente o orizzontalmente nel layout di pagina.",
+	"displayOptionsLabel":"Orientamento navigazione",
+	"horizontalText": "Orizzontale",
+	"verticalText": "Verticale"
+  }
+}

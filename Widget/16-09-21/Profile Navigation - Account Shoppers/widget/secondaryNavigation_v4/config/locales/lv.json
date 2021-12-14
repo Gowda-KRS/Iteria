@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Sekundārās izvēlnes iespējas",
+    "displayAndURLHelpText":"Ievadiet sekundārās navigācijas izvēles iespējas nosaukumu, kas jāparāda jūsu vitrīnā, un saistīto URL. Pircēji tiek novirzīti uz šo URL, kad atlasa doto nosaukumu. Ievadiet saistīto kontu, pamatojoties uz pircēju lomām, kam būs piekļuve šai izvēlnes iespējai. Piezīme. Tam ir jāattiecas tikai uz tām pircēju lomām, kuru pamatā ir konts.",
+    "placeHoldersText":   "Parādāmais nosaukums, URL, loma",
+    "addMoreRowsText": "Pievienot vairāk rindu",
+    "displayOptionsHelpText":" Izvēlieties, vai izvēlnes iespējas lapas izkārtojumā parādīt vertikāli vai horizontāli.",
+	"displayOptionsLabel":"Navigācijas orientācija",
+	"horizontalText": "Horizontāli",
+	"verticalText": "Vertikāli"
+  }
+}

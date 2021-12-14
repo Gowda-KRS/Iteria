@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Сведения об аккаунте",
+    "accountAddressBookText": "Адресная книга счета",
+    "updatePasswordText": "Обновить пароль",
+    "orderHistoryText":"История заказов",
+    "scheduledOrdersText": "Запланированные заказы",
+    "purchaseListsText": "Списки покупок",
+    "orderApprovalSettingsText": "Настройки утверждения заказов",
+    "accountContactsText": "Контакты аккаунта",
+    "ordersPendingApprovalText": "Заказы на утверждении",
+    "addressBookText": "Адресная книга",
+    "wishListText": "Список желаний",
+    "myAccountText": "Моя учетная запись",
+    "customerDetailsText": "Данные профиля",
+    "accountOrderHistoryText": "История заказов",
+    "accountScheduledOrdersText": "Запланированные заказы",
+    "customerSearchText":"Поиск клиентов",
+    "selfRegistrationText":"Запросы на регистрацию",
+    "registrationRequestsText": "Запросы на регистрацию"
+    
+  }
+}

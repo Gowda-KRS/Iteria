@@ -1,0 +1,6 @@
+{
+  "resources": {
+    "enableExchangeOrder":"교환 주문 사용",
+    "enableExchangeInOrderDetails":"교환 주문을 사용으로 설정하려면 선택"
+  }
+}

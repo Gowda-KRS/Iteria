@@ -1,0 +1,26 @@
+{
+  "availableToAllPages": true,
+  "config": {},
+  "defaultLayout": "ultraSourceAccountContactsAgent_v10_lyt2",
+  "global": false,
+  "globalEnabled": false,
+  "i18nresources": "ultrasourcedelegatedadmincontacts",
+  "imports": [],
+  "javascript": "ultrasource-delegated-admin-contacts",
+  "jsEditable": true,
+  "minWidth": 1,
+  "source": 101,
+  "translations": [
+    {
+      "language": "en",
+      "name": "UltraSource Account Contacts - Agent"
+    },
+    {
+      "language": "en_GB",
+      "name": "UltraSource Account Contacts - Agent"
+    }
+  ],
+  "version": 10,
+  "widgetFamily": "ultraSourceDelegatedAdminContacts",
+  "widgetType": "ultraSourceAccountContactsAgent"
+}

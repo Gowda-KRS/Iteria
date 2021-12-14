@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "Tùy chọn trình đơn phụ",
+    "displayAndURLHelpText":"Nhập tên tùy chọn trình đơn điều hướng phụ sẽ hiển thị trên mặt tiền cửa hàng của bạn và một URL liên kết. Khách hàng được chuyển tới URL đó khi họ chọn tên đã cho. Nhập các vai trò khách hàng dựa trên tài khoản liên kết sẽ có quyền truy cập vào tùy chọn trình đơn đó. Lưu ý: chỉ nên nhập những vai trò khách hàng dựa trên tài khoản.",
+    "placeHoldersText":   "Tên hiển thị, URL, vai trò",
+    "addMoreRowsText": "Thêm nhiều dãy",
+    "displayOptionsHelpText":" Chọn hiển thị các tùy chọn trình đơn trên bố cục trang theo chiều dọc hay chiều ngang.",
+	"displayOptionsLabel":"Hướng điều hướng",
+	"horizontalText": "Ngang",
+	"verticalText": "Dọc"
+  }
+}

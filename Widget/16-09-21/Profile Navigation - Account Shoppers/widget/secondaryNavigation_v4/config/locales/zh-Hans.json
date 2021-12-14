@@ -1,0 +1,12 @@
+{
+  "resources" : {
+ "displayAndURLLabel": "次级菜单选项",
+    "displayAndURLHelpText":"输入要在网上商店中显示的次级导航菜单选项名称，以及关联的 URL。购物者选择给定名称后，将重定向到该 URL。输入关联的基于账户的购物者角色（该角色对该菜单选项具有访问权限）。注意：这只能包含基于账户的购物者角色。",
+    "placeHoldersText":   "显示名称、URL、角色",
+    "addMoreRowsText": "添加更多行",
+    "displayOptionsHelpText":"选择是垂直还是水平页面布局中显示菜单选项。",
+	"displayOptionsLabel":"导航方向",
+	"horizontalText": "水平",
+	"verticalText": "垂直"
+  }
+}

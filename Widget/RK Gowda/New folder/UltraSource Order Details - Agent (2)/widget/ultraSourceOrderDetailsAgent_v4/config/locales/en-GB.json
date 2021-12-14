@@ -1,0 +1,6 @@
+{
+  "resources": {
+    "enableExchangeOrder":"Enable Exchange Order",
+    "enableExchangeInOrderDetails":"Check to enable exchange order"
+  }
+}

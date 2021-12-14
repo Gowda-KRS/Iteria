@@ -1,0 +1,6 @@
+{
+  "resources": {
+    "enableExchangeOrder":"Activar orden de cambio",
+    "enableExchangeInOrderDetails":"Marque esta opción para activar la orden de cambio"
+  }
+}

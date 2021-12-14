@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Detalii cont",
+    "accountAddressBookText": "Administrare agendă",
+    "updatePasswordText": "Actualizare parolă",
+    "orderHistoryText":"Istoric comenzi",
+    "scheduledOrdersText": "Comenzi programate",
+    "purchaseListsText": "Liste de achiziţii",
+    "orderApprovalSettingsText": "Setări pt. aprobare comenzi",
+    "accountContactsText": "Contacte cont",
+    "ordersPendingApprovalText": "Comenzi în aşteptarea aprobării",
+    "addressBookText": "Agendă",
+    "wishListText": "Listă de dorinţe",
+    "myAccountText": "Cont propriu",
+    "customerDetailsText": "Detalii profil",
+    "accountOrderHistoryText": "Istoric comenzi",
+    "accountScheduledOrdersText": "Comenzi programate",
+    "customerSearchText":"Căutare client",
+    "selfRegistrationText":"Cereri de înregistrare",
+    "registrationRequestsText": "Cereri de înregistrare"
+    
+  }
+}

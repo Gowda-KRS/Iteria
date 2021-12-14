@@ -1,0 +1,23 @@
+{
+  "resources": {
+    "accountDetailsText" : "Detail Akun",
+    "accountAddressBookText": "Buku Alamat Akun",
+    "updatePasswordText": "Perbarui Kata Sandi",
+    "orderHistoryText":"Riwayat Pesanan",
+    "scheduledOrdersText": "Pesanan Terjadwal",
+    "purchaseListsText": "Daftar Pembelian",
+    "orderApprovalSettingsText": "Pengaturan Persetujuan Pesanan",
+    "accountContactsText": "Kontak Akun",
+    "ordersPendingApprovalText": "Persetujuan Tertunda Pesanan",
+    "addressBookText": "Buku Alamat",
+    "wishListText": "Dftr Keinginan",
+    "myAccountText": "Akun Saya",
+    "customerDetailsText": "Detail Profil",
+    "accountOrderHistoryText": "Riwayat Pesanan",
+    "accountScheduledOrdersText": "Pesanan Terjadwal",
+    "customerSearchText":"Pencarian Pelanggan",
+    "selfRegistrationText":"Permintaan Registrasi",
+    "registrationRequestsText": "Permintaan Registrasi"
+    
+  }
+}

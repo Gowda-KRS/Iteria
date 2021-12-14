@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["ultraSourceAccountDetailsAgent"],
+  "tag": "ultrasource-dynamic-property-new",
+  "translations": [{
+    "description": "UltraSource Dynamic Property New",
+    "language": "en",
+    "title": "UltraSource Dynamic Property New"
+  }],
+  "type": "fragment",
+  "version": 2
+}

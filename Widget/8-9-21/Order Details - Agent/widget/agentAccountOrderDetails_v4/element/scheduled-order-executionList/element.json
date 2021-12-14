@@ -1,0 +1,16 @@
+{
+  "availableToAllWidgets": false,
+  "children": [],
+  "configOptions": [],
+  "global": false,
+  "inline": false,
+  "supportedWidgetType": ["agentAccountOrderDetails"],
+  "tag": "scheduled-order-executionList",
+  "translations": [{
+    "description": "Agent Scheduled Order History",
+    "language": "en",
+    "title": "Agent Scheduled Order History"
+  }],
+  "type": "fragment",
+  "version": 5
+}
